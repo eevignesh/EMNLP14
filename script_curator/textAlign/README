@@ -1,0 +1,11 @@
+1. Requirements
+boost library, specifically you need tokenizer.hpp from boost
+
+2. Install
+mkdir build
+cd build
+cmake ../
+make
+
+3. Running
+build/bin/align <script_file> <srt_file>
