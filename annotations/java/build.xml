@@ -1,0 +1,88 @@
+<!-- build.xml file for ant for the action parser -->
+<!-- written by Armand Joulin, 2013 -->
+
+<project name="geneartAnnotaionFiles">
+
+
+	<!-- directories -->
+	<property name="src.dir" value="src"/>
+	<property name="lib.dir" value="lib"/>
+	<property name="dest.dir" value="build"/>
+	<property name="classes.dir" value="${dest.dir}/classes"/>
+	<property name="jar.dir" value="${dest.dir}/jar"/>
+
+	<property name="corenlp.dir" value="${lib.dir}/stanford-corenlp-full-2013-06-20/"/>
+  <property name="curator.dir" value="${lib.dir}/curator-dependencies/target/"/>
+  
+	<!-- classpath -->
+
+	<path id="classpath_corenlp">
+    <fileset dir="${corenlp.dir}" includes="*.jar" />
+  </path>
+
+  <path id="classpath_curator">
+      <fileset dir="${corenlp.dir}" includes="*.jar" />
+    <pathelement path="${curator.dir}/classes/"/>
+    <dirset dir="${curator.dir}">
+      <include name="config"/>
+    </dirset>        
+    <pathelement path="${curator.dir}/dependency/illinois*.jar"/>
+    <fileset dir="${curator.dir}" includes="dependency/*.jar"/>
+	</path>
+
+	<!-- class to compile -->
+
+  <!-- <property name="main-class"  value="EMNLP14.GenerateAnnotationData"/> -->
+  
+  <property name="main-class"  value="EMNLP14.Test"/>
+
+	<!-- jar file name -->
+
+	<property name="jar.file" value="${jar.dir}/${ant.project.name}.jar"/>
+
+
+	<!-- all the targets 
+
+		- compile
+		- jar
+		- run
+
+	-->
+  <target name="clean">
+    <delete dir="build"/>
+  </target>
+
+  <target name="compile">
+    <mkdir dir="build/classes"/>
+    <mkdir dir="build/jar"/>
+    <javac srcdir="${src.dir}" destdir="${classes.dir}"
+      classpathref="classpath_curator" deprecation="on"
+      includeantruntime="false"/>
+		<copy todir="${classes.dir}">
+      <fileset dir="${src.dir}" excludes="*.java"/>
+    </copy>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar destfile="${jar.file}" basedir="${classes.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="${main-class}" />
+			</manifest>
+		</jar>
+	</target>
+
+
+	<target name="run" depends="jar">
+		<java fork="true" classname="${main-class}">
+      <arg value="${arg0}"/>
+      <arg value="${arg1}"/>
+      <arg value="${arg2}"/>
+      <arg value="${arg3}"/>
+			<classpath>
+				<path refid="classpath_curator" />
+        <path location="${jar.file}"/>
+			</classpath>
+		</java>
+	</target>
+
+</project>

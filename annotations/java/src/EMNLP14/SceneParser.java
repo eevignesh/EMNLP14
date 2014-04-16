@@ -1,4 +1,4 @@
-//package EMNLP14;
+package EMNLP14;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
@@ -53,7 +53,7 @@ class SceneParser{
       }
 	}
 
-  public static void main(String[] args){
+  /*public static void main(String[] args){
     try{      
       SceneParser sceneParser = new SceneParser(args[0]);
       System.out.println(sceneParser.sceneData.get(Integer.parseInt(args[1])));
@@ -61,6 +61,6 @@ class SceneParser{
       e.printStackTrace();
     }
 
-  }
+  }*/
 
 }
