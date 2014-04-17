@@ -1,0 +1,61 @@
+T0	Verb 32 37	snaps
+T1	Argument 19 31	PHOTOGRAPHER
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 67 72	taped
+T3	Verb 119 125	enters
+T4	Verb 127 131	sees
+T5	Verb 170 174	walk
+T6	Argument 154 159	DAVID
+R1	A0 Arg1:T5 Arg2:T6
+T7	Verb 188 194	speaks
+T8	Argument 182 187	DAVID
+R2	A0 Arg1:T7 Arg2:T8
+T9	Verb 214 220	speaks
+T10	Verb 239 243	nods
+T11	Argument 233 238	Colby
+R3	A0 Arg1:T10 Arg2:T11
+T12	Verb 251 258	bagging
+T13	Verb 293 299	speaks
+T14	Verb 316 321	spies
+T15	Argument 324 329	WOMAN
+R4	A1 Arg1:T14 Arg2:T15
+T16	Argument 312 315	Don
+R5	A0 Arg1:T14 Arg2:T16
+T17	Verb 340 347	dressed
+R6	A1 Arg1:T17 Arg2:T15
+T18	Verb 374 380	speaks
+T19	Verb 397 402	takes
+T20	Argument 393 396	Don
+R7	A0 Arg1:T19 Arg2:T20
+T21	Verb 446 452	speaks
+T22	Verb 498 504	enters
+T23	Verb 506 514	carrying
+T24	Verb 528 533	looks
+T25	Verb 551 557	speaks
+T26	Argument 545 550	LARRY
+R8	A0 Arg1:T25 Arg2:T26
+T27	Verb 573 578	turns
+T28	Verb 582 585	see
+T29	Argument 586 591	LARRY
+R9	A1 Arg1:T28 Arg2:T29
+T30	Verb 636 642	coming
+T31	Verb 653 659	speaks
+T32	Argument 644 651	Charles
+R10	A0 Arg1:T31 Arg2:T32
+T33	Verb 724 730	speaks
+T34	Argument 718 723	LARRY
+R11	A0 Arg1:T33 Arg2:T34
+T35	Verb 751 756	pulls
+T36	Argument 743 750	Charlie
+R12	A0 Arg1:T35 Arg2:T36
+T37	Verb 803 809	speaks
+T38	Argument 797 802	LARRY
+R13	A0 Arg1:T37 Arg2:T38
+T39	Verb 828 834	speaks
+T40	Verb 853 858	takes
+T41	Verb 873 878	opens
+T42	Verb 885 889	find
+T43	Argument 916 919	his
+R14	A1 Arg1:T42 Arg2:T43
+T44	Verb 895 900	faded
+R15	A1 Arg1:T44 Arg2:T43

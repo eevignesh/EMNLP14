@@ -1,0 +1,24 @@
+T0	Verb 4 10	speaks
+T1	Verb 23 28	CLOSE
+T2	Verb 84 93	scattered
+T3	Verb 95 102	showing
+T4	Argument 110 117	Tillman
+R0	A1 Arg1:T3 Arg2:T4
+T5	Verb 144 146	is
+T6	Argument 136 143	Charlie
+R1	A1 Arg1:T5 Arg2:T6
+T7	Verb 176 185	listening
+T8	Argument 170 175	Megan
+R2	A0 Arg1:T7 Arg2:T8
+T9	Verb 198 204	speaks
+T10	Argument 190 197	CHARLIE
+R3	A0 Arg1:T9 Arg2:T10
+T11	FAIL 217 383	Charlie now punches up his previous map showing Jessica's Law --hot---zones-- split---screened with the map of house locations...  CHARLIE (cont'd) speaks a dialogue.
+T12	Verb 392 396	hits
+T13	Argument 384 391	Charlie
+R4	A0 Arg1:T12 Arg2:T13
+T14	Verb 431 442	simplifying
+T15	Verb 505 511	speaks
+T16	Argument 488 495	CHARLIE
+R5	A0 Arg1:T15 Arg2:T16
+T17	Verb 528 534	speaks

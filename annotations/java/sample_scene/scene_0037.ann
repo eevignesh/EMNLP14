@@ -1,0 +1,9 @@
+T0	Verb 6 12	speaks
+T1	Verb 39 47	crossing
+T2	Argument 33 38	Colby
+R0	A0 Arg1:T1 Arg2:T2
+T3	Verb 57 64	heading
+T4	Argument 72 77	Megan
+R1	A1 Arg1:T3 Arg2:T4
+R2	A0 Arg1:T3 Arg2:T2
+T5	Verb 88 94	speaks

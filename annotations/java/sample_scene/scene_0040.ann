@@ -1,0 +1,6 @@
+T0	Verb 10 14	pull
+T1	Verb 62 66	jump
+T2	Argument 46 51	Megan
+R0	A0 Arg1:T1 Arg2:T2
+T3	Verb 72 80	checking
+R1	A0 Arg1:T3 Arg2:T2

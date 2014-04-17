@@ -1,0 +1,49 @@
+T0	Verb 4 9	walks
+T1	Argument 0 3	Don
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 36 42	speaks
+T3	Verb 150 157	waiting
+T4	Argument 108 115	McCRARY
+R1	A1 Arg1:T3 Arg2:T4
+T5	Verb 201 206	looks
+T6	Argument 193 200	McCrary
+R2	A0 Arg1:T5 Arg2:T6
+T7	Argument 210 213	Don
+R3	A1 Arg1:T5 Arg2:T7
+T8	Verb 219 225	speaks
+T9	Verb 263 267	walk
+T10	Argument 246 253	McCrary
+R4	A0 Arg1:T9 Arg2:T10
+T11	Verb 291 297	speaks
+T12	Argument 283 290	MCCRARY
+R5	A0 Arg1:T11 Arg2:T12
+T13	Verb 310 316	glares
+T14	Argument 320 323	Don
+R6	A1 Arg1:T13 Arg2:T14
+T15	Verb 334 339	hangs
+T16	Argument 329 333	Matt
+R7	A1 Arg1:T15 Arg2:T16
+T17	Verb 372 378	speaks
+T18	Argument 364 371	MCCRARY
+R8	A0 Arg1:T17 Arg2:T18
+T19	FAIL 391 571	The McCrary Family turns and exits as... Colby, holding a print---out (having seen the exchange with the McCrarys), comes from the Elevator Area, picking his way through the crowd.
+T20	Verb 575 582	glances
+T21	Argument 590 597	McCrary
+R9	A1 Arg1:T20 Arg2:T21
+T22	Verb 618 624	speaks
+T23	Verb 654 658	move
+T24	Argument 640 643	Don
+R10	A1 Arg1:T23 Arg2:T24
+T25	Verb 686 692	speaks
+T26	Verb 709 718	registers
+T27	Verb 725 729	sees
+T28	Argument 730 737	Charlie
+R11	A1 Arg1:T27 Arg2:T28
+T29	Verb 748 759	approaching
+R12	A1 Arg1:T29 Arg2:T28
+T30	Verb 772 778	speaks
+T31	Argument 764 771	CHARLIE
+R13	A0 Arg1:T30 Arg2:T31
+T32	Verb 814 822	continue
+T33	Argument 796 803	Charlie
+R14	A1 Arg1:T32 Arg2:T33

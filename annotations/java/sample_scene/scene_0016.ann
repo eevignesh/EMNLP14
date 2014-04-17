@@ -1,0 +1,50 @@
+T0	Verb 48 56	watching
+T1	Argument 86 93	McCRARY
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 75 77	is
+R1	A1 Arg1:T2 Arg2:T1
+T3	Verb 135 145	distracted
+T4	Argument 124 131	McCrary
+R2	A1 Arg1:T3 Arg2:T4
+T5	Verb 200 205	picks
+T6	Argument 187 194	McCRARY
+R3	A0 Arg1:T5 Arg2:T6
+T7	Verb 242 246	puts
+T8	Argument 265 271	goalie
+R4	A2 Arg1:T7 Arg2:T8
+R5	A0 Arg1:T7 Arg2:T6
+T9	Verb 302 307	looks
+T10	Argument 299 301	He
+R6	A0 Arg1:T9 Arg2:T10
+T11	Verb 364 370	speaks
+T12	Argument 356 363	MCCRARY
+R7	A0 Arg1:T11 Arg2:T12
+T13	Verb 399 403	hear
+T14	Argument 383 390	McCrary
+R8	A0 Arg1:T13 Arg2:T14
+T15	Verb 407 409	's
+T16	Argument 405 407	He
+R9	A1 Arg1:T15 Arg2:T16
+T17	Verb 456 467	approaching
+T18	Verb 516 522	speaks
+T19	Argument 508 515	MCCRARY
+R10	A0 Arg1:T18 Arg2:T19
+T20	Verb 575 583	watching
+T21	Argument 543 547	Matt
+R11	A0 Arg1:T20 Arg2:T21
+T22	Verb 605 611	speaks
+T23	Argument 597 604	MCCRARY
+R12	A0 Arg1:T22 Arg2:T23
+T24	Verb 640 644	take
+T25	Argument 624 629	David
+R13	A0 Arg1:T24 Arg2:T25
+T26	Argument 645 652	McCrary
+R14	A2 Arg1:T24 Arg2:T26
+R15	A1 Arg1:T24 Arg2:T26
+T27	Verb 677 685	watching
+T28	Argument 686 689	his
+R16	A1 Arg1:T27 Arg2:T28
+T29	Argument 671 675	Matt
+R17	A0 Arg1:T27 Arg2:T29
+T30	Verb 700 703	led
+R18	A1 Arg1:T30 Arg2:T28

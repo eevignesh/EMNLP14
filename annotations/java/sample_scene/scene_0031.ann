@@ -1,0 +1,22 @@
+T0	Verb 83 89	LIVING
+T1	Verb 135 139	tied
+T2	Verb 152 159	slumped
+T3	Argument 123 132	HENDERSON
+R0	A1 Arg1:T2 Arg2:T3
+T4	Verb 176 180	left
+T5	Verb 193 199	facing
+T6	Argument 200 203	him
+R1	A1 Arg1:T5 Arg2:T6
+T7	Verb 209 215	checks
+T8	Argument 205 208	Don
+R2	A0 Arg1:T7 Arg2:T8
+T9	Verb 272 280	entering
+T10	Verb 304 312	carrying
+T11	Verb 334 340	speaks
+T12	Verb 359 364	holds
+T13	Argument 353 358	Colby
+R3	A0 Arg1:T12 Arg2:T13
+T14	Verb 399 402	are
+T15	Verb 467 473	speaks
+T16	Argument 461 466	DAVID
+R4	A0 Arg1:T15 Arg2:T16

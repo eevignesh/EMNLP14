@@ -21,7 +21,7 @@
   </path>
 
   <path id="classpath_curator">
-      <fileset dir="${corenlp.dir}" includes="*.jar" />
+    <fileset dir="${corenlp.dir}" includes="*.jar" />
     <pathelement path="${curator.dir}/classes/"/>
     <dirset dir="${curator.dir}">
       <include name="config"/>
@@ -34,7 +34,7 @@
 
   <!-- <property name="main-class"  value="EMNLP14.GenerateAnnotationData"/> -->
   
-  <property name="main-class"  value="EMNLP14.Test"/>
+  <property name="main-class"  value="EMNLP14.GenerateAnnotationData"/>
 
 	<!-- jar file name -->
 

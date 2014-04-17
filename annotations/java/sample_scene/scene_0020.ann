@@ -1,0 +1,15 @@
+T0	FAIL 0 103	Don watches the PLASMA, David works the remote... Onscreen is a VIDEO IMAGE of VICTIM #3 (John Santos).
+T1	Verb 125 128	saw
+T2	Argument 122 124	we
+R0	A0 Arg1:T1 Arg2:T2
+T3	Verb 141 146	faces
+T4	Argument 138 140	he
+R1	A0 Arg1:T3 Arg2:T4
+T5	Verb 155 161	beaten
+T6	Verb 163 171	bloodied
+R2	A0 Arg1:T6 Arg2:T4
+T7	Verb 183 186	see
+T8	Argument 180 182	We
+R3	A0 Arg1:T7 Arg2:T8
+T9	Verb 273 280	beating
+T10	Verb 281 293	accumulating

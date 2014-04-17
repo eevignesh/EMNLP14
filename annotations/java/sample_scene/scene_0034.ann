@@ -1,0 +1,5 @@
+T0	Verb 63 69	speaks
+T1	Argument 55 62	CHARLIE
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 135 140	moved
+T3	Verb 165 172	looking

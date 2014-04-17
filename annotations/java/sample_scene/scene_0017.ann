@@ -1,0 +1,22 @@
+T0	Verb 16 22	speaks
+T1	Argument 8 15	MCCRARY
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 62 68	grills
+T3	Argument 77 84	McCrary
+R1	A2 Arg1:T2 Arg2:T3
+T4	Verb 113 119	speaks
+T5	Verb 136 140	lays
+T6	Argument 132 135	Don
+R2	A0 Arg1:T5 Arg2:T6
+T7	Verb 191 197	speaks
+T8	Verb 214 220	slides
+T9	Verb 264 270	speaks
+T10	Argument 256 263	MCCRARY
+R3	A0 Arg1:T9 Arg2:T10
+T11	Verb 334 340	speaks
+T12	Verb 357 366	indicates
+T13	Verb 390 397	regains
+T14	Argument 382 389	McCrary
+R4	A0 Arg1:T13 Arg2:T14
+T15	Verb 422 428	speaks
+T16	Verb 469 472	set

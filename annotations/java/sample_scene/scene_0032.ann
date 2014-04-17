@@ -1,0 +1,21 @@
+T0	Verb 4 10	speaks
+T1	Verb 64 71	sitting
+T2	Verb 121 123	go
+T3	Argument 106 113	Charlie
+R0	A1 Arg1:T2 Arg2:T3
+T4	Verb 200 205	chats
+T5	Argument 211 220	predators
+R1	A2 Arg1:T4 Arg2:T5
+T6	Verb 266 270	chat
+T7	Verb 280 283	pop
+T8	Verb 285 297	illuminating
+T9	Verb 315 321	speaks
+T10	Argument 307 314	CHARLIE
+R2	A0 Arg1:T9 Arg2:T10
+T11	Verb 392 399	varying
+T12	Verb 458 464	speaks
+T13	FAIL 477 550	A HAND strings another strand -- different beads, order...  CHARLIE(V.0.)
+T14	Verb 579 585	speaks
+T15	Verb 624 628	line
+T16	FAIL 648 726	Letters now'appear on the beads, revealing.message sequences...  CHARLIE(V.0.)
+T17	Verb 755 761	speaks

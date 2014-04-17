@@ -1,0 +1,16 @@
+T0	Verb 8 14	speaks
+T1	Argument 0 7	CHARLIE
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 72 78	speaks
+T3	Argument 66 71	DAVID
+R1	A0 Arg1:T2 Arg2:T3
+T4	Verb 150 156	speaks
+T5	Argument 144 149	MEGAN
+R2	A0 Arg1:T4 Arg2:T5
+T6	FAIL 169 239	She picks up another file, reads...  MEGAN (cont'd) speaks a dialogue.
+T7	Verb 246 252	speaks
+T8	Argument 240 245	DAVID
+R3	A0 Arg1:T7 Arg2:T8
+T9	Verb 271 276	looks
+T10	Argument 265 270	Megan
+R4	A0 Arg1:T9 Arg2:T10

@@ -1,0 +1,11 @@
+T0	Verb 8 15	crosses
+T1	Argument 0 7	Charlie
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 26 33	reading
+R1	A0 Arg1:T2 Arg2:T1
+T3	Verb 45 55	intercepts
+T4	Argument 56 59	him
+R2	A1 Arg1:T3 Arg2:T4
+T5	Verb 70 76	speaks
+T6	Argument 64 69	LARRY
+R3	A0 Arg1:T5 Arg2:T6

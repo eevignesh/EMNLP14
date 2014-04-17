@@ -1,0 +1,23 @@
+T0	Verb 6 13	crosses
+T1	Argument 0 5	Amita
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 23 31	carrying
+T3	Verb 34 39	stack
+T4	Verb 59 65	speaks
+T5	Argument 51 58	CHARLIE
+R1	A0 Arg1:T4 Arg2:T5
+T6	Verb 78 85	catches
+T7	Argument 94 97	her
+R2	A2 Arg1:T6 Arg2:T7
+T8	Verb 99 107	carrying
+T9	Verb 122 126	chat
+T10	Verb 146 152	speaks
+T11	Argument 140 145	AMITA
+R3	A0 Arg1:T10 Arg2:T11
+T12	Verb 171 177	speaks
+T13	Argument 165 170	MEGAN
+R4	A0 Arg1:T12 Arg2:T13
+T14	Verb 209 214	holds
+T15	Verb 222 227	stack
+T16	Verb 257 263	speaks
+T17	Verb 297 304	heading

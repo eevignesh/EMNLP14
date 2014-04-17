@@ -1,0 +1,10 @@
+T0	Verb 35 40	swarm
+T1	Verb 45 51	Living
+T2	Verb 62 68	speaks
+T3	Verb 86 94	levelled
+T4	Verb 134 138	look
+T5	Argument 129 133	They
+R0	A0 Arg1:T4 Arg2:T5
+T6	Verb 188 194	arrive
+T7	Verb 228 234	speaks
+T8	Verb 251 257	speaks

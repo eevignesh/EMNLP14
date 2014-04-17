@@ -1,0 +1,38 @@
+T0	Verb 47 53	spread
+T1	Argument 36 41	their
+R0	A1 Arg1:T0 Arg2:T1
+T2	Verb 108 114	speaks
+T3	Argument 100 107	CHARLIE
+R1	A0 Arg1:T2 Arg2:T3
+T4	Verb 152 161	struggles
+T5	Argument 144 151	Charlie
+R2	A0 Arg1:T4 Arg2:T5
+T6	Verb 201 207	speaks
+T7	Argument 184 191	CHARLIE
+R3	A0 Arg1:T6 Arg2:T7
+T8	Verb 233 239	speaks
+T9	Argument 227 232	AMITA
+R4	A0 Arg1:T8 Arg2:T9
+T10	Verb 256 261	turns
+T11	Argument 252 255	She
+R5	A0 Arg1:T10 Arg2:T11
+T12	Verb 283 286	see
+T13	Argument 276 278	he
+R6	A0 Arg1:T12 Arg2:T13
+T14	Verb 303 306	see
+T15	Argument 300 302	we
+R7	A0 Arg1:T14 Arg2:T15
+T16	Verb 331 338	showing
+T17	Verb 377 383	speaks
+T18	Argument 369 376	CHARLIE
+R8	A0 Arg1:T17 Arg2:T18
+T19	Verb 400 407	punches
+T20	Argument 396 399	She
+R9	A0 Arg1:T19 Arg2:T20
+T21	Verb 494 500	appear
+T22	Verb 513 519	speaks
+T23	Argument 505 512	CHARLIE
+R10	A0 Arg1:T22 Arg2:T23
+T24	Verb 574 580	speaks
+T25	Argument 566 573	CHARLIE
+R11	A0 Arg1:T24 Arg2:T25

@@ -1,0 +1,24 @@
+T0	Verb 4 10	speaks
+T1	Verb 49 56	reviews
+T2	Argument 46 48	he
+R0	A0 Arg1:T1 Arg2:T2
+T3	Verb 95 101	speaks
+T4	Argument 87 94	CHARLIE
+R1	A0 Arg1:T3 Arg2:T4
+T5	Verb 143 148	drops
+T6	Verb 162 169	stamped
+T7	Verb 172 181	addressed
+T8	Verb 241 247	speaks
+T9	FAIL 260 261	.
+T10	Verb 334 340	speaks
+T11	FAIL 353 426	second smaller ENVELOPE #9, stamped & addressed, inside...  CHARLIE(V.0.)
+T12	Verb 436 442	speaks
+T13	Verb 483 490	opening
+T14	Verb 494 500	reveal
+T15	Argument 509 513	ones
+R2	A1 Arg1:T14 Arg2:T15
+T16	Verb 531 537	opened
+T17	Verb 562 568	speaks
+T18	Verb 602 608	speaks
+T19	Argument 596 601	MEGAN
+R3	A0 Arg1:T18 Arg2:T19

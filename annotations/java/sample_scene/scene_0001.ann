@@ -1,0 +1,61 @@
+T0	Verb 70 75	pulls
+T1	Verb 154 159	think
+T2	Argument 172 179	manager
+R0	A2 Arg1:T1 Arg2:T2
+T3	Verb 182 186	gets
+T4	Verb 231 236	walks
+T5	Argument 228 230	He
+R1	A0 Arg1:T4 Arg2:T5
+T6	Verb 326 331	fixed
+T7	Verb 365 368	see
+T8	Argument 362 364	we
+R2	A0 Arg1:T7 Arg2:T8
+T9	Argument 369 375	Santos
+R3	A1 Arg1:T7 Arg2:T9
+T10	Verb 376 381	enter
+R4	A0 Arg1:T10 Arg2:T9
+T11	Verb 417 422	moves
+T12	Argument 410 416	Santos
+R5	A1 Arg1:T11 Arg2:T12
+T13	Verb 442 449	looking
+R6	A0 Arg1:T13 Arg2:T12
+T14	Verb 470 476	speaks
+T15	Argument 463 469	SANTOS
+R7	A0 Arg1:T14 Arg2:T15
+T16	Verb 503 508	spies
+T17	Argument 500 502	He
+R8	A0 Arg1:T16 Arg2:T17
+T18	Verb 530 536	tacked
+T19	Verb 568 570	'm
+T20	Verb 578 584	shower
+T21	Verb 621 627	coming
+T22	Verb 672 677	hears
+T23	Verb 682 688	shower
+T24	Verb 693 697	pops
+T25	Argument 690 692	He
+R9	A0 Arg1:T24 Arg2:T25
+T26	Verb 706 711	calls
+T27	Verb 755 761	speaks
+T28	Argument 739 745	SANTOS
+R10	A0 Arg1:T27 Arg2:T28
+T29	Verb 777 783	starts
+T30	Argument 774 776	He
+R11	A1 Arg1:T29 Arg2:T30
+T31	Verb 842 847	falls
+T32	Verb 869 874	turns
+T33	Argument 866 868	He
+R12	A0 Arg1:T32 Arg2:T33
+T34	Verb 876 889	TRANSITIONING
+T35	Verb 934 939	comes
+T36	Argument 943 946	him
+R13	A2 Arg1:T35 Arg2:T36
+T37	Verb 951 957	clocks
+T38	Argument 958 961	him
+R14	A1 Arg1:T37 Arg2:T38
+T39	Verb 963 968	sends
+T40	Argument 969 972	him
+R15	A1 Arg1:T39 Arg2:T40
+T41	Verb 1047 1051	drag
+T42	Argument 1052 1055	him
+R16	A1 Arg1:T41 Arg2:T42
+T43	FAIL 1068 1069	:
