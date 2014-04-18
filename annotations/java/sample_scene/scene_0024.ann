@@ -1,18 +1,15 @@
 T0	Verb 8 14	speaks
-T1	Argument 0 7	CHARLIE
-R0	A0 Arg1:T0 Arg2:T1
+T1	Argument 17 25	dialogue
+R0	A1 Arg1:T0 Arg2:T1
 T2	Verb 33 39	enters
-T3	Argument 27 32	Megan
-R1	A0 Arg1:T2 Arg2:T3
-T4	Argument 48 53	Larry
-R2	A1 Arg1:T2 Arg2:T4
-T5	Verb 43 47	find
-R3	A0 Arg1:T5 Arg2:T3
-T6	Verb 54 61	reading
-T7	Verb 91 97	speaks
-T8	Argument 85 90	LARRY
-R4	A0 Arg1:T7 Arg2:T8
-T9	FAIL 110 173	He looks up from the book...  LARRY (cont'd) speaks a dialogue.
-T10	Verb 183 188	takes
-T11	Argument 177 182	Megan
-R5	A0 Arg1:T10 Arg2:T11
+T3	Argument 76 80	play
+R1	A1 Arg1:T2 Arg2:T3
+T4	Verb 43 47	find
+R2	A1 Arg1:T4 Arg2:T3
+T5	Verb 54 61	reading
+R3	A1 Arg1:T5 Arg2:T3
+T6	Verb 91 97	speaks
+T7	Argument 100 108	dialogue
+R4	A1 Arg1:T6 Arg2:T7
+T8	FAIL 110 173	He looks up from the book...  LARRY (cont'd) speaks a dialogue.
+T9	Verb 183 188	takes

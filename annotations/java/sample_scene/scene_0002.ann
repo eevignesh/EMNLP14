@@ -35,27 +35,32 @@ T25	Verb 551 557	speaks
 T26	Argument 545 550	LARRY
 R8	A0 Arg1:T25 Arg2:T26
 T27	Verb 573 578	turns
-T28	Verb 582 585	see
-T29	Argument 586 591	LARRY
-R9	A1 Arg1:T28 Arg2:T29
-T30	Verb 636 642	coming
-T31	Verb 653 659	speaks
-T32	Argument 644 651	Charles
-R10	A0 Arg1:T31 Arg2:T32
-T33	Verb 724 730	speaks
-T34	Argument 718 723	LARRY
-R11	A0 Arg1:T33 Arg2:T34
-T35	Verb 751 756	pulls
-T36	Argument 743 750	Charlie
-R12	A0 Arg1:T35 Arg2:T36
-T37	Verb 803 809	speaks
-T38	Argument 797 802	LARRY
-R13	A0 Arg1:T37 Arg2:T38
-T39	Verb 828 834	speaks
-T40	Verb 853 858	takes
-T41	Verb 873 878	opens
-T42	Verb 885 889	find
-T43	Argument 916 919	his
-R14	A1 Arg1:T42 Arg2:T43
-T44	Verb 895 900	faded
-R15	A1 Arg1:T44 Arg2:T43
+T28	Argument 570 572	He
+R9	A1 Arg1:T27 Arg2:T28
+T29	Verb 582 585	see
+T30	Argument 586 591	LARRY
+R10	A1 Arg1:T29 Arg2:T30
+R11	A0 Arg1:T29 Arg2:T28
+T31	Verb 636 642	coming
+T32	Verb 653 659	speaks
+T33	Argument 644 651	Charles
+R12	A0 Arg1:T32 Arg2:T33
+T34	Verb 724 730	speaks
+T35	Argument 718 723	LARRY
+R13	A0 Arg1:T34 Arg2:T35
+T36	Verb 751 756	pulls
+T37	Argument 743 750	Charlie
+R14	A0 Arg1:T36 Arg2:T37
+T38	Verb 803 809	speaks
+T39	Argument 797 802	LARRY
+R15	A0 Arg1:T38 Arg2:T39
+T40	Verb 828 834	speaks
+T41	Argument 822 827	LARRY
+R16	A0 Arg1:T40 Arg2:T41
+T42	Verb 853 858	takes
+T43	Argument 847 852	Larry
+R17	A0 Arg1:T42 Arg2:T43
+T44	Verb 873 878	opens
+R18	A0 Arg1:T44 Arg2:T43
+T45	Verb 885 889	find
+T46	Verb 895 900	faded

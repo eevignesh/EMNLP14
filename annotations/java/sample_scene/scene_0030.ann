@@ -1,4 +1,4 @@
 T0	Verb 0 6	Resume
-T1	Argument 7 14	Charlie
-R0	A1 Arg1:T0 Arg2:T1
-T2	Verb 16 24	checking
+T1	Verb 16 24	checking
+T2	Argument 29 37	database
+R0	A1 Arg1:T1 Arg2:T2

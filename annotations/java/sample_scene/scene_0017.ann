@@ -1,22 +1,34 @@
 T0	Verb 16 22	speaks
-T1	Argument 8 15	MCCRARY
-R0	A0 Arg1:T0 Arg2:T1
+T1	Argument 25 33	dialogue
+R0	A1 Arg1:T0 Arg2:T1
 T2	Verb 62 68	grills
-T3	Argument 77 84	McCrary
-R1	A2 Arg1:T2 Arg2:T3
+T3	Argument 58 61	Don
+R1	A0 Arg1:T2 Arg2:T3
 T4	Verb 113 119	speaks
-T5	Verb 136 140	lays
-T6	Argument 132 135	Don
-R2	A0 Arg1:T5 Arg2:T6
+T5	Argument 122 130	dialogue
+R2	A1 Arg1:T4 Arg2:T5
+T6	Verb 136 140	lays
 T7	Verb 191 197	speaks
-T8	Verb 214 220	slides
-T9	Verb 264 270	speaks
-T10	Argument 256 263	MCCRARY
-R3	A0 Arg1:T9 Arg2:T10
-T11	Verb 334 340	speaks
-T12	Verb 357 366	indicates
-T13	Verb 390 397	regains
-T14	Argument 382 389	McCrary
-R4	A0 Arg1:T13 Arg2:T14
-T15	Verb 422 428	speaks
-T16	Verb 469 472	set
+T8	Argument 200 208	dialogue
+R3	A1 Arg1:T7 Arg2:T8
+T9	Verb 214 220	slides
+T10	Argument 225 236	transcripts
+R4	A1 Arg1:T9 Arg2:T10
+T11	Verb 264 270	speaks
+T12	Argument 273 281	dialogue
+R5	A1 Arg1:T11 Arg2:T12
+T13	Verb 334 340	speaks
+T14	Argument 343 351	dialogue
+R6	A1 Arg1:T13 Arg2:T14
+T15	Verb 357 366	indicates
+T16	Argument 374 380	photos
+R7	A2 Arg1:T15 Arg2:T16
+T17	Verb 390 397	regains
+T18	Argument 402 411	composure
+R8	A1 Arg1:T17 Arg2:T18
+T19	Verb 422 428	speaks
+T20	Argument 431 439	dialogue
+R9	A1 Arg1:T19 Arg2:T20
+T21	Verb 469 472	set
+T22	Argument 476 487	transcripts
+R10	A2 Arg1:T21 Arg2:T22

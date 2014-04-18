@@ -27,35 +27,42 @@ T17	Argument 500 502	He
 R8	A0 Arg1:T16 Arg2:T17
 T18	Verb 530 536	tacked
 T19	Verb 568 570	'm
-T20	Verb 578 584	shower
-T21	Verb 621 627	coming
-T22	Verb 672 677	hears
-T23	Verb 682 688	shower
-T24	Verb 693 697	pops
-T25	Argument 690 692	He
-R9	A0 Arg1:T24 Arg2:T25
-T26	Verb 706 711	calls
-T27	Verb 755 761	speaks
-T28	Argument 739 745	SANTOS
-R10	A0 Arg1:T27 Arg2:T28
-T29	Verb 777 783	starts
-T30	Argument 774 776	He
-R11	A1 Arg1:T29 Arg2:T30
-T31	Verb 842 847	falls
-T32	Verb 869 874	turns
-T33	Argument 866 868	He
-R12	A0 Arg1:T32 Arg2:T33
-T34	Verb 876 889	TRANSITIONING
-T35	Verb 934 939	comes
-T36	Argument 943 946	him
-R13	A2 Arg1:T35 Arg2:T36
-T37	Verb 951 957	clocks
-T38	Argument 958 961	him
-R14	A1 Arg1:T37 Arg2:T38
-T39	Verb 963 968	sends
-T40	Argument 969 972	him
-R15	A1 Arg1:T39 Arg2:T40
-T41	Verb 1047 1051	drag
-T42	Argument 1052 1055	him
-R16	A1 Arg1:T41 Arg2:T42
-T43	FAIL 1068 1069	:
+T20	Argument 567 568	I
+R9	A1 Arg1:T19 Arg2:T20
+T21	Verb 578 584	shower
+R10	A0 Arg1:T21 Arg2:T20
+T22	Verb 621 627	coming
+T23	Verb 672 677	hears
+T24	Argument 604 606	He
+R11	A1 Arg1:T23 Arg2:T24
+T25	Verb 682 688	shower
+R12	A1 Arg1:T25 Arg2:T24
+T26	Verb 693 697	pops
+T27	Argument 690 692	He
+R13	A0 Arg1:T26 Arg2:T27
+T28	Verb 706 711	calls
+R14	A0 Arg1:T28 Arg2:T27
+T29	Verb 755 761	speaks
+T30	Argument 739 745	SANTOS
+R15	A0 Arg1:T29 Arg2:T30
+T31	Verb 777 783	starts
+T32	Argument 774 776	He
+R16	A1 Arg1:T31 Arg2:T32
+T33	Verb 842 847	falls
+T34	Verb 869 874	turns
+T35	Argument 866 868	He
+R17	A0 Arg1:T34 Arg2:T35
+T36	Verb 876 889	TRANSITIONING
+T37	Verb 934 939	comes
+T38	Argument 943 946	him
+R18	A2 Arg1:T37 Arg2:T38
+T39	Verb 951 957	clocks
+T40	Argument 958 961	him
+R19	A1 Arg1:T39 Arg2:T40
+T41	Verb 963 968	sends
+T42	Argument 969 972	him
+R20	A1 Arg1:T41 Arg2:T42
+T43	Verb 1047 1051	drag
+T44	Argument 1052 1055	him
+R21	A1 Arg1:T43 Arg2:T44
+T45	FAIL 1068 1069	:

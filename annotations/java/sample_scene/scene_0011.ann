@@ -1,30 +1,27 @@
 T0	Verb 6 14	observes
-T1	Argument 0 5	Megan
-R0	A0 Arg1:T0 Arg2:T1
-T2	Verb 34 40	cleans
-T3	Argument 26 33	Tillman
-R1	A0 Arg1:T2 Arg2:T3
-T4	Verb 89 96	spilled
-R2	A0 Arg1:T4 Arg2:T3
-T5	Verb 141 147	speaks
-T6	Argument 133 140	TILLMAN
-R3	A0 Arg1:T5 Arg2:T6
-T7	Verb 166 174	measures
-T8	Argument 175 181	Elaine
-R4	A1 Arg1:T7 Arg2:T8
-T9	Argument 160 165	Megan
-R5	A0 Arg1:T7 Arg2:T9
-T10	Verb 192 198	locked
+T1	Verb 34 40	cleans
+T2	Argument 48 52	mess
+R0	A1 Arg1:T1 Arg2:T2
+T3	Verb 89 96	spilled
+T4	Argument 97 101	milk
+R1	A2 Arg1:T3 Arg2:T4
+T5	Argument 81 87	cereal
+R2	A1 Arg1:T3 Arg2:T5
+T6	Verb 141 147	speaks
+T7	Argument 150 158	dialogue
+R3	A1 Arg1:T6 Arg2:T7
+T8	Verb 166 174	measures
+T9	Verb 192 198	locked
+T10	Argument 187 191	eyes
+R4	A1 Arg1:T9 Arg2:T10
 T11	Verb 212 218	speaks
-T12	Argument 206 211	MEGAN
-R6	A0 Arg1:T11 Arg2:T12
+T12	Argument 221 229	dialogue
+R5	A1 Arg1:T11 Arg2:T12
 T13	Verb 274 280	reacts
-T14	Argument 267 273	Elaine
-R7	A0 Arg1:T13 Arg2:T14
-T15	Verb 288 294	speaks
-T16	Argument 282 287	MEGAN
-R8	A0 Arg1:T15 Arg2:T16
-T17	Verb 332 342	devastated
+T14	Verb 288 294	speaks
+T15	Argument 297 305	dialogue
+R6	A1 Arg1:T14 Arg2:T15
+T16	Verb 332 342	devastated
+T17	Argument 325 331	------
+R7	A1 Arg1:T16 Arg2:T17
 T18	Verb 344 350	failed
-T19	Argument 354 358	wife
-R9	A2 Arg1:T18 Arg2:T19

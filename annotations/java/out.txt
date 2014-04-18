@@ -1,0 +1,350 @@
+Buildfile: /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build.xml
+
+compile:
+    [javac] Compiling 1 source file to /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/classes
+     [copy] Copying 1 file to /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/classes
+
+jar:
+      [jar] Building jar: /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/jar/geneartAnnotaionFiles.jar
+
+run:
+     [java] Starting scene parser
+     [java] Adding annotator tokenize
+     [java] Adding annotator ssplit
+     [java] Adding annotator pos
+     [java] Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [1.6 sec].
+     [java] Adding annotator lemma
+     [java] Adding annotator ner
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [6.8 sec].
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [4.3 sec].
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [3.9 sec].
+     [java] Initializing JollyDayHoliday for sutime
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+     [java] Apr 18, 2014 12:05:28 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+     [java] INFO: Ignoring inactive rule: temporal-composite-8:ranges
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+     [java] Adding annotator parse
+     [java] Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [1.4 sec].
+     [java] Adding annotator dcoref
+     [java] pull:
+     [java]     A0: A car
+     [java]     C-V: up
+     [java] 
+     [java] mention: car-NN
+     [java] think:
+     [java]     A2: Radio Shack manager
+     [java] get:
+     [java]     A1: a six --- pack of beer under his arm
+     [java]     C-V: out
+     [java] 
+     [java] mention: manager-NN
+     [java] ANIMATE
+     [java] manager-24, beg --- 172 , end --- 179
+     [java] mention: six-CD
+     [java] mention: pack-NN
+     [java] mention: beer-NN
+     [java] mention: arm-NN
+     [java] mention: his-PRP$
+     [java] walk:
+     [java]     A0: He
+     [java]     AM-DIR: across the lawn
+     [java] fix:
+     [java]     A1: NOW FROM POV OF -- DATELINE ----- style fixed surveillance video cameras
+     [java] see:
+     [java]     A0: we
+     [java]     A1: Santos enter
+     [java] enter:
+     [java]     A0: Santos
+     [java] 
+     [java] mention: He-PRP
+     [java] ANIMATE
+     [java] He-1, beg --- 228 , end --- 230
+     [java] mention: NOW-RB
+     [java] mention: POV-NN
+     [java] mention: style-NN
+     [java] mention: ------CD
+     [java] mention: cameras-NNS
+     [java] mention: we-PRP
+     [java] ANIMATE
+     [java] we-27, beg --- 362 , end --- 364
+     [java] mention: Santos-NNP
+     [java] ANIMATE
+     [java] Santos-29, beg --- 369 , end --- 375
+     [java] mention: Santos-NNP
+     [java] ANIMATE
+     [java] Santos-29, beg --- 369 , end --- 375
+     [java] 
+     [java] move:
+     [java]     A1: Santos
+     [java]     AM-DIR: through the house
+     [java] look:
+     [java]     A0: Santos
+     [java]     A1: around
+     [java] 
+     [java] mention: Santos-NNS
+     [java] ANIMATE
+     [java] Santos-1, beg --- 410 , end --- 416
+     [java] mention: Santos-NNS
+     [java] ANIMATE
+     [java] Santos-1, beg --- 410 , end --- 416
+     [java] speak:
+     [java]     A0: JOHN SANTOS
+     [java]     A1: a dialogue
+     [java] 
+     [java] mention: SANTOS-NNP
+     [java] ANIMATE
+     [java] SANTOS-2, beg --- 464 , end --- 470
+     [java] mention: dialogue-NN
+     [java] 
+     [java] spy:
+     [java]     A0: He
+     [java]     A1: a note on the fridge tacked up by a magnet : --- Chill
+     [java] tack:
+     [java]     A1: the fridge
+     [java]     C-V: up
+     [java]     C-V: out
+     [java] 
+     [java] mention: note-NN
+     [java] mention: fridge-NN
+     [java] mention: magnet-NN
+     [java] mention: Chill-NNP
+     [java] mention: He-PRP
+     [java] ANIMATE
+     [java] He-1, beg --- 501 , end --- 503
+     [java] mention: fridge-NN
+     [java] be:
+     [java]     A1: I
+     [java]     AM-DIR: in the shower
+     [java] shower:
+     [java]     A0: I
+     [java] 
+     [java] mention: I-PRP
+     [java] ANIMATE
+     [java] I-1, beg --- 568 , end --- 569
+     [java] mention: I-PRP
+     [java] ANIMATE
+     [java] I-1, beg --- 568 , end --- 569
+     [java] 
+     [java] come:
+     [java]     A1: steam
+     [java]     A2: from under the bathroom door
+     [java] hear:
+     [java]     A0: the shower
+     [java]     A1: He notices steam coming from under the bathroom door down the hall
+     [java] shower:
+     [java]     A1: He notices steam coming from under the bathroom door down the hall
+     [java] 
+     [java] mention: door-NN
+     [java] mention: steam-NN
+     [java] mention: shower-NN
+     [java] mention: He-PRP
+     [java] mention: steam-NN
+     [java] mention: door-NN
+     [java] mention: hall-NN
+     [java] ANIMATE
+     [java] He-1, beg --- 604 , end --- 606
+     [java] mention: He-PRP
+     [java] mention: steam-NN
+     [java] mention: door-NN
+     [java] mention: hall-NN
+     [java] ANIMATE
+     [java] He-1, beg --- 604 , end --- 606
+     [java] pop:
+     [java]     A0: He
+     [java]     A1: a beer
+     [java] call:
+     [java]     A0: He pops a beer
+     [java] speak:
+     [java]     A0: JOHN SANTOS ( cont 'd )
+     [java]     A1: a dialogue
+     [java] 
+     [java] mention: He-PRP
+     [java] ANIMATE
+     [java] He-1, beg --- 690 , end --- 692
+     [java] mention: beer-NN
+     [java] mention: He-PRP
+     [java] mention: beer-NN
+     [java] ANIMATE
+     [java] He-1, beg --- 690 , end --- 692
+     [java] mention: dialogue-NN
+     [java] mention: SANTOS-NNP
+     [java] ANIMATE
+     [java] SANTOS-12, beg --- 739 , end --- 745
+     [java] start:
+     [java]     A1: He
+     [java]     C-A1: to unbutton his shirt
+     [java] 
+     [java] mention: He-PRP
+     [java] ANIMATE
+     [java] He-1, beg --- 774 , end --- 776
+     [java] fall:
+     [java]     A1: A SHADOW
+     [java]     A4: across the floor
+     [java] 
+     [java] mention: SHADOW-NN
+     [java] turn:
+     [java]     A0: He
+     [java] 
+     [java] mention: He-PRP
+     [java] ANIMATE
+     [java] He-1, beg --- 866 , end --- 868
+     [java] transition:
+     [java]     A4: TO OBJECTIVE FILM POV
+     [java]     AM-TMP: NOW
+     [java] come:
+     [java]     A1: A BASEBALL BAT
+     [java]     A2: at him
+     [java] 
+     [java] mention: him-PRP
+     [java] ANIMATE
+     [java] him-13, beg --- 943 , end --- 946
+     [java] mention: BAT-NN
+     [java] clock:
+     [java]     A0: It
+     [java]     A1: him
+     [java] send:
+     [java]     A0: It
+     [java]     A1: him
+     [java]     A2: to the carpet
+     [java] drag:
+     [java]     A0: HANDS IN HEAVY GLOVES
+     [java]     A1: him
+     [java]     A2: to a CHAIR
+     [java] 
+     [java] mention: him-PRP
+     [java] ANIMATE
+     [java] him-3, beg --- 958 , end --- 961
+     [java] mention: It-PRP
+     [java] mention: him-PRP
+     [java] ANIMATE
+     [java] him-6, beg --- 969 , end --- 972
+     [java] mention: carpet-NN
+     [java] mention: It-PRP
+     [java] mention: CHAIR-NN
+     [java] mention: HANDS-NN
+     [java] mention: GLOVES-NNS
+     [java] mention: him-PRP
+     [java] ANIMATE
+     [java] him-24, beg --- 1052 , end --- 1055
+     [java] SRL failed for sentence: :
+     [java] Continuing ...
+     [java] coref (POV) --- key: 5_8
+     [java] coref (HAND) --- key: 14_18
+     [java] coref (CAMERA) --- key: 32_38
+     [java] coref (house) --- key: 55_60
+     [java] coref (house) --- key: 435_440
+     [java] coref (car) --- key: 66_69
+     [java] coref (SANTOS) --- key: 85_91
+     [java] coref (SANTOS) --- key: 85_91
+     [java] coref (his) --- key: 219_222
+     [java] coref (He) --- key: 228_230
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (Santos) --- key: 369_375
+     [java] COREF --------------
+     [java] mention: Santos, coref: SANTOS
+     [java] coref (Santos) --- key: 410_416
+     [java] COREF --------------
+     [java] mention: Santos, coref: SANTOS
+     [java] coref (SANTOS) --- key: 464_470
+     [java] COREF --------------
+     [java] mention: SANTOS, coref: SANTOS
+     [java] coref (He) --- key: 501_503
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (Santos) --- key: 589_595
+     [java] coref (He) --- key: 604_606
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (He) --- key: 690_692
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (SANTOS) --- key: 739_745
+     [java] COREF --------------
+     [java] mention: SANTOS, coref: SANTOS
+     [java] coref (He) --- key: 774_776
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (his) --- key: 796_799
+     [java] coref (He) --- key: 866_868
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (30) --- key: 93_95
+     [java] coref (pack) --- key: 200_204
+     [java] coref (Latino) --- key: 97_103
+     [java] coref (shirt) --- key: 111_116
+     [java] coref (tie) --- key: 121_124
+     [java] coref (slacks) --- key: 127_133
+     [java] coref (slacks) --- key: 127_133
+     [java] coref (cellphone) --- key: 135_144
+     [java] coref (manager) --- key: 172_179
+     [java] COREF --------------
+     [java] mention: manager, coref: manager
+     [java] coref (six) --- key: 194_197
+     [java] coref (beer) --- key: 208_212
+     [java] coref (arm) --- key: 223_226
+     [java] coref (NOW) --- key: 289_292
+     [java] coref (NOW) --- key: 890_893
+     [java] coref (It) --- key: 948_950
+     [java] coref (-----) --- key: 315_320
+     [java] coref (circles) --- key: 254_261
+     [java] coref (lawn) --- key: 248_252
+     [java] coref (lawn) --- key: 248_252
+     [java] coref (POV) --- key: 298_301
+     [java] coref (door) --- key: 281_285
+     [java] coref (cameras) --- key: 351_358
+     [java] coref (we) --- key: 362_364
+     [java] COREF --------------
+     [java] mention: we, coref: we
+     [java] coref (style) --- key: 320_325
+     [java] coref (STEREO) --- key: 402_408
+     [java] coref (moves) --- key: 417_422
+     [java] coref (note) --- key: 512_516
+     [java] coref (answer) --- key: 493_499
+     [java] coref (dialogue) --- key: 480_488
+     [java] coref (dialogue) --- key: 764_772
+     [java] coref (magnet) --- key: 546_552
+     [java] coref (fridge) --- key: 524_530
+     [java] coref (shower) --- key: 579_585
+     [java] coref (shower) --- key: 682_688
+     [java] coref (I) --- key: 568_569
+     [java] COREF --------------
+     [java] mention: I, coref: I
+     [java] coref (Chill) --- key: 557_562
+     [java] coref (hall) --- key: 666_670
+     [java] coref (steam) --- key: 615_620
+     [java] coref (door) --- key: 652_656
+     [java] coref (shirt) --- key: 800_805
+     [java] coref (shirt) --- key: 800_805
+     [java] coref (move) --- key: 807_811
+     [java] coref (beer) --- key: 700_704
+     [java] coref (bathroom) --- key: 723_731
+     [java] coref (bathroom) --- key: 823_831
+     [java] coref (cont) --- key: 747_751
+     [java] coref (floor) --- key: 859_864
+     [java] coref (POV) --- key: 912_915
+     [java] coref (him) --- key: 943_946
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (him) --- key: 958_961
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (him) --- key: 969_972
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (his) --- key: 1037_1040
+     [java] coref (him) --- key: 1052_1055
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (SHADOW) --- key: 835_841
+     [java] coref (HANDS) --- key: 1003_1008
+     [java] coref (carpet) --- key: 980_986
+     [java] coref (BAT) --- key: 930_933
+     [java] coref (:) --- key: 1068_1069
+     [java] coref (CHAIR) --- key: 1061_1066
+     [java] coref (legs) --- key: 1041_1045
+     [java] coref (GLOVES) --- key: 1018_1024
+
+BUILD SUCCESSFUL
+Total time: 27 seconds

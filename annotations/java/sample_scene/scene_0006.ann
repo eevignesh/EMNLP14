@@ -25,3 +25,5 @@ T15	Verb 299 304	stops
 T16	Argument 291 298	Charlie
 R8	A1 Arg1:T15 Arg2:T16
 T17	Verb 337 344	returns
+T18	Argument 334 336	he
+R9	A1 Arg1:T17 Arg2:T18
