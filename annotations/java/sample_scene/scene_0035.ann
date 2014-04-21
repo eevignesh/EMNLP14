@@ -1,64 +1,70 @@
 T0	Verb 8 14	speaks
-T1	Argument 17 25	dialogue
-R0	A1 Arg1:T0 Arg2:T1
+R0	A0 Arg1:T0 Arg2:T1
 T2	Verb 48 53	enter
-T3	Argument 77 83	PLASMA
 R1	A1 Arg1:T2 Arg2:T3
-T4	Verb 57 61	find
-T5	Verb 88 91	has
-T6	Verb 131 135	chat
-T7	Argument 143 147	left
-R2	A1 Arg1:T6 Arg2:T7
-T8	Verb 193 197	chat
-T9	Argument 205 210	right
-R3	A2 Arg1:T8 Arg2:T9
-T10	Verb 218 224	speaks
-T11	Argument 212 217	COLBY
-R4	A0 Arg1:T10 Arg2:T11
-T12	Argument 227 235	dialogue
-R5	A1 Arg1:T10 Arg2:T12
-T13	Verb 253 259	DINING
-T14	Argument 267 272	NIGHT
-R6	A0 Arg1:T13 Arg2:T14
-T15	Verb 304 310	speaks
-T16	Argument 313 321	dialogue
-R7	A1 Arg1:T15 Arg2:T16
-T17	Verb 328 333	looks
-T18	Argument 345 351	------
-R8	A1 Arg1:T17 Arg2:T18
-T19	Verb 358 364	struck
-T20	Argument 367 372	chord
-R9	A1 Arg1:T19 Arg2:T20
+R2	A0 Arg1:T2 Arg2:T4
+R3	A0 Arg1:T2 Arg2:T5
+R4	A0 Arg1:T2 Arg2:T6
+T7	Verb 57 61	find
+R5	A0 Arg1:T7 Arg2:T4
+R6	A0 Arg1:T7 Arg2:T5
+R7	A0 Arg1:T7 Arg2:T6
+T8	Verb 88 91	has
+R8	A0 Arg1:T8 Arg2:T9
+T10	Verb 131 135	chat
+R9	A0 Arg1:T10 Arg2:T11
+T12	Verb 193 197	chat
+T13	Verb 218 224	speaks
+R10	A0 Arg1:T13 Arg2:T14
+T15	Verb 253 259	DINING
+R11	A0 Arg1:T15 Arg2:T16
+T17	Verb 304 310	speaks
+T18	Verb 328 333	looks
+R12	A0 Arg1:T18 Arg2:T19
+T20	Verb 358 364	struck
 T21	Verb 387 392	spies
-T22	Argument 402 407	PHOTO
-R10	A1 Arg1:T21 Arg2:T22
+R13	A0 Arg1:T21 Arg2:T22
 T23	Verb 409 418	including
-R11	A2 Arg1:T23 Arg2:T22
-T24	Verb 460 465	crack
-T25	Argument 473 478	shell
-R12	A1 Arg1:T24 Arg2:T25
-T26	Argument 454 459	words
-R13	A0 Arg1:T24 Arg2:T26
-T27	Verb 485 490	leave
-T28	Argument 510 518	dialogue
-R14	A0 Arg1:T27 Arg2:T28
-T29	Argument 496 500	room
-R15	A1 Arg1:T27 Arg2:T29
-T30	Verb 501 507	speaks
-R16	A1 Arg1:T30 Arg2:T28
-R17	A0 Arg1:T30 Arg2:T29
-T31	Verb 524 529	leans
+R14	A1 Arg1:T23 Arg2:T24
+T25	Verb 460 465	crack
+R15	A1 Arg1:T25 Arg2:T26
+R16	A0 Arg1:T25 Arg2:T27
+T28	Verb 485 490	leave
+T29	Verb 501 507	speaks
+T30	Verb 524 529	leans
+R17	A0 Arg1:T30 Arg2:T31
 T32	Verb 534 539	holds
-T33	Argument 547 551	look
-R18	A0 Arg1:T32 Arg2:T33
+R18	A1 Arg1:T32 Arg2:T31
+R19	A0 Arg1:T32 Arg2:T33
 T34	Verb 557 563	speaks
-T35	Argument 566 574	dialogue
-R19	A1 Arg1:T34 Arg2:T35
-T36	Verb 581 585	nods
+T35	Verb 581 585	nods
+R20	A0 Arg1:T35 Arg2:T36
 T37	Verb 587 592	looks
-T38	Verb 637 646	collapses
-T39	Argument 662 666	arms
-R20	A2 Arg1:T38 Arg2:T39
-T40	Verb 668 674	crying
-R21	A1 Arg1:T40 Arg2:T39
-T41	Verb 698 705	embrace
+R21	A0 Arg1:T37 Arg2:T36
+R22	A1 Arg1:T37 Arg2:T38
+T39	Verb 637 646	collapses
+R23	A1 Arg1:T39 Arg2:T40
+R24	A2 Arg1:T39 Arg2:T41
+T42	Verb 668 674	crying
+R25	A1 Arg1:T42 Arg2:T41
+T43	Verb 698 705	embrace
+T9	don 85 87	He
+T14	colby 212 217	COLBY
+T26	matt_mccrary 466 470	Matt
+T3	charlie 62 69	Charlie
+T27	don 448 451	Don
+T19	matt_mccrary 323 327	Matt
+T11	Other 122 128	killer
+T31	don 520 523	Don
+T40	matt_mccrary 632 636	Matt
+T4	don 27 30	Don
+T36	matt_mccrary 576 580	Matt
+T6	colby 42 47	Colby
+T22	don 383 386	Don
+T33	matt_mccrary 540 544	Matt
+T24	Other 428 433	KATIE
+T38	Other 600 607	parents
+T1	charlie 0 7	CHARLIE
+T41	Other 656 659	mom
+T5	megan 32 37	Megan
+T16	don 273 276	Don

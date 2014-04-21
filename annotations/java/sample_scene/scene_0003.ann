@@ -1,23 +1,21 @@
 T0	Verb 103 108	JARED
-T1	Argument 83 90	TILLMAN
-R0	A0 Arg1:T0 Arg2:T1
-T2	Verb 148 154	speaks
-T3	Argument 140 147	CHARLIE
-R1	A0 Arg1:T2 Arg2:T3
-T4	Verb 183 190	showing
-T5	Verb 336 342	speaks
-T6	Argument 328 335	CHARLIE
-R2	A0 Arg1:T5 Arg2:T6
-T7	Verb 370 376	speaks
-T8	Argument 355 362	CHARLIE
-R3	A0 Arg1:T7 Arg2:T8
-T9	Verb 419 426	sitting
-T10	Verb 442 448	speaks
-T11	Argument 434 441	CHARLIE
-R4	A0 Arg1:T10 Arg2:T11
-T12	Verb 486 489	SEE
-T13	Verb 504 511	applied
-T14	Verb 586 593	CLOIHES
-T15	Verb 667 674	CLOIHES
-T16	Verb 679 685	rotate
-T17	Verb 723 735	PIRE-SMOKING
+T1	Verb 148 154	speaks
+R0	A0 Arg1:T1 Arg2:T2
+T3	Verb 183 190	showing
+T4	Verb 336 342	speaks
+R1	A0 Arg1:T4 Arg2:T5
+T6	Verb 370 376	speaks
+R2	A0 Arg1:T6 Arg2:T7
+T8	Verb 419 426	sitting
+T9	Verb 442 448	speaks
+R3	A0 Arg1:T9 Arg2:T10
+T11	Verb 486 489	SEE
+T12	Verb 504 511	applied
+T13	Verb 586 593	CLOIHES
+T14	Verb 667 674	CLOIHES
+T15	Verb 679 685	rotate
+T16	Verb 723 735	PIRE-SMOKING
+T7	charlie 355 362	CHARLIE
+T5	charlie 328 335	CHARLIE
+T2	charlie 140 147	CHARLIE
+T10	charlie 434 441	CHARLIE

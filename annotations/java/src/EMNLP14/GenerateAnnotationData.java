@@ -11,12 +11,14 @@ import java.util.Properties;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.HashSet;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
+import java.util.StringTokenizer;
 
 import java.lang.Math;
 
@@ -52,7 +54,30 @@ import edu.stanford.nlp.trees.GrammaticalRelation;
 import edu.stanford.nlp.util.Pair;
 
 class GenerateAnnotationData{
-// printing options
+  public static class LevenshteinDistance {
+    
+    private static int minimum(int a, int b, int c) {
+      return Math.min(Math.min(a, b), c);
+    }
+   
+    public static int computeLevenshteinDistance(String str1,String str2) {
+      int[][] distance = new int[str1.length() + 1][str2.length() + 1];
+   
+      for (int i = 0; i <= str1.length(); i++)
+        distance[i][0] = i;
+      for (int j = 1; j <= str2.length(); j++)
+        distance[0][j] = j;
+   
+      for (int i = 1; i <= str1.length(); i++)
+        for (int j = 1; j <= str2.length(); j++)
+          distance[i][j] = minimum(
+              distance[i - 1][j] + 1,
+              distance[i][j - 1] + 1,
+              distance[i - 1][j - 1]+ ((str1.charAt(i - 1) == str2.charAt(j - 1)) ? 0 : 1));
+   
+      return distance[str1.length()][str2.length()];    
+    }
+  }
 
   private static String sentence2string(CoreMap sentence){
     List<CoreLabel> tokens = sentence.get(TokensAnnotation.class);
@@ -62,7 +87,7 @@ class GenerateAnnotationData{
     return stc;
   }
 
-  private static boolean isHumanNotPossesive(Mention m1) {
+  private static boolean isHumanNotPossesive(Mention m1, List <String> castList) {
 
     boolean isHuman;
     boolean isPossesive = false;
@@ -73,9 +98,6 @@ class GenerateAnnotationData{
     } else {
       isHuman = false;
     }
-
-    // Check if the mention is possesive (Jon's bottle or his bottle)
-    System.out.println("mention: " + m1.headIndexedWord);
 
     if (m1.headIndexedWord.tag().equals("PRP$")) {
       isPossesive = true;
@@ -89,85 +111,45 @@ class GenerateAnnotationData{
       } 
     }
 
+    // Check if the mention is possesive (Jon's bottle or his bottle)
+    String overlap = getFromCastList(m1.headWord.originalText(), castList);
+    if (!overlap.toLowerCase().equals("other")) {
+      isHuman = true;
+    }
+
+    /*System.out.println("mention: " + m1.headWord + " from list: " +  overlap);
+    System.out.println(isHuman);
+    System.out.println(!(isPossesive));*/
+
     return (isHuman & !(isPossesive));
 
   }
 
+  public static String getFromCastList(String mentionString, List <String> castList) {
+    
+    String personName = "Other";
+    mentionString = mentionString.toLowerCase();
 
-   private static boolean sameListWord(List <IndexedWord> a, List <CoreLabel> b){
-    if(a.size()!=b.size()) return false;
-
-    int count_matchs = 0;
-
-    Boolean[] b_used = new Boolean[b.size()];
-    Arrays.fill(b_used, Boolean.FALSE);
-
-    for(int i = 0; i < a.size(); i++)
-    {
-      for(int j = 0; j < b.size(); j++)
-      {
-        if( b_used[j] == true )
-          continue;
-        else if(a.get(i).word().equals(b.get(j).word()))
-        {
-          b_used[j] = true;
-          count_matchs++;
-          break;
-        }
-      }
-    }
-    if( count_matchs == a.size() )
-      return true;
-    else
-      return false;
-
-  }
-
-  // recursive search for the indexed word related to refTokens
-  private static boolean isRefIndexWord(SemanticGraph sg, 
-      IndexedWord idw, AtomicReference<IndexedWord> res, 
-      List<IndexedWord> tokens, List<CoreLabel> refTokens){
-
-    for ( IndexedWord sidw : sg.getChildren(idw)){
-      List<IndexedWord> stokens = new ArrayList<IndexedWord> ();
-      if( isRefIndexWord(sg, sidw, res, stokens, refTokens ))
-        return true;
-      tokens.addAll(stokens);
+    for ( String castName : castList) {
+      
+      int minDist = LevenshteinDistance.computeLevenshteinDistance(castName, mentionString);
+      
+      StringTokenizer st = new StringTokenizer(castName.toLowerCase());
+      while (st.hasMoreTokens()) {
+        minDist = Math.min(minDist,
+          LevenshteinDistance.computeLevenshteinDistance(st.nextToken(), mentionString));
       }
 
-    tokens.add(idw);
-    if(sameListWord(tokens, refTokens)){
-      res.set(idw);
-      return true;
+      if (minDist <= 1) {
+        personName = castName.toLowerCase();
+        personName = personName.replace(' ', '_');
+        break;
+      }
     }
-    return false;
+    
+    return personName;
   }
 
-
-  // helper functions from Armand's original code
-  private static SemanticGraph mention2SemanticGraph(List<CoreMap> sentences, CorefMention rep){
-      return sentences.get(rep.sentNum-1).get(CollapsedCCProcessedDependenciesAnnotation.class); 
-  }
-
-  // helper function form Armand's orignal code
-  private static List<CoreLabel> mention2label(List<CoreMap> sentences, CorefMention rep){
-      return sentences.get(rep.sentNum-1).
-            get(TokensAnnotation.class).subList(rep.startIndex-1, rep.endIndex-1);
-  }
-
-  // helper function form Armand's orignal code
-  private static IndexedWord findRefIndexWord(SemanticGraph sg, List<CoreLabel> refTokens){
-    List <IndexedWord>    tokens  = new ArrayList<IndexedWord>();
-    IndexedWord           idw   = sg.getFirstRoot();
-    AtomicReference<IndexedWord>  res   = new AtomicReference<IndexedWord>(idw); 
-
-    isRefIndexWord(sg, idw, res, tokens, refTokens);
-
-    //if(DEBUG_SG) System.out.println("find res: " + res);
-
-    return res.get();
-
-  } 
 
   public static class MentionForBrat {
     //Mention m;
@@ -178,6 +160,8 @@ class GenerateAnnotationData{
     String headWord;
     int tokenId; 
     
+    String corefTokenName;
+
     public MentionForBrat(int bcd, int ecd, int bcb, int ecb, String hw, int ti) {
       begCharDocument = bcd;
       endCharDocument = ecd;
@@ -187,6 +171,25 @@ class GenerateAnnotationData{
       tokenId         = ti;
     }
   };  
+
+ 
+  public static ArrayList<String> parseCastList(String castListFile) throws Exception{
+    
+    BufferedReader reader   = new BufferedReader( new FileReader (castListFile));
+    ArrayList <String> castList  = new ArrayList <String>();
+    String line;
+    while ( ( line = reader.readLine()) != null) {
+      
+      if (line.endsWith(".")) {
+        line = line.substring(0, line.length()-1);
+      }
+      castList.add(line);
+
+    }
+
+    reader.close();
+    return castList;
+  }
 
 /**********************************************************
 *                       MAIN
@@ -198,16 +201,21 @@ class GenerateAnnotationData{
 
     // coreNLP stuff
     Properties props = new Properties();
-    props.put("annotators", "tokenize, ssplit, pos, lemma, ner, parse, dcoref");
+    props.put("annotators", "tokenize, ssplit, pos, lemma, truecase, ner, parse, dcoref");
     StanfordCoreNLP pipeline = new StanfordCoreNLP(props);
 
     // handling input:
     String namefile  = args[0];
     String outDir    = args[1];
     String verbOrNom = args[2];
+    String castListFile = args[3];
+
+    // overlap threshold between the mention and SRL arguments
+    float overlapThreshold = (float)0.1;
 
     try
     {
+      ArrayList<String> castList = parseCastList(castListFile);
       SceneParser sceneParser = new SceneParser(namefile);
       //String configFile       = "srl-config.properties";
       CuratorSRLClassifier curatorSRL = new CuratorSRLClassifier();
@@ -219,9 +227,9 @@ class GenerateAnnotationData{
             continue;
           }
 
-          if (sceneId >= 2) {
-            break;
-          }
+          /*if (sceneId != 11) {
+            continue;
+          }*/
 
           String sceneText = sceneParser.sceneData.get(sceneId);
           Annotation document = new Annotation(sceneText);
@@ -251,7 +259,7 @@ class GenerateAnnotationData{
             RuleBasedCorefMentionFinder ruleMentionFinder = new RuleBasedCorefMentionFinder();
             List <List <Mention> > mentionList = ruleMentionFinder.extractPredictedMentions(document,
                                                  -1, dict);
-            
+                     
             //Semantics semantic = new Semantics();
             MentionExtractor menext = new MentionExtractor(dict, null);
             List <List <Mention>> newMentionList = menext.arrange(document, words, 
@@ -272,6 +280,7 @@ class GenerateAnnotationData{
             
             // To store the argument mentions which have been covered till now
             HashMap <String, MentionForBrat> argumentMentions = new HashMap <String, MentionForBrat> ();
+            Set <String> relationSet = new HashSet <String> ();
 
             for (int sentI = 0; sentI < numSentences; sentI++) {
 
@@ -335,9 +344,12 @@ class GenerateAnnotationData{
                         // and annotate if it is animate or in the cast list
                         int bestMatch = -1;
                         float bestOverlap = 0;
+                        ArrayList <Integer> goodOverlaps = new ArrayList <Integer> ();
 
                         for (int mentionI = 0; mentionI < orderedMentions.size(); mentionI++) {
                           Mention m1 = orderedMentions.get(mentionI);
+                          //System.out.println("mention (" + mentionI + ", " + 
+                          //    orderedMentions.size() + ")");
                           // get the character span of the head string in the mention
                           int begCharMention = m1.headWord.beginPosition() - begCharOffset;
                           int endCharMention = m1.headWord.endPosition() - begCharOffset;
@@ -351,9 +363,14 @@ class GenerateAnnotationData{
                             overlap = (float)(Math.min(endCharMention, endChar) - begCharMention)/
                                       (float)(Math.max(endCharMention, endChar) - begChar);
                           }
-                          if (overlap > bestOverlap && isHumanNotPossesive(m1)) {
+                          boolean isHuman = isHumanNotPossesive(m1, castList);
+                          if (overlap > bestOverlap && isHuman) {
                             bestMatch = mentionI;
                             bestOverlap = overlap;
+                          }
+
+                          if (overlap > overlapThreshold && isHuman) {
+                            goodOverlaps.add(mentionI);
                           }
 
                           /*System.out.println( "mention: " + m1.headWord.originalText() + 
@@ -364,43 +381,57 @@ class GenerateAnnotationData{
                               endChar + ">\n");*/
                         }
                         
-                        /*System.out.println( "Pred: " + c.getSurfaceString() + 
+                        System.out.println( "Pred: " + c.getSurfaceString() + 
                                             " Arg: " + r.getTarget().toString() + 
-                                            " best-match: " + bestMatch);  */
+                                            " best-match: " + bestMatch);
 
                         if (bestMatch >= 0) {
 
-                          Mention m1 = orderedMentions.get(bestMatch);
-                          begChar = m1.headWord.beginPosition();
-                          endChar = m1.headWord.endPosition();
-                          System.out.println(m1.animacy);
-                          System.out.println(m1.headWord + 
-                              ", beg --- " + m1.headWord.beginPosition() +
-                              " , end --- " + m1.headWord.endPosition());
-                          int begCharMod = begChar - begCharOffset;
-                          int endCharMod = endChar - begCharOffset;
-                          
+                          //Mention m1 = orderedMentions.get(bestMatch);
 
-                          String mentionKey = String.format("%d_%d", begChar, endChar);
-                          int argumentTokenId = -1;
-                          if (!argumentMentions.containsKey(mentionKey)) {
-                            MentionForBrat m1ForBrat =  new MentionForBrat(begChar, 
-                                endChar, begCharMod, endCharMod, 
-                                m1.headWord.originalText(), tokenCtr++);
-                            argumentMentions.put(mentionKey, m1ForBrat);             
-                            writerAnno.write(String.format("T%d\tArgument %d %d\t%s\n", 
-                             m1ForBrat.tokenId, m1ForBrat.begCharBrat, 
-                             m1ForBrat.endCharBrat, m1ForBrat.headWord));                                
-                            argumentTokenId = m1ForBrat.tokenId;
+                          //int mentionId = -1;
+
+                          for (int mentionId : goodOverlaps) {
+                            Mention m1 = orderedMentions.get(mentionId);
+
+                            begChar = m1.headWord.beginPosition();
+                            endChar = m1.headWord.endPosition();
+                            System.out.println(m1.animacy);
+                            System.out.println(m1.headWord + 
+                                ", beg --- " + m1.headWord.beginPosition() +
+                                " , end --- " + m1.headWord.endPosition());
+                            int begCharMod = begChar - begCharOffset;
+                            int endCharMod = endChar - begCharOffset;
+                            
+
+                            String mentionKey = String.format("%d_%d", begChar, endChar);
+                            int argumentTokenId = -1;
+                            if (!argumentMentions.containsKey(mentionKey)) {
+                              MentionForBrat m1ForBrat =  new MentionForBrat(begChar, 
+                                  endChar, begCharMod, endCharMod, 
+                                  m1.headWord.originalText(), tokenCtr++);
+                              m1ForBrat.corefTokenName = "Other";
+                              argumentMentions.put(mentionKey, m1ForBrat);             
+                              /*writerAnno.write(String.format("T%d\tArgument %d %d\t%s\n", 
+                               m1ForBrat.tokenId, m1ForBrat.begCharBrat, 
+                               m1ForBrat.endCharBrat, m1ForBrat.headWord));*/
+                              argumentTokenId = m1ForBrat.tokenId;
+                            }
+                            else {
+                              MentionForBrat m1ForBrat = argumentMentions.get(mentionKey);
+                              argumentTokenId = m1ForBrat.tokenId;
+                            }
+
+                            String relationBratString = 
+                              String.format("R%s_T%d_T%d",relName, sourceTokenId,
+                                argumentTokenId);
+                            if (!relationSet.contains(relationBratString)) {
+
+                              writerAnno.write(String.format("R%d\t%s Arg1:T%d Arg2:T%d\n", 
+                                  relationCtr++, relName, sourceTokenId, argumentTokenId));
+                              relationSet.add(relationBratString);
+                            }
                           }
-                          else {
-                            MentionForBrat m1ForBrat = argumentMentions.get(mentionKey);
-                            argumentTokenId = m1ForBrat.tokenId;
-                          }
-
-                          writerAnno.write(String.format("R%d\t%s Arg1:T%d Arg2:T%d\n", 
-                                relationCtr++, relName, sourceTokenId, argumentTokenId));
-
                         } // end of if bestMatch
                       } // end of if argumentCheck
                    } // end of for relationIteration
@@ -411,19 +442,10 @@ class GenerateAnnotationData{
             }
 
 
-            // Transfer coref labels to the arguments
-            //Collection <MentionForBrat> argumentMentionCollection = argumentMentions.values();
-            
+            // Transfer coref labels to the arguments           
             for (CorefChain corefValue : corefGraph.values()) {
               List<CorefMention> mentions = corefValue.getMentionsInTextualOrder();
               for( CorefMention cc : mentions) {
-                //if(cc.sentNum == is + 1)
-                //{
-                  //curIndWord.add ( findRefIndexWord( dep, mention2label(sentences, cc)) );
-                  /*SemanticGraph refDep  = mention2SemanticGraph( sentences, 
-                      corefValue.getRepresentativeMention());  
-                  IndexedWord rep   = findRefIndexWord( refDep, 
-                      mention2label(sentences, corefValue.getRepresentativeMention()));*/
 
                   CorefMention mentionRepresentative = corefValue.getRepresentativeMention();
                   CoreLabel reprWordOfMention = sentences.
@@ -432,11 +454,6 @@ class GenerateAnnotationData{
                   CoreLabel headWordOfMention = sentences.
                       get(cc.sentNum-1).get(TokensAnnotation.class).get(cc.headIndex-1);
     
-                  /*IntTuple sentenceMentionNumbers = cc.position;
-                  int sentNum = sentenceMentionNumbers.get(0);
-                  int mentionNum = sentenceMentionNumbers.get(1);
-                  Mention ccMention = mentionList.get(sentNum).get(mentionNum);*/
-
                   int begCharCoref = headWordOfMention.beginPosition();
                   int endCharCoref = headWordOfMention.endPosition();                 
                   
@@ -444,15 +461,26 @@ class GenerateAnnotationData{
                   System.out.println("coref (" + headWordOfMention.originalText() + 
                         ") --- key: " + mentionKey);
                   if (argumentMentions.containsKey(mentionKey)) {
+                    MentionForBrat argumentBratMention = argumentMentions.get(mentionKey);
                     System.out.println("COREF --------------");
-                    System.out.println("mention: " + argumentMentions.get(mentionKey).headWord+ 
+                    System.out.println("mention: " + argumentBratMention.headWord + 
                         ", coref: " + reprWordOfMention.originalText());
+
+                    argumentBratMention.corefTokenName = getFromCastList(reprWordOfMention.
+                                      originalText(), castList);
+                    argumentMentions.put(mentionKey, argumentBratMention);
+
                   }
-                  //refIndWord.add(new Pair< SemanticGraph, IndexedWord> (refDep, rep));
-                //} 
               }         
             }
 
+
+            for (MentionForBrat m1ForBrat : argumentMentions.values() ) {
+             
+              writerAnno.write(String.format("T%d\t%s %d %d\t%s\n", 
+              m1ForBrat.tokenId, m1ForBrat.corefTokenName, m1ForBrat.begCharBrat, 
+              m1ForBrat.endCharBrat, m1ForBrat.headWord));
+            }
 
             writerOut.close();
             writerAnno.close();

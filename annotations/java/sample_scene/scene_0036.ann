@@ -1,10 +1,11 @@
 T0	Verb 8 15	crosses
-T1	Argument 20 24	Quad
-R0	A1 Arg1:T0 Arg2:T1
+R0	A0 Arg1:T0 Arg2:T1
 T2	Verb 26 33	reading
-T3	Argument 36 43	journal
-R1	A1 Arg1:T2 Arg2:T3
-T4	Verb 45 55	intercepts
+R1	A0 Arg1:T2 Arg2:T1
+T3	Verb 45 55	intercepts
+R2	A1 Arg1:T3 Arg2:T4
 T5	Verb 70 76	speaks
-T6	Argument 79 87	dialogue
-R2	A1 Arg1:T5 Arg2:T6
+R3	A0 Arg1:T5 Arg2:T6
+T4	charlie 56 59	him
+T1	charlie 0 7	Charlie
+T6	larry 64 69	LARRY

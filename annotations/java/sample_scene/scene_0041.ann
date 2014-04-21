@@ -1,54 +1,54 @@
 T0	Verb 0 5	CLOSE
-T1	Argument 102 106	eyes
-R0	A1 Arg1:T0 Arg2:T1
-T2	Verb 47 54	bruised
+T1	Verb 47 54	bruised
+R0	A1 Arg1:T1 Arg2:T2
 T3	Verb 59 67	bloodied
-T4	Argument 37 39	35
-R1	A1 Arg1:T3 Arg2:T4
-T5	Verb 137 141	find
-T6	Argument 127 133	SCREEN
-R2	A0 Arg1:T5 Arg2:T6
-T7	Verb 152 158	lashed
-T8	Argument 169 173	tape
-R3	A2 Arg1:T7 Arg2:T8
-T9	Verb 223 229	stands
-T10	Verb 255 261	speaks
-T11	Argument 264 272	dialogue
-R4	A1 Arg1:T10 Arg2:T11
-T12	Verb 287 293	filled
-T13	Argument 278 282	eyes
-R5	A1 Arg1:T12 Arg2:T13
-T14	Argument 299 305	hatred
-R6	A2 Arg1:T12 Arg2:T14
-T15	Verb 340 344	cuts
-T16	Argument 349 353	last
-R7	A1 Arg1:T15 Arg2:T16
-T17	Argument 386 391	knife
-R8	A2 Arg1:T15 Arg2:T17
-T18	Verb 529 535	enters
-T19	Argument 524 528	TEAM
-R9	A0 Arg1:T18 Arg2:T19
-T20	Verb 562 565	has
-T21	Argument 570 574	drop
-R10	A1 Arg1:T20 Arg2:T21
-T22	Verb 637 643	speaks
-T23	Argument 646 654	dialogue
-R11	A1 Arg1:T22 Arg2:T23
-T24	Verb 676 685	weakening
-T25	Argument 665 672	resolve
-R12	A1 Arg1:T24 Arg2:T25
-T26	Verb 702 705	got
-T27	Argument 740 748	dialogue
-R13	A1 Arg1:T26 Arg2:T27
-T28	Verb 731 737	speaks
-T29	Argument 716 721	MEGAN
-R14	A0 Arg1:T28 Arg2:T29
-R15	A1 Arg1:T28 Arg2:T27
-T30	Verb 763 768	drops
-T31	Argument 773 778	knife
-R16	A1 Arg1:T30 Arg2:T31
-T32	Verb 780 788	crumbles
-T33	Verb 830 838	carrying
-T34	Verb 859 864	takes
-T35	Verb 896 901	looks
-T36	Verb 922 928	shaken
+T4	Verb 137 141	find
+T5	Verb 152 158	lashed
+T6	Verb 223 229	stands
+R1	A1 Arg1:T6 Arg2:T7
+T8	Verb 255 261	speaks
+R2	A0 Arg1:T8 Arg2:T9
+T10	Verb 287 293	filled
+T11	Verb 340 344	cuts
+R3	A0 Arg1:T11 Arg2:T12
+T13	Verb 529 535	enters
+T14	Verb 562 565	has
+R4	A1 Arg1:T14 Arg2:T15
+R5	A0 Arg1:T14 Arg2:T16
+T17	Verb 637 643	speaks
+R6	A0 Arg1:T17 Arg2:T18
+T19	Verb 676 685	weakening
+R7	A1 Arg1:T19 Arg2:T20
+T21	Verb 702 705	got
+R8	A1 Arg1:T21 Arg2:T22
+T23	Verb 731 737	speaks
+R9	A0 Arg1:T23 Arg2:T22
+T24	Verb 763 768	drops
+R10	A0 Arg1:T24 Arg2:T25
+T26	Verb 780 788	crumbles
+R11	A0 Arg1:T26 Arg2:T25
+R12	A1 Arg1:T26 Arg2:T27
+T28	Verb 830 838	carrying
+R13	A0 Arg1:T28 Arg2:T27
+T29	Verb 859 864	takes
+R14	A0 Arg1:T29 Arg2:T30
+T31	Verb 896 901	looks
+R15	A0 Arg1:T31 Arg2:T32
+R16	A1 Arg1:T31 Arg2:T33
+R17	A1 Arg1:T31 Arg2:T34
+T35	Verb 922 928	shaken
+T20	elaine_tillman 656 662	Elaine
+T32	Other 886 892	VICTIM
+T2	Other 26 32	VICTIM
+T12	Other 336 339	She
+T34	david 915 920	David
+T22	megan 716 721	MEGAN
+T18	megan 631 636	MEGAN
+T30	Other 852 858	MEMBER
+T27	elaine_tillman 819 822	she
+T16	elaine_tillman 555 561	Elaine
+T33	megan 905 910	Megan
+T15	Other 582 588	victim
+T25	elaine_tillman 756 762	Elaine
+T9	elaine_tillman 247 254	TILLMAN
+T7	elaine_tillman 215 222	Tillman

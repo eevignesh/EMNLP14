@@ -1,35 +1,23 @@
 T0	Verb 83 89	LIVING
 T1	Verb 135 139	tied
-T2	Argument 145 150	chair
-R0	A1 Arg1:T1 Arg2:T2
-T3	Verb 152 159	slumped
-T4	Argument 60 68	UNIFORMS
-R1	A1 Arg1:T3 Arg2:T4
-T5	Verb 176 180	left
-T6	Argument 169 175	camera
-R2	A1 Arg1:T5 Arg2:T6
-T7	Argument 186 192	tripod
-R3	A2 Arg1:T5 Arg2:T7
-T8	Verb 193 199	facing
-R4	A0 Arg1:T8 Arg2:T7
-T9	Verb 209 215	checks
-T10	Argument 220 225	pulse
-R5	A1 Arg1:T9 Arg2:T10
-T11	Verb 272 280	entering
-T12	Argument 290 294	back
-R6	A1 Arg1:T11 Arg2:T12
-T13	Argument 263 271	UNIFORMS
-R7	A0 Arg1:T11 Arg2:T13
-T14	Verb 304 312	carrying
-T15	Argument 325 328	bag
-R8	A1 Arg1:T14 Arg2:T15
-T16	Verb 334 340	speaks
-T17	Argument 343 351	dialogue
-R9	A1 Arg1:T16 Arg2:T17
-T18	Verb 359 364	holds
-T19	Verb 399 402	are
-T20	Argument 421 433	transmitters
-R10	A1 Arg1:T19 Arg2:T20
-T21	Verb 467 473	speaks
-T22	Argument 476 484	dialogue
-R11	A1 Arg1:T21 Arg2:T22
+T2	Verb 152 159	slumped
+T3	Verb 176 180	left
+R0	A2 Arg1:T3 Arg2:T4
+T5	Verb 193 199	facing
+R1	A1 Arg1:T5 Arg2:T4
+T6	Verb 209 215	checks
+R2	A0 Arg1:T6 Arg2:T7
+T8	Verb 272 280	entering
+R3	A0 Arg1:T8 Arg2:T9
+T10	Verb 304 312	carrying
+T11	Verb 334 340	speaks
+T12	Verb 359 364	holds
+R4	A0 Arg1:T12 Arg2:T13
+T14	Verb 399 402	are
+T15	Verb 467 473	speaks
+R5	A0 Arg1:T15 Arg2:T16
+T9	colby 239 244	Colby
+T4	don 200 203	him
+T16	david 461 466	DAVID
+T7	don 205 208	Don
+T13	colby 353 358	Colby

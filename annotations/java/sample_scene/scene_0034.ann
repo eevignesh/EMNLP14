@@ -1,11 +1,9 @@
 T0	Verb 63 69	speaks
-T1	Argument 72 80	dialogue
-R0	A1 Arg1:T0 Arg2:T1
+R0	A0 Arg1:T0 Arg2:T1
 T2	Verb 135 140	moved
-T3	Argument 101 105	DOOR
-R1	A1 Arg1:T2 Arg2:T3
-T4	Verb 165 172	looking
-T5	Argument 142 148	HARLIE
-R2	A0 Arg1:T4 Arg2:T5
-T6	Argument 178 183	PHOTO
-R3	A1 Arg1:T4 Arg2:T6
+T3	Verb 165 172	looking
+R1	A0 Arg1:T3 Arg2:T4
+R2	A1 Arg1:T3 Arg2:T5
+T1	charlie 55 62	CHARLIE
+T4	charlie 142 148	HARLIE
+T5	larry 187 192	LARRY

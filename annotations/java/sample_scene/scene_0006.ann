@@ -1,29 +1,29 @@
 T0	Verb 8 10	is
-T1	Argument 0 7	Charlie
 R0	A1 Arg1:T0 Arg2:T1
 T2	Verb 65 71	speaks
-T3	Argument 59 64	LARRY
 R1	A0 Arg1:T2 Arg2:T3
 T4	Verb 100 106	smiles
-T5	Argument 87 92	Larry
 R2	A1 Arg1:T4 Arg2:T5
-T6	Argument 94 99	Larry
 R3	A0 Arg1:T4 Arg2:T6
 T7	Verb 160 166	speaks
-T8	Argument 152 159	CHARLIE
 R4	A0 Arg1:T7 Arg2:T8
 T9	Verb 215 221	speaks
-T10	Argument 209 214	AMITA
 R5	A0 Arg1:T9 Arg2:T10
 T11	Verb 239 245	return
-T12	Argument 234 238	They
 R6	A1 Arg1:T11 Arg2:T12
 T13	Verb 272 278	speaks
-T14	Argument 264 271	CHARLIE
 R7	A0 Arg1:T13 Arg2:T14
 T15	Verb 299 304	stops
-T16	Argument 291 298	Charlie
 R8	A1 Arg1:T15 Arg2:T16
 T17	Verb 337 344	returns
-T18	Argument 334 336	he
 R9	A1 Arg1:T17 Arg2:T18
+T6	larry 94 99	Larry
+T1	charlie 0 7	Charlie
+T14	charlie 264 271	CHARLIE
+T10	amita 209 214	AMITA
+T8	charlie 152 159	CHARLIE
+T3	larry 59 64	LARRY
+T12	Other 234 238	They
+T18	charlie 334 336	he
+T16	charlie 291 298	Charlie
+T5	larry 87 92	Larry

@@ -1,2 +1,4 @@
 T0	Verb 0 6	Resume
-T1	Verb 37 39	's
+R0	A1 Arg1:T0 Arg2:T1
+T2	Verb 37 39	's
+T1	don 7 10	Don

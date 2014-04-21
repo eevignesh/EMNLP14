@@ -1,19 +1,25 @@
 T0	Verb 55 62	arrives
-T1	Argument 51 54	SUV
 R0	A1 Arg1:T0 Arg2:T1
 T2	Verb 117 121	jump
 T3	Verb 138 142	join
-T4	Argument 165 173	UNIFORMS
-R1	A1 Arg1:T3 Arg2:T4
-T5	Verb 179 184	looks
-T6	Argument 212 220	UNIFORMS
-R2	A2 Arg1:T5 Arg2:T6
-T7	Verb 229 235	speaks
-T8	Argument 238 246	dialogue
-R3	A1 Arg1:T7 Arg2:T8
-T9	Verb 376 381	gives
-T10	Argument 392 395	nod
-R4	A1 Arg1:T9 Arg2:T10
-T11	Argument 382 387	Colby
-R5	A2 Arg1:T9 Arg2:T11
-T12	Verb 403 408	kicks
+R1	A0 Arg1:T3 Arg2:T4
+R2	A0 Arg1:T3 Arg2:T5
+R3	A0 Arg1:T3 Arg2:T6
+T7	Verb 179 184	looks
+R4	A2 Arg1:T7 Arg2:T8
+R5	A0 Arg1:T7 Arg2:T9
+T10	Verb 229 235	speaks
+T11	Verb 376 381	gives
+R6	A0 Arg1:T11 Arg2:T12
+R7	A2 Arg1:T11 Arg2:T13
+T14	Verb 403 408	kicks
+R8	A1 Arg1:T14 Arg2:T15
+T1	colby 45 48	Don
+T8	colby 188 193	Colby
+T12	colby 372 375	Don
+T9	colby 175 178	Don
+T6	david 104 109	David
+T15	colby 400 402	he
+T13	colby 382 387	Colby
+T4	colby 111 116	Colby
+T5	colby 99 102	Don

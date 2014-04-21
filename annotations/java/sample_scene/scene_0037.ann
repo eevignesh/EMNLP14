@@ -1,12 +1,16 @@
 T0	Verb 6 12	speaks
-T1	Argument 0 5	COLBY
 R0	A0 Arg1:T0 Arg2:T1
-T2	Argument 15 23	dialogue
-R1	A1 Arg1:T0 Arg2:T2
-T3	Verb 39 47	crossing
-T4	Verb 57 64	heading
-T5	Verb 88 94	speaks
-T6	Argument 82 87	COLBY
-R2	A0 Arg1:T5 Arg2:T6
-T7	Argument 97 105	dialogue
-R3	A1 Arg1:T5 Arg2:T7
+T2	Verb 39 47	crossing
+R1	A0 Arg1:T2 Arg2:T3
+R2	A0 Arg1:T2 Arg2:T4
+T5	Verb 57 64	heading
+R3	A1 Arg1:T5 Arg2:T6
+R4	A0 Arg1:T5 Arg2:T3
+R5	A0 Arg1:T5 Arg2:T4
+T7	Verb 88 94	speaks
+R6	A0 Arg1:T7 Arg2:T8
+T4	colby 33 38	Colby
+T8	colby 82 87	COLBY
+T1	colby 0 5	COLBY
+T3	don 25 28	Don
+T6	megan 72 77	Megan

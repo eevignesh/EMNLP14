@@ -1,24 +1,26 @@
 T0	Verb 4 10	speaks
-T1	Argument 13 21	dialogue
-R0	A1 Arg1:T0 Arg2:T1
-T2	Verb 23 28	CLOSE
-T3	Verb 84 93	scattered
-T4	Verb 95 102	showing
-T5	Argument 126 134	listings
-R1	A1 Arg1:T4 Arg2:T5
-T6	Verb 144 146	is
+T1	Verb 23 28	CLOSE
+T2	Verb 84 93	scattered
+T3	Verb 95 102	showing
+R0	A1 Arg1:T3 Arg2:T4
+T5	Verb 144 146	is
+R1	A1 Arg1:T5 Arg2:T6
 T7	Verb 176 185	listening
-T8	Verb 198 204	speaks
-T9	Argument 207 215	dialogue
-R2	A1 Arg1:T8 Arg2:T9
-T10	FAIL 217 383	Charlie now punches up his previous map showing Jessica's Law --hot---zones-- split---screened with the map of house locations...  CHARLIE (cont'd) speaks a dialogue.
-T11	Verb 392 396	hits
-T12	Verb 431 442	simplifying
-T13	Verb 505 511	speaks
-T14	Argument 497 501	cont
-R3	A0 Arg1:T13 Arg2:T14
-T15	Argument 514 522	dialogue
-R4	A1 Arg1:T13 Arg2:T15
-T16	Verb 528 534	speaks
-T17	Argument 537 545	dialogue
-R5	A1 Arg1:T16 Arg2:T17
+R2	A0 Arg1:T7 Arg2:T8
+R3	A0 Arg1:T7 Arg2:T9
+T10	Verb 198 204	speaks
+R4	A0 Arg1:T10 Arg2:T11
+T12	FAIL 217 383	Charlie now punches up his previous map showing Jessica's Law --hot---zones-- split---screened with the map of house locations...  CHARLIE (cont'd) speaks a dialogue.
+T13	Verb 392 396	hits
+R5	A0 Arg1:T13 Arg2:T14
+T15	Verb 431 442	simplifying
+T16	Verb 505 511	speaks
+R6	A0 Arg1:T16 Arg2:T17
+T18	Verb 528 534	speaks
+T11	charlie 190 197	CHARLIE
+T17	charlie 488 495	CHARLIE
+T6	charlie 136 143	Charlie
+T14	charlie 384 391	Charlie
+T9	megan 170 175	Megan
+T4	elaine_tillman 110 117	Tillman
+T8	don 162 165	Don

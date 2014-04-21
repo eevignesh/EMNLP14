@@ -1,3 +1,3 @@
 T0	Verb 6 12	speaks
-T1	Argument 15 23	dialogue
-R0	A1 Arg1:T0 Arg2:T1
+R0	A0 Arg1:T0 Arg2:T1
+T1	megan 0 5	MEGAN

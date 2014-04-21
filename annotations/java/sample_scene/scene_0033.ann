@@ -1,34 +1,26 @@
 T0	Verb 6 13	crosses
-T1	Argument 43 49	papers
-R0	A1 Arg1:T0 Arg2:T1
+R0	A0 Arg1:T0 Arg2:T1
 T2	Verb 23 31	carrying
-R1	A1 Arg1:T2 Arg2:T1
-T3	Argument 18 22	Quad
-R2	A0 Arg1:T2 Arg2:T3
-T4	Verb 34 39	stack
-R3	A1 Arg1:T4 Arg2:T1
-T5	Verb 59 65	speaks
-T6	Argument 68 76	dialogue
-R4	A1 Arg1:T5 Arg2:T6
-T7	Verb 78 85	catches
+T3	Verb 34 39	stack
+T4	Verb 59 65	speaks
+R1	A0 Arg1:T4 Arg2:T5
+T6	Verb 78 85	catches
+R2	A2 Arg1:T6 Arg2:T7
 T8	Verb 99 107	carrying
-T9	Argument 110 116	folder
-R5	A1 Arg1:T8 Arg2:T9
-T10	Verb 122 126	chat
-T11	Argument 127 138	transcripts
-R6	A1 Arg1:T10 Arg2:T11
-T12	Verb 146 152	speaks
-T13	Argument 155 163	dialogue
-R7	A1 Arg1:T12 Arg2:T13
-T14	Verb 171 177	speaks
-T15	Argument 180 188	dialogue
-R8	A1 Arg1:T14 Arg2:T15
-T16	Verb 209 214	holds
-T17	Argument 231 242	transcripts
-R9	A1 Arg1:T16 Arg2:T17
-T18	Verb 222 227	stack
-R10	A1 Arg1:T18 Arg2:T17
-T19	Verb 257 263	speaks
-T20	Argument 266 274	dialogue
-R11	A1 Arg1:T19 Arg2:T20
-T21	Verb 297 304	heading
+T9	Verb 122 126	chat
+T10	Verb 146 152	speaks
+R3	A0 Arg1:T10 Arg2:T11
+T12	Verb 171 177	speaks
+R4	A0 Arg1:T12 Arg2:T13
+T14	Verb 209 214	holds
+R5	A0 Arg1:T14 Arg2:T15
+T16	Verb 222 227	stack
+T17	Verb 257 263	speaks
+R6	A0 Arg1:T17 Arg2:T15
+T18	Verb 297 304	heading
+T15	amita 251 256	AMITA
+T13	megan 165 170	MEGAN
+T5	charlie 51 58	CHARLIE
+T11	amita 140 145	AMITA
+T1	amita 0 5	Amita
+T7	amita 94 97	her
