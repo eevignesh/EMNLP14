@@ -1,0 +1,8 @@
+T0	Verb 135 140	moved
+T1	Verb 165 172	looking
+R0	A0 Arg1:T1 Arg2:T2
+R1	A1 Arg1:T1 Arg2:T3
+T4	Nom 178 183	PHOTO
+R2	A1 Arg1:T4 Arg2:T3
+T2	charlie 142 148	HARLIE
+T3	larry 187 192	LARRY

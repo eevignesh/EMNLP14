@@ -1,0 +1,18 @@
+T0	Verb 6 13	crosses
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 23 31	carrying
+T3	Verb 34 39	stack
+T4	Verb 78 85	catches
+R1	A2 Arg1:T4 Arg2:T5
+T6	Verb 99 107	carrying
+T7	Verb 122 126	chat
+T8	Nom 196 202	smiles
+R2	A1 Arg1:T8 Arg2:T9
+T10	Verb 209 214	holds
+R3	A0 Arg1:T10 Arg2:T11
+T12	Verb 222 227	stack
+T13	Verb 297 304	heading
+T11	amita 251 256	AMITA
+T9	megan 190 195	Megan
+T1	amita 0 5	Amita
+T5	amita 94 97	her

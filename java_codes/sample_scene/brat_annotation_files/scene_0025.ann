@@ -1,0 +1,31 @@
+T0	Verb 13 23	monitoring
+T1	Verb 28 33	trace
+T2	Nom 103 107	rush
+R0	A1 Arg1:T2 Arg2:T3
+R1	A1 Arg1:T2 Arg2:T4
+T5	Verb 172 176	look
+T6	Verb 222 225	was
+T7	Verb 261 268	staring
+T8	Verb 282 290	resigned
+T9	Nom 198 208	confession
+T10	Nom 238 241	end
+T11	Verb 294 298	find
+T12	Verb 322 325	run
+T13	Verb 417 425	commands
+R2	A0 Arg1:T13 Arg2:T14
+T15	Nom 411 416	types
+R3	A2 Arg1:T15 Arg2:T14
+T16	Verb 481 483	is
+R4	A1 Arg1:T16 Arg2:T17
+T18	Verb 509 517	observes
+R5	A0 Arg1:T18 Arg2:T19
+T20	Verb 528 533	works
+R6	A0 Arg1:T20 Arg2:T21
+T22	Verb 596 606	telescopes
+T23	Verb 696 700	pops
+T17	don 477 480	Don
+T14	charlie 403 410	Charlie
+T21	Other 523 527	TECH
+T4	don 99 102	Don
+T19	charlie 501 508	Charlie
+T3	charlie 87 94	Charlie

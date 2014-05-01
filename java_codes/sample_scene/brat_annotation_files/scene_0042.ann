@@ -1,0 +1,28 @@
+T0	Verb 22 27	drops
+T1	Verb 104 112	gathered
+R0	A0 Arg1:T1 Arg2:T2
+R1	A0 Arg1:T1 Arg2:T3
+R2	A0 Arg1:T1 Arg2:T4
+R3	A0 Arg1:T1 Arg2:T5
+T6	Verb 152 157	gives
+R4	A2 Arg1:T6 Arg2:T7
+R5	A0 Arg1:T6 Arg2:T8
+T9	Nom 168 172	look
+R6	A2 Arg1:T9 Arg2:T7
+T10	Verb 180 185	steps
+R7	A0 Arg1:T10 Arg2:T11
+T12	Verb 190 197	extends
+T13	Nom 200 204	hand
+T14	Verb 239 244	turns
+R8	A1 Arg1:T14 Arg2:T15
+T16	Verb 261 265	been
+R9	A1 Arg1:T16 Arg2:T17
+T5	colby 98 103	Colby
+T7	charlie 158 165	Charlie
+T2	charlie 72 79	Charlie
+T8	colby 146 151	Colby
+T17	megan 248 253	Megan
+T15	larry 233 238	Larry
+T11	david 174 179	David
+T4	david 88 93	David
+T3	megan 81 86	Megan

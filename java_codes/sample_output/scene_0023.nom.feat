@@ -1,0 +1,8 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov, is_arg_possesive
+19,1,computer,0,0,false,false,true,nsubj,false
+19,3,computer,0,0,false,false,true,dep,false
+19,5,computer,0,0,false,true,true,poss,true
+19,7,computer,0,0,false,true,false,prep_for,false
+19,9,computer,0,0,false,false,false,poss,true
+19,11,computer,1,0,false,false,false,nsubj,false
+19,13,computer,1,0,false,false,false,nsubj,false

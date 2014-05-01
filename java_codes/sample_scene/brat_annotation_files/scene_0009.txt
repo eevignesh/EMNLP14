@@ -1,0 +1,7 @@
+CHARLIE speaks a dialogue.
+Don and David head for the Bullpen...  DAVID speaks a dialogue.
+They ENTER THE BULLPEN... t0 FIND Megan at her desk.
+MEGAN speaks a dialogue.
+She picks up another file, reads...  MEGAN (cont'd) speaks a dialogue.
+DAVID speaks a dialogue.
+Megan looks at Don... MEGAN Off Don's look --

@@ -1,0 +1,25 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov, is_arg_possesive
+31,1,look,0,4,false,false,true,nn,false
+32,1,hand,0,5,false,false,true,nn,false
+31,3,look,1,4,false,false,true,prep_with,false
+32,3,hand,1,5,false,false,true,prep_with,false
+31,5,look,2,4,false,false,true,nsubj,false
+32,5,hand,2,5,false,false,true,nsubj,false
+31,7,look,2,4,false,false,true,conj_and,false
+32,7,hand,2,5,false,false,true,conj_and,false
+31,9,look,2,4,false,false,true,conj_and,false
+32,9,hand,2,5,false,false,true,conj_and,false
+31,11,look,2,4,false,false,true,conj_and,false
+32,11,hand,2,5,false,false,true,conj_and,false
+31,13,look,4,4,false,false,true,nsubj,false
+32,13,hand,4,5,false,false,true,nsubj,false
+31,15,look,4,4,false,false,true,iobj,false
+32,15,hand,4,5,false,false,true,iobj,false
+31,17,look,5,4,false,false,false,nsubj,false
+32,17,hand,5,5,false,false,true,nsubj,false
+31,19,look,7,4,false,false,false,nsubj,false
+32,19,hand,7,5,false,false,false,nsubj,false
+31,21,look,7,4,false,false,false,prep_to,false
+32,21,hand,7,5,false,false,false,prep_to,false
+31,23,look,7,4,false,false,false,nsubjpass,false
+32,23,hand,7,5,false,false,false,nsubjpass,false

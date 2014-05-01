@@ -1,0 +1,17 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+9,1,take,1,3,false,false,true,nsubj,false
+10,1,find,1,1,false,false,true,nsubj,false
+11,1,read,1,1,false,false,true,nsubj,false
+12,1,enter,1,1,false,true,true,nsubj,false
+9,3,take,1,3,false,false,true,nsubj,false
+10,3,find,1,1,false,false,false,nsubj,false
+11,3,read,1,1,false,true,true,nsubj,false
+12,3,enter,1,1,false,false,false,nsubj,false
+9,6,take,3,3,false,true,true,nsubj,false
+10,6,find,3,1,false,false,false,nsubj,false
+11,6,read,3,1,false,false,false,nsubj,false
+12,6,enter,3,1,false,false,false,nsubj,false
+9,8,take,3,3,false,false,false,poss,true
+10,8,find,3,1,false,false,false,poss,true
+11,8,read,3,1,false,false,false,poss,true
+12,8,enter,3,1,false,false,false,poss,true

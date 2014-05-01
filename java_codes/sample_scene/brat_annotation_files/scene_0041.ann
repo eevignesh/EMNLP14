@@ -1,0 +1,62 @@
+T0	Verb 0 5	CLOSE
+T1	Verb 47 54	bruised
+R0	A1 Arg1:T1 Arg2:T2
+T3	Verb 59 67	bloodied
+T4	Verb 137 141	find
+T5	Verb 152 158	lashed
+T6	Nom 169 173	tape
+T7	Verb 223 229	stands
+R1	A1 Arg1:T7 Arg2:T8
+T9	Verb 287 293	filled
+T10	Nom 278 282	eyes
+T11	Nom 299 305	hatred
+T12	Nom 327 334	control
+T13	Verb 340 344	cuts
+R2	A0 Arg1:T13 Arg2:T14
+T15	Nom 366 370	tape
+T16	Nom 480 485	surge
+T17	Verb 529 535	enters
+T18	Verb 562 565	has
+R3	A1 Arg1:T18 Arg2:T19
+R4	A0 Arg1:T18 Arg2:T20
+T21	Nom 570 574	drop
+R5	A1 Arg1:T21 Arg2:T19
+T22	Nom 582 588	victim
+R6	A2 Arg1:T22 Arg2:T19
+T23	Verb 676 685	weakening
+R7	A1 Arg1:T23 Arg2:T24
+T25	Nom 665 672	resolve
+R8	A0 Arg1:T25 Arg2:T24
+T26	Verb 702 705	got
+R9	A1 Arg1:T26 Arg2:T27
+T28	Verb 763 768	drops
+R10	A0 Arg1:T28 Arg2:T29
+T30	Verb 780 788	crumbles
+R11	A0 Arg1:T30 Arg2:T29
+R12	A1 Arg1:T30 Arg2:T31
+T32	Verb 830 838	carrying
+R13	A0 Arg1:T32 Arg2:T31
+T33	Nom 799 805	weight
+T34	Nom 813 818	guilt
+T35	Verb 859 864	takes
+R14	A0 Arg1:T35 Arg2:T36
+T37	Verb 896 901	looks
+R15	A0 Arg1:T37 Arg2:T38
+R16	A1 Arg1:T37 Arg2:T39
+R17	A1 Arg1:T37 Arg2:T40
+T41	Verb 922 928	shaken
+T42	Nom 874 881	custody
+R18	A0 Arg1:T42 Arg2:T36
+T24	elaine_tillman 656 662	Elaine
+T38	Other 886 892	VICTIM
+T2	Other 26 32	VICTIM
+T14	Other 336 339	She
+T40	david 915 920	David
+T27	megan 716 721	MEGAN
+T36	Other 852 858	MEMBER
+T31	elaine_tillman 819 822	she
+T20	elaine_tillman 555 561	Elaine
+T19	Other 582 588	victim
+T39	megan 905 910	Megan
+T29	elaine_tillman 756 762	Elaine
+T8	elaine_tillman 215 222	Tillman

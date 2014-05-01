@@ -1,0 +1,60 @@
+T0	Verb 32 37	snaps
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 67 72	taped
+T3	Verb 119 125	enters
+T4	Verb 127 131	sees
+T5	Nom 144 152	evidence
+T6	Verb 170 174	walk
+R1	A0 Arg1:T6 Arg2:T7
+R2	A0 Arg1:T6 Arg2:T8
+T9	Verb 239 243	nods
+R3	A0 Arg1:T9 Arg2:T10
+T11	Verb 251 258	bagging
+T12	Nom 269 273	pack
+T13	Verb 316 321	spies
+R4	A1 Arg1:T13 Arg2:T14
+R5	A0 Arg1:T13 Arg2:T15
+T16	Verb 340 347	dressed
+R6	A1 Arg1:T16 Arg2:T14
+T17	Verb 397 402	takes
+R7	A0 Arg1:T17 Arg2:T18
+T19	Nom 412 416	look
+R8	A0 Arg1:T19 Arg2:T18
+T20	Verb 498 504	enters
+R9	A0 Arg1:T20 Arg2:T21
+T22	Verb 506 514	carrying
+R10	A0 Arg1:T22 Arg2:T21
+R11	A0 Arg1:T22 Arg2:T23
+T24	Verb 528 533	looks
+R12	A0 Arg1:T24 Arg2:T23
+T25	Verb 573 578	turns
+R13	A1 Arg1:T25 Arg2:T26
+T27	Verb 582 585	see
+R14	A1 Arg1:T27 Arg2:T28
+R15	A0 Arg1:T27 Arg2:T26
+T29	Verb 636 642	coming
+T30	Nom 625 632	apology
+T31	Nom 678 684	swings
+R16	A1 Arg1:T31 Arg2:T32
+T33	Verb 751 756	pulls
+R17	A0 Arg1:T33 Arg2:T34
+T35	Verb 853 858	takes
+R18	A0 Arg1:T35 Arg2:T36
+T37	Verb 873 878	opens
+R19	A0 Arg1:T37 Arg2:T36
+T38	Verb 885 889	find
+T39	Verb 895 900	faded
+T15	don 312 315	Don
+T21	larry 465 470	LARRY
+T1	Other 19 31	PHOTOGRAPHER
+T36	larry 847 852	Larry
+T8	colby 164 169	COLBY
+T14	Other 324 329	WOMAN
+T18	don 393 396	Don
+T23	charlie 490 497	CHARLIE
+T32	larry 672 677	Larry
+T34	charlie 743 750	Charlie
+T7	david 154 159	DAVID
+T26	larry 570 572	He
+T28	larry 586 591	LARRY
+T10	colby 233 238	Colby

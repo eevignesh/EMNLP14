@@ -1,0 +1,38 @@
+T0	Verb 18 21	sit
+R0	A1 Arg1:T0 Arg2:T1
+R1	A1 Arg1:T0 Arg2:T2
+T3	Verb 32 39	working
+R2	A0 Arg1:T3 Arg2:T1
+R3	A0 Arg1:T3 Arg2:T2
+T4	Verb 47 52	looks
+R4	A0 Arg1:T4 Arg2:T5
+T6	Verb 73 83	frustrated
+T7	Verb 102 106	sees
+R5	A0 Arg1:T7 Arg2:T8
+T9	Verb 129 135	Living
+T10	Verb 142 149	talking
+T11	Nom 115 121	pacing
+T12	Verb 204 211	watches
+R6	A0 Arg1:T12 Arg2:T13
+T14	Verb 220 224	ends
+R7	A0 Arg1:T14 Arg2:T15
+T16	Nom 229 233	call
+T17	Verb 270 275	joins
+R8	A1 Arg1:T17 Arg2:T18
+T19	Verb 288 294	Dining
+T20	Verb 344 351	realize
+R9	A0 Arg1:T20 Arg2:T21
+R10	A0 Arg1:T20 Arg2:T22
+T23	Verb 443 449	spread
+T24	Nom 438 442	work
+T25	Nom 502 507	exits
+T26	FAIL 524 750	Charlie looks down at the map Of GREATER L.A. ShOWing the THREE HOUSE LOCATIONS... FZASH'CHARLIE VISION Details (maybe_pqpping up in 3-D) appear around each of the HUUHES: 8 CHURCH} FIREHUUSE, SCHOOL, HUSPIZAL... BACK TU SCENE
+T21	amita 326 331	Amita
+T1	charlie 0 7	Charlie
+T5	amita 41 46	Amita
+T8	amita 98 101	she
+T2	amita 12 17	Amita
+T15	alan 215 219	Alan
+T13	amita 198 203	Amita
+T22	charlie 336 343	Charlie
+T18	Other 276 280	them

@@ -1,0 +1,9 @@
+T0	Verb 10 14	pull
+T1	Verb 62 66	jump
+R0	A0 Arg1:T1 Arg2:T2
+R1	A0 Arg1:T1 Arg2:T3
+T4	Verb 72 80	checking
+R2	A0 Arg1:T4 Arg2:T2
+R3	A0 Arg1:T4 Arg2:T3
+T3	david 56 61	David
+T2	megan 46 51	Megan

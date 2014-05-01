@@ -1,0 +1,13 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+8,1,read,0,0,false,false,true,nsubj,false
+9,1,cross,0,0,false,true,true,nsubj,false
+10,1,intercept,0,1,false,false,true,nsubj,false
+8,3,read,1,0,false,false,false,dep,false
+9,3,cross,1,0,false,false,false,dep,false
+10,3,intercept,1,1,false,true,false,dep,false
+8,5,read,2,0,false,false,false,nsubj,false
+9,5,cross,2,0,false,false,false,nsubj,false
+10,5,intercept,2,1,false,false,false,nsubj,false
+8,7,read,2,0,false,false,false,poss,true
+9,7,cross,2,0,false,false,false,poss,true
+10,7,intercept,2,1,false,false,false,poss,true

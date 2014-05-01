@@ -1,0 +1,33 @@
+T0	Verb 61 64	see
+R0	A0 Arg1:T0 Arg2:T1
+T2	Nom 75 82	shuttle
+T3	Nom 111 120	countdown
+T4	Verb 154 160	enters
+R1	A0 Arg1:T4 Arg2:T5
+T6	Verb 183 191	carrying
+R2	A0 Arg1:T6 Arg2:T5
+T7	Verb 220 226	filled
+T8	Verb 241 245	sets
+R3	A0 Arg1:T8 Arg2:T9
+T10	Verb 301 308	glasses
+R4	A0 Arg1:T10 Arg2:T11
+T12	Nom 296 300	grab
+R5	A0 Arg1:T12 Arg2:T11
+T13	Verb 374 381	glasses
+R6	A0 Arg1:T13 Arg2:T14
+T15	Verb 383 394	celebrating
+R7	A1 Arg1:T15 Arg2:T16
+T17	Verb 458 466	climbing
+T18	Nom 437 442	IMAGE
+T19	Verb 576 583	appears
+T20	Nom 540 550	CONFESSION
+T21	Verb 656 664	continue
+T22	Verb 692 699	follows
+T23	Nom 671 677	action
+T24	Nom 678 686	sequence
+T11	Other 287 291	They
+T5	alan 149 153	Alan
+T14	Other 359 363	they
+T9	alan 238 240	He
+T16	charlie 399 406	CHARLIE
+T1	Other 58 60	we

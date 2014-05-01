@@ -28,6 +28,15 @@ import java.io.FileReader;
 
 class Utils {
 
+  /* deprecate (code from Armand) */
+  private static String sentence2string(CoreMap sentence){
+    List<CoreLabel> tokens = sentence.get(TokensAnnotation.class);
+    String stc ="";
+    for( CoreLabel token : tokens)
+    stc+= token.word() + " ";
+    return stc;
+  }
+
   /* Getting the levenshtein distance between strings */
   public static class LevenshteinDistance {
     

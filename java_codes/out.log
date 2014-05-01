@@ -1,0 +1,10 @@
+Buildfile: /juicer/scr91/scr/vigneshr/EMNLP14/java_codes/build.xml
+
+compile:
+    [javac] Compiling 2 source files to /juicer/scr91/scr/vigneshr/EMNLP14/java_codes/build/classes
+    [javac] /juicer/scr91/scr/vigneshr/EMNLP14/java_codes/src/EMNLP14/HumanArguments.java:649: error: cannot find symbol
+    [javac]                 boolean isLeft   = (h.endChar <= bv.begChar);
+    [javac]                                                  ^
+    [javac]   symbol:   variable bv
+    [javac]   location: class HumanArguments
+    [javac] 1 error

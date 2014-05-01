@@ -1,0 +1,25 @@
+T0	Verb 47 53	spread
+T1	Nom 42 46	work
+T2	Nom 65 70	peers
+R0	A2 Arg1:T2 Arg2:T3
+T4	Verb 152 161	struggles
+R1	A0 Arg1:T4 Arg2:T5
+T6	Nom 171 179	emotions
+T7	Verb 256 261	turns
+R2	A0 Arg1:T7 Arg2:T8
+T9	Verb 283 286	see
+R3	A0 Arg1:T9 Arg2:T10
+T11	Verb 303 306	see
+R4	A0 Arg1:T11 Arg2:T12
+T13	Verb 331 338	showing
+T14	Nom 311 314	map
+T15	Verb 400 407	punches
+R5	A0 Arg1:T15 Arg2:T16
+T17	Verb 494 500	appear
+T18	Nom 424 431	details
+T8	amita 252 255	She
+T10	charlie 276 278	he
+T5	charlie 144 151	Charlie
+T12	Other 300 302	we
+T3	amita 59 64	Amita
+T16	amita 396 399	She
