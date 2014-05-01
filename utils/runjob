@@ -1,0 +1,84 @@
+#!/usr/bin/perl
+# runjob - poorman's job submission software
+#
+# questions, comments -> daniel.cer@colorado.edu
+
+use Cwd; 
+#use Net::OpenSSH;
+
+$SHELL = "/bin/sh";
+$STATUS_HTML = "/u/apache/htdocs/local/machines.shtml";
+
+if ($ARGV[0] eq "-l") { $logfile = $ARGV[1]; shift @ARGV; shift @ARGV; #splice(@ARGV,2); 
+} else { $logfile = "$ARGV[0].$$"; }
+
+#print " $ARGV[0]"
+#print " $ARGV[1].$$"
+#print "@ARGV";
+
+if (@ARGV < 2) {
+  print stderr "Usage:\n\t$0 (host) (command)\n".
+               "\nOptional Flags:\n".
+               "\t-l logfilename \n".
+               "\t   default: (prog name).(process id)\n\n".
+               "Notes: using 'feelinglucky' as the hostname runs the\n".
+               "       command on one of the free-ish javanlp machines\n";
+  exit -1;
+}
+
+$host = $ARGV[0]; shift @ARGV; $cmd = join ' ', @ARGV;
+
+if ($host eq "feelinglucky") {
+  print "Finding freeish host...\n";
+
+  open fh, $STATUS_HTML or die "Can't open $STATUS_HTML\n";
+  $freeish = (grep { /^<p><b>Free:<\/b>/ }<fh>)[0]; close fh; 
+  die "no freeish machines found!" if ($freeish eq "");
+
+  $freeish =~ s/^<p><b>Free:<\/b> //;
+  $freeish =~ s/>,/>/; $freeish =~ s/> and </> </;
+  $freeish =~ s/<a\s+href//g;
+  @freeish = split ' ', $freeish;
+  $host = $freeish[int(rand(@freeish))];
+  $host =~ s/^[^>]*>//; $host =~ s/<.*//;
+  print "Selected host: $host\n";
+  #die
+}
+
+die "Error: $host not found\n" if (`host $host` =~ /not found:/);
+$jobstartlog = "/tmp/runjob.$$.log";
+
+print "Logfile prefix: $logfile\n";
+
+# connect to host
+open sfh, "|ssh -T $host > $jobstartlog 2>&1" or 
+  die "failed to connect to $host\n";
+
+# switch to a known shell
+print sfh "$SHELL\n"; 
+
+
+# reproduce the env
+foreach $key (keys %ENV) {
+  print sfh "export $key='$ENV{$key}'\n";
+}
+
+# change to the right directory
+$dir = getcwd; 
+print sfh "cd $dir\n";
+
+# run command
+$logfile = "$dir/$logfile" if (not $logfile =~ /^\//);
+$cmd = "nohup $cmd > $logfile.o 2> $logfile.e & ";
+print sfh "$cmd\n";
+print "Command: $cmd\n";
+sleep 3;
+close sfh;
+
+# display any output the was generated during the
+# ssh session
+open ofh, "$jobstartlog" or 
+  die "can't retrieve output from $jobstartlog\n";
+
+print $_ while (<ofh>); close ofh;
+unlink($jobstartlog);

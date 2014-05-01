@@ -1,0 +1,10 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+6,1,stack,0,0,false,false,true,nsubj,false
+7,1,pile,0,0,false,true,true,nsubj,false
+8,1,walk,0,1,false,false,true,nsubj,false
+6,3,stack,0,0,false,false,true,poss,true
+7,3,pile,0,0,false,false,true,poss,true
+8,3,walk,0,1,false,false,true,poss,true
+6,5,stack,1,0,false,false,false,nsubj,false
+7,5,pile,1,0,false,false,false,nsubj,false
+8,5,walk,1,1,false,true,true,nsubj,false

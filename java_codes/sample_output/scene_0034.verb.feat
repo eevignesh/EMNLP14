@@ -1,0 +1,15 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+14,1,look,0,2,false,false,true,prep_of,false
+15,1,move,0,1,false,false,true,prep_of,false
+14,3,look,0,2,false,false,true,dep,false
+15,3,move,0,1,false,false,true,dep,false
+14,5,look,1,2,false,false,true,nsubj,false
+15,5,move,1,1,false,true,true,nsubj,false
+14,7,look,1,2,false,false,true,conj_and,false
+15,7,move,1,1,false,true,true,conj_and,false
+14,9,look,2,2,false,false,true,root,false
+15,9,move,2,1,false,false,false,root,false
+14,11,look,2,2,false,false,true,appos,false
+15,11,move,2,1,false,false,false,appos,false
+14,13,look,2,2,false,false,false,prep_of,false
+15,13,move,2,1,false,false,false,prep_of,false

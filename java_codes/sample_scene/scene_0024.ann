@@ -1,0 +1,16 @@
+T0	Verb 33 39	enters
+R0	A0 Arg1:T0 Arg2:T1
+R1	A1 Arg1:T0 Arg2:T2
+T3	Verb 43 47	find
+R2	A0 Arg1:T3 Arg2:T1
+T4	Verb 54 61	reading
+T5	Nom 76 80	play
+T6	FAIL 110 173	He looks up from the book...  LARRY (cont'd) speaks a dialogue.
+T7	Verb 183 188	takes
+R3	A0 Arg1:T7 Arg2:T8
+T9	Nom 200 210	desolation
+R4	A0 Arg1:T9 Arg2:T10
+T8	megan 177 182	Megan
+T1	megan 27 32	Megan
+T10	larry 192 197	Larry
+T2	larry 48 53	Larry

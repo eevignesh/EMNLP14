@@ -1,0 +1,8 @@
+T0	Nom 41 45	head
+T1	FAIL 169 239	She picks up another file, reads...  MEGAN (cont'd) speaks a dialogue.
+T2	Verb 271 276	looks
+R0	A0 Arg1:T2 Arg2:T3
+R1	A1 Arg1:T2 Arg2:T4
+T5	Nom 303 307	look
+T3	megan 265 270	Megan
+T4	don 280 283	Don

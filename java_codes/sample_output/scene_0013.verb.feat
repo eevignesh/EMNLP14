@@ -1,0 +1,16 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+10,1,continue,0,3,false,false,true,root,false
+11,1,want,0,3,false,false,true,root,false
+12,1,stop,0,3,false,false,true,root,false
+10,3,continue,0,3,false,false,true,conj_and,false
+11,3,want,0,3,false,false,true,conj_and,false
+12,3,stop,0,3,false,false,true,conj_and,false
+10,5,continue,2,3,false,false,true,nn,false
+11,5,want,2,3,false,false,true,nn,false
+12,5,stop,2,3,false,false,true,nn,false
+10,7,continue,2,3,false,false,true,dep,false
+11,7,want,2,3,false,false,true,dep,false
+12,7,stop,2,3,false,false,true,dep,false
+10,9,continue,3,3,false,false,true,nsubj,false
+11,9,want,3,3,false,false,true,nsubj,false
+12,9,stop,3,3,false,true,true,nsubj,false

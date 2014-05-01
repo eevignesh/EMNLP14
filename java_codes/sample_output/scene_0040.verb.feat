@@ -1,0 +1,7 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov
+4,1,jump,1,1,false,false,true,root,false
+5,1,check,1,1,false,false,true,root,false
+6,1,pull,1,0,false,false,false,root,false
+4,3,jump,1,1,false,false,true,conj_and,false
+5,3,check,1,1,false,false,true,conj_and,false
+6,3,pull,1,0,false,false,false,conj_and,false

@@ -1,0 +1,37 @@
+T0	Verb 6 14	observes
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 34 40	cleans
+R1	A0 Arg1:T2 Arg2:T3
+R2	A1 Arg1:T2 Arg2:T4
+T5	Verb 89 96	spilled
+R3	A0 Arg1:T5 Arg2:T3
+T6	Nom 48 52	mess
+R4	A1 Arg1:T6 Arg2:T4
+R5	A0 Arg1:T6 Arg2:T3
+T7	Nom 62 66	kids
+R6	A0 Arg1:T7 Arg2:T4
+T8	Verb 166 174	measures
+R7	A1 Arg1:T8 Arg2:T9
+R8	A0 Arg1:T8 Arg2:T10
+T11	Verb 192 198	locked
+T12	Nom 187 191	eyes
+T13	Verb 274 280	reacts
+R9	A0 Arg1:T13 Arg2:T14
+T15	Nom 237 241	eyes
+R10	A1 Arg1:T15 Arg2:T16
+T17	Nom 246 251	photo
+R11	A1 Arg1:T17 Arg2:T18
+T19	Nom 261 265	kids
+R12	A0 Arg1:T19 Arg2:T18
+T20	Verb 332 342	devastated
+T21	Verb 344 350	failed
+R13	A2 Arg1:T21 Arg2:T22
+T10	megan 160 165	Megan
+T14	elaine_tillman 267 273	Elaine
+T3	elaine_tillman 26 33	Tillman
+T16	megan 231 236	Megan
+T22	Other 354 358	wife
+T4	Other 62 66	kids
+T18	Other 261 265	kids
+T1	megan 0 5	Megan
+T9	elaine_tillman 175 181	Elaine

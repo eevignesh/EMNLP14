@@ -1,0 +1,58 @@
+T0	Verb 4 9	walks
+R0	A0 Arg1:T0 Arg2:T1
+T2	Verb 150 157	waiting
+R1	A1 Arg1:T2 Arg2:T3
+T4	Nom 63 68	looks
+R2	A2 Arg1:T4 Arg2:T5
+T6	Nom 128 131	mom
+R3	A0 Arg1:T6 Arg2:T7
+T8	Nom 163 170	contact
+T9	Verb 201 206	looks
+R4	A0 Arg1:T9 Arg2:T10
+R5	A1 Arg1:T9 Arg2:T11
+T12	Verb 263 267	walk
+R6	A0 Arg1:T12 Arg2:T13
+R7	A0 Arg1:T12 Arg2:T14
+T15	Verb 310 316	glares
+R8	A1 Arg1:T15 Arg2:T16
+T17	Verb 334 339	hangs
+R9	A1 Arg1:T17 Arg2:T18
+T19	FAIL 391 571	The McCrary Family turns and exits as... Colby, holding a print---out (having seen the exchange with the McCrarys), comes from the Elevator Area, picking his way through the crowd.
+T20	Verb 575 582	glances
+R10	A0 Arg1:T20 Arg2:T21
+T22	Nom 600 607	exiting
+T23	Verb 654 658	move
+R11	A1 Arg1:T23 Arg2:T24
+R12	A1 Arg1:T23 Arg2:T25
+T26	Verb 709 718	registers
+R13	A0 Arg1:T26 Arg2:T27
+T28	Verb 725 729	sees
+R14	A0 Arg1:T28 Arg2:T27
+R15	A1 Arg1:T28 Arg2:T29
+R16	A1 Arg1:T28 Arg2:T30
+T31	Verb 748 759	approaching
+R17	A1 Arg1:T31 Arg2:T29
+R18	A1 Arg1:T31 Arg2:T30
+T32	Verb 814 822	continue
+R19	A1 Arg1:T32 Arg2:T33
+R20	A1 Arg1:T32 Arg2:T34
+R21	A1 Arg1:T32 Arg2:T35
+T16	don 320 323	Don
+T25	colby 648 653	Colby
+T30	amita 742 747	Amita
+T11	don 210 213	Don
+T21	matt_mccrary 572 574	He
+T27	don 705 708	Don
+T34	charlie 796 803	Charlie
+T1	don 0 3	Don
+T24	don 640 643	Don
+T29	charlie 730 737	Charlie
+T14	matt_mccrary 258 262	Matt
+T10	matt_mccrary 193 200	McCrary
+T3	matt_mccrary 108 115	McCRARY
+T35	amita 808 813	Amita
+T5	matt_mccrary 55 62	McCrary
+T18	matt_mccrary 329 333	Matt
+T13	matt_mccrary 246 253	McCrary
+T33	don 791 794	Don
+T7	Other 128 131	mom

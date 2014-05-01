@@ -1,9 +1,0 @@
-T0	Verb 63 69	speaks
-R0	A0 Arg1:T0 Arg2:T1
-T2	Verb 135 140	moved
-T3	Verb 165 172	looking
-R1	A0 Arg1:T3 Arg2:T4
-R2	A1 Arg1:T3 Arg2:T5
-T1	charlie 55 62	CHARLIE
-T4	charlie 142 148	HARLIE
-T5	larry 187 192	LARRY

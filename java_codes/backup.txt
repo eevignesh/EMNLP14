@@ -1,0 +1,75 @@
+public List<CandidateHumanArguments> getHumanArguments(SemanticGraph dep, 
+                  IndexedWord rootWord, Set <IndexedWord> alreadySeen, 
+                  List <CandidateHumanArguments> argCandidates, 
+                  String appendString, int currentEndPt, boolean currentPossesive, String currentRelation) {
+      
+        String wordTillNow;
+        List <CandidateHumanArguments> resArgCandidates = new ArrayList<CandidateHumanArguments>();
+        if(!alreadySeen.contains(rootWord)) {
+          alreadySeen.add(rootWord);
+          if (rootWord.tag().equals("NN") | rootWord.tag().equals("NNP")) {
+            
+            // to ensure that the complete name does not get missed out (first-name + sec-name)
+            if (!appendString.equals("")) {
+              wordTillNow = appendString + " " + rootWord.originalText().toLowerCase();
+              for (SemanticGraphEdge e : dep.getOutEdgesSorted(rootWord)){
+                  System.out.println("out-edges( " + rootWord.toString() + ") : " + e.toString());
+                }
+              currentPossesive = false;
+            } else {
+              wordTillNow = rootWord.originalText().toLowerCase();
+              currentEndPt = rootWord.endPosition();
+            }
+            System.out.println("NER (" + rootWord.originalText() + ") : " + rootWord.ner());
+            // check if the word is human, then add it to list 
+            // and reset the current trailing words
+            if (Utils.isWordHuman(wordTillNow, this.castList, this.dict) ) {
+              List<SemanticGraphEdge> outEdges = dep.getOutEdgesSorted(rootWord);
+              String relation = "";
+              if (outEdges.size() > 0)
+                relation = outEdges.get(0).toString();
+
+              CandidateHumanArguments c = new CandidateHumanArguments(relation, 
+                  rootWord.beginPosition(), currentEndPt, wordTillNow, currentPossesive);
+
+              resArgCandidates.add(c);
+              System.out.println("Adding: " + c.originalText);
+
+            } else {
+              appendString = wordTillNow;
+            }
+
+          } else {
+            appendString = "";
+            currentPossesive = false;
+
+            currentEndPt = rootWord.endPosition();
+            wordTillNow = rootWord.originalText().toLowerCase();
+            if (Utils.isWordHuman(wordTillNow, this.castList, this.dict)) {
+
+              boolean isPossesive = this.dict.possessivePronouns.contains(wordTillNow);
+              List<SemanticGraphEdge> outEdges = dep.getIncomingEdgesSorted(rootWord);
+              String relation = "";
+              if (outEdges.size() > 0)
+                relation = outEdges.get(0).toString();
+              CandidateHumanArguments c = new CandidateHumanArguments(relation, 
+                  rootWord.beginPosition(), currentEndPt, wordTillNow, isPossesive);
+                       
+              resArgCandidates.add(c);
+              System.out.println("Adding: " + c.originalText + "(" + relation + ")");
+              System.out.println(rootWord);
+            }
+
+            currentEndPt = -1;
+          }
+          
+          List <IndexedWord> childList = dep.getChildList(rootWord);
+          for (IndexedWord child : childList) {
+            List<CandidateHumanArguments> res = getHumanArguments(dep, child, alreadySeen,
+                argCandidates, appendString, currentEndPt, currentPossesive, rootWord);
+            resArgCandidates.addAll(res);
+          }
+          //System.out.println("Leaf: " + rootWord);
+        }
+        return resArgCandidates;
+    }

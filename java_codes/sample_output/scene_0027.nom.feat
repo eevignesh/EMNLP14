@@ -1,0 +1,10 @@
+#verb_token_id, argument_token_id,pred_lemma, arg_sentence_id, pred_sentence_idpred_voice, is_pred_parent, is_arg_to_left, rel_of_arg_to_gov, is_arg_possesive
+23,1,reading,0,2,false,false,true,nsubj,false
+23,3,reading,0,2,false,false,true,conj_and,false
+23,5,reading,2,2,false,true,true,nn,false
+23,7,reading,2,2,false,true,false,prep_to,false
+23,9,reading,2,2,false,false,false,poss,true
+23,11,reading,3,2,false,false,false,nsubj,false
+23,13,reading,4,2,false,false,false,nsubj,false
+23,15,reading,7,2,false,false,false,poss,true
+23,17,reading,7,2,false,false,false,poss,true

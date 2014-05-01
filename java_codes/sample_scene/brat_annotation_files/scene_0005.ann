@@ -1,0 +1,11 @@
+T0	Nom 15 21	FAMILY
+T1	Nom 104 109	shows
+T2	Nom 110 113	son
+R0	A0 Arg1:T2 Arg2:T3
+T4	Nom 264 272	strength
+T5	Verb 278 283	looks
+R1	A0 Arg1:T5 Arg2:T6
+R2	A1 Arg1:T5 Arg2:T7
+T3	don 110 113	son
+T6	Other 274 277	She
+T7	megan 287 292	Megan

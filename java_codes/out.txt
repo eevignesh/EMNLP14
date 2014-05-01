@@ -1,0 +1,4989 @@
+Buildfile: /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build.xml
+
+compile:
+    [javac] Compiling 1 source file to /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/classes
+     [copy] Copying 1 file to /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/classes
+
+jar:
+      [jar] Building jar: /juicer/scr91/scr/vigneshr/EMNLP14/annotations/java/build/jar/geneartAnnotaionFiles.jar
+
+run:
+     [java] Starting scene parser
+     [java] Adding annotator tokenize
+     [java] Adding annotator ssplit
+     [java] Adding annotator pos
+     [java] Reading POS tagger model from edu/stanford/nlp/models/pos-tagger/english-left3words/english-left3words-distsim.tagger ... done [1.6 sec].
+     [java] Adding annotator lemma
+     [java] Adding annotator truecase
+     [java] loadClassifier=edu/stanford/nlp/models/truecase/truecasing.fast.caseless.qn.ser.gz
+     [java] mixedCaseMapFile=edu/stanford/nlp/models/truecase/MixDisambiguation.list
+     [java] classBias=INIT_UPPER:-0.7,UPPER:-0.7,O:0
+     [java] Loading classifier from edu/stanford/nlp/models/truecase/truecasing.fast.caseless.qn.ser.gz ... done [5.3 sec].
+     [java] Adding annotator ner
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.all.3class.distsim.crf.ser.gz ... done [6.9 sec].
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.muc.7class.distsim.crf.ser.gz ... done [3.1 sec].
+     [java] Loading classifier from edu/stanford/nlp/models/ner/english.conll.4class.distsim.crf.ser.gz ... done [4.3 sec].
+     [java] Initializing JollyDayHoliday for sutime
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/defs.sutime.txt
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.sutime.txt
+     [java] Apr 20, 2014 1:56:28 AM edu.stanford.nlp.ling.tokensregex.CoreMapExpressionExtractor appendRules
+     [java] INFO: Ignoring inactive rule: temporal-composite-8:ranges
+     [java] Reading TokensRegex rules from edu/stanford/nlp/models/sutime/english.holidays.sutime.txt
+     [java] Adding annotator parse
+     [java] Loading parser from serialized file edu/stanford/nlp/models/lexparser/englishPCFG.ser.gz ... done [1.3 sec].
+     [java] Adding annotator dcoref
+     [java] pull:
+     [java]     A0: A car
+     [java]     C-V: up
+     [java] 
+     [java] Pred: pulls Arg: A car best-match: -1
+     [java] think:
+     [java]     A2: Radio Shack manager
+     [java] get:
+     [java]     A1: a six --- pack of beer under his arm
+     [java]     C-V: out
+     [java] 
+     [java] Pred: think Arg: Radio Shack manager best-match: 9
+     [java] ANIMATE
+     [java] manager-24, beg --- 172 , end --- 179
+     [java] Pred: gets Arg: a six --- pack of beer under his arm best-match: -1
+     [java] walk:
+     [java]     A0: He
+     [java]     AM-DIR: across the lawn
+     [java] fix:
+     [java]     A1: NOW FROM POV OF -- DATELINE ----- style fixed surveillance video cameras
+     [java] see:
+     [java]     A0: we
+     [java]     A1: Santos enter
+     [java] enter:
+     [java]     A0: Santos
+     [java] 
+     [java] Pred: walks Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 228 , end --- 230
+     [java] Pred: fixed Arg: NOW FROM POV OF -- DATELINE ----- style fixed surveillance video cameras best-match: -1
+     [java] Pred: see Arg: we best-match: 10
+     [java] ANIMATE
+     [java] we-27, beg --- 362 , end --- 364
+     [java] Pred: see Arg: Santos enter best-match: 11
+     [java] ANIMATE
+     [java] Santos-29, beg --- 369 , end --- 375
+     [java] Pred: enter Arg: Santos best-match: 11
+     [java] ANIMATE
+     [java] Santos-29, beg --- 369 , end --- 375
+     [java] 
+     [java] move:
+     [java]     A1: Santos
+     [java]     AM-DIR: through the house
+     [java] look:
+     [java]     A0: Santos
+     [java]     A1: around
+     [java] 
+     [java] Pred: moves Arg: Santos best-match: 1
+     [java] ANIMATE
+     [java] Santos-1, beg --- 410 , end --- 416
+     [java] Pred: looking Arg: Santos best-match: 1
+     [java] ANIMATE
+     [java] Santos-1, beg --- 410 , end --- 416
+     [java] Pred: looking Arg: around best-match: -1
+     [java] speak:
+     [java]     A0: JOHN SANTOS
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: JOHN SANTOS best-match: 0
+     [java] ANIMATE
+     [java] SANTOS-2, beg --- 464 , end --- 470
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] spy:
+     [java]     A0: He
+     [java]     A1: a note on the fridge tacked up by a magnet : --- Chill
+     [java] tack:
+     [java]     A1: the fridge
+     [java]     C-V: up
+     [java]     C-V: out
+     [java] 
+     [java] Pred: spies Arg: a note on the fridge tacked up by a magnet : --- Chill best-match: -1
+     [java] Pred: spies Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 501 , end --- 503
+     [java] Pred: tacked Arg: the fridge best-match: -1
+     [java] be:
+     [java]     A1: I
+     [java]     AM-DIR: in the shower
+     [java] shower:
+     [java]     A0: I
+     [java] 
+     [java] Pred: 'm Arg: I best-match: 0
+     [java] ANIMATE
+     [java] I-1, beg --- 568 , end --- 569
+     [java] Pred: shower Arg: I best-match: 0
+     [java] ANIMATE
+     [java] I-1, beg --- 568 , end --- 569
+     [java] 
+     [java] come:
+     [java]     A1: steam
+     [java]     A2: from under the bathroom door
+     [java] hear:
+     [java]     A0: the shower
+     [java]     A1: He notices steam coming from under the bathroom door down the hall
+     [java] shower:
+     [java]     A1: He notices steam coming from under the bathroom door down the hall
+     [java] 
+     [java] Pred: coming Arg: from under the bathroom door best-match: -1
+     [java] Pred: coming Arg: steam best-match: -1
+     [java] Pred: hears Arg: the shower best-match: -1
+     [java] Pred: hears Arg: He notices steam coming from under the bathroom door down the hall best-match: 0
+     [java] Pred: shower Arg: He notices steam coming from under the bathroom door down the hall best-match: 0
+     [java] pop:
+     [java]     A0: He
+     [java]     A1: a beer
+     [java] call:
+     [java]     A0: He pops a beer
+     [java] speak:
+     [java]     A0: JOHN SANTOS ( cont 'd )
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: pops Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 690 , end --- 692
+     [java] Pred: pops Arg: a beer best-match: -1
+     [java] Pred: calls Arg: He pops a beer best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 690 , end --- 692
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: JOHN SANTOS ( cont 'd ) best-match: 3
+     [java] ANIMATE
+     [java] SANTOS-12, beg --- 739 , end --- 745
+     [java] start:
+     [java]     A1: He
+     [java]     C-A1: to unbutton his shirt
+     [java] 
+     [java] Pred: starts Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 774 , end --- 776
+     [java] fall:
+     [java]     A1: A SHADOW
+     [java]     A4: across the floor
+     [java] 
+     [java] Pred: falls Arg: A SHADOW best-match: -1
+     [java] turn:
+     [java]     A0: He
+     [java] 
+     [java] Pred: turns Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 866 , end --- 868
+     [java] transition:
+     [java]     A4: TO OBJECTIVE FILM POV
+     [java]     AM-TMP: NOW
+     [java] come:
+     [java]     A1: A BASEBALL BAT
+     [java]     A2: at him
+     [java] 
+     [java] Pred: comes Arg: at him best-match: 3
+     [java] ANIMATE
+     [java] him-13, beg --- 943 , end --- 946
+     [java] Pred: comes Arg: A BASEBALL BAT best-match: -1
+     [java] clock:
+     [java]     A0: It
+     [java]     A1: him
+     [java] send:
+     [java]     A0: It
+     [java]     A1: him
+     [java]     A2: to the carpet
+     [java] drag:
+     [java]     A0: HANDS IN HEAVY GLOVES
+     [java]     A1: him
+     [java]     A2: to a CHAIR
+     [java] 
+     [java] Pred: clocks Arg: him best-match: 1
+     [java] ANIMATE
+     [java] him-3, beg --- 958 , end --- 961
+     [java] Pred: clocks Arg: It best-match: -1
+     [java] Pred: sends Arg: him best-match: 2
+     [java] ANIMATE
+     [java] him-6, beg --- 969 , end --- 972
+     [java] Pred: sends Arg: to the carpet best-match: -1
+     [java] Pred: sends Arg: It best-match: -1
+     [java] Pred: drag Arg: to a CHAIR best-match: -1
+     [java] Pred: drag Arg: HANDS IN HEAVY GLOVES best-match: -1
+     [java] Pred: drag Arg: him best-match: 8
+     [java] ANIMATE
+     [java] him-24, beg --- 1052 , end --- 1055
+     [java] SRL failed for sentence: :
+     [java] Continuing ...
+     [java] coref (POV) --- key: 5_8
+     [java] coref (HAND) --- key: 14_18
+     [java] coref (CAMERA) --- key: 32_38
+     [java] coref (house) --- key: 55_60
+     [java] coref (house) --- key: 435_440
+     [java] coref (car) --- key: 66_69
+     [java] coref (SANTOS) --- key: 85_91
+     [java] coref (SANTOS) --- key: 85_91
+     [java] coref (his) --- key: 219_222
+     [java] coref (He) --- key: 228_230
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (Santos) --- key: 369_375
+     [java] COREF --------------
+     [java] mention: Santos, coref: SANTOS
+     [java] coref (Santos) --- key: 410_416
+     [java] COREF --------------
+     [java] mention: Santos, coref: SANTOS
+     [java] coref (SANTOS) --- key: 464_470
+     [java] COREF --------------
+     [java] mention: SANTOS, coref: SANTOS
+     [java] coref (He) --- key: 501_503
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (Santos) --- key: 589_595
+     [java] coref (He) --- key: 604_606
+     [java] coref (He) --- key: 690_692
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (SANTOS) --- key: 739_745
+     [java] COREF --------------
+     [java] mention: SANTOS, coref: SANTOS
+     [java] coref (He) --- key: 774_776
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (his) --- key: 796_799
+     [java] coref (He) --- key: 866_868
+     [java] COREF --------------
+     [java] mention: He, coref: SANTOS
+     [java] coref (30) --- key: 93_95
+     [java] coref (pack) --- key: 200_204
+     [java] coref (Latino) --- key: 97_103
+     [java] coref (shirt) --- key: 111_116
+     [java] coref (tie) --- key: 121_124
+     [java] coref (slacks) --- key: 127_133
+     [java] coref (slacks) --- key: 127_133
+     [java] coref (cellphone) --- key: 135_144
+     [java] coref (manager) --- key: 172_179
+     [java] COREF --------------
+     [java] mention: manager, coref: manager
+     [java] coref (six) --- key: 194_197
+     [java] coref (beer) --- key: 208_212
+     [java] coref (arm) --- key: 223_226
+     [java] coref (NOW) --- key: 289_292
+     [java] coref (NOW) --- key: 890_893
+     [java] coref (It) --- key: 948_950
+     [java] coref (-----) --- key: 315_320
+     [java] coref (circles) --- key: 254_261
+     [java] coref (lawn) --- key: 248_252
+     [java] coref (lawn) --- key: 248_252
+     [java] coref (POV) --- key: 298_301
+     [java] coref (door) --- key: 281_285
+     [java] coref (cameras) --- key: 351_358
+     [java] coref (we) --- key: 362_364
+     [java] COREF --------------
+     [java] mention: we, coref: we
+     [java] coref (style) --- key: 320_325
+     [java] coref (STEREO) --- key: 402_408
+     [java] coref (moves) --- key: 417_422
+     [java] coref (note) --- key: 512_516
+     [java] coref (answer) --- key: 493_499
+     [java] coref (dialogue) --- key: 480_488
+     [java] coref (dialogue) --- key: 764_772
+     [java] coref (magnet) --- key: 546_552
+     [java] coref (fridge) --- key: 524_530
+     [java] coref (shower) --- key: 579_585
+     [java] coref (shower) --- key: 682_688
+     [java] coref (I) --- key: 568_569
+     [java] COREF --------------
+     [java] mention: I, coref: I
+     [java] coref (Chill) --- key: 557_562
+     [java] coref (hall) --- key: 666_670
+     [java] coref (steam) --- key: 615_620
+     [java] coref (door) --- key: 652_656
+     [java] coref (shirt) --- key: 800_805
+     [java] coref (shirt) --- key: 800_805
+     [java] coref (move) --- key: 807_811
+     [java] coref (beer) --- key: 700_704
+     [java] coref (bathroom) --- key: 723_731
+     [java] coref (bathroom) --- key: 823_831
+     [java] coref (cont) --- key: 747_751
+     [java] coref (floor) --- key: 859_864
+     [java] coref (POV) --- key: 912_915
+     [java] coref (him) --- key: 943_946
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (him) --- key: 958_961
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (him) --- key: 969_972
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (his) --- key: 1037_1040
+     [java] coref (him) --- key: 1052_1055
+     [java] COREF --------------
+     [java] mention: him, coref: POV
+     [java] coref (SHADOW) --- key: 835_841
+     [java] coref (HANDS) --- key: 1003_1008
+     [java] coref (carpet) --- key: 980_986
+     [java] coref (BAT) --- key: 930_933
+     [java] coref (:) --- key: 1068_1069
+     [java] coref (CHAIR) --- key: 1061_1066
+     [java] coref (legs) --- key: 1041_1045
+     [java] coref (GLOVES) --- key: 1018_1024
+     [java] 
+     [java] snap:
+     [java]     A0: CRIME SCENE PHOTOGRAPHER
+     [java]     A1: a photo of our VICTIM duct ---
+     [java]     AM-ADV: taped to Uniforms , Detectives , Coroner
+     [java] tape:
+     [java]     A1: a photo of our VICTIM duct ---
+     [java] 
+     [java] Pred: snaps Arg: CRIME SCENE PHOTOGRAPHER best-match: 0
+     [java] ANIMATE
+     [java] PHOTOGRAPHER-3, beg --- 19 , end --- 31
+     [java] Pred: snaps Arg: a photo of our VICTIM duct --- best-match: -1
+     [java] Pred: taped Arg: a photo of our VICTIM duct --- best-match: -1
+     [java] enter:
+     [java]     A0: DON
+     [java]     A1: SID bagging evidence
+     [java] see:
+     [java]     A0: SID bagging evidence
+     [java]     A1: DON enters
+     [java] 
+     [java] Pred: enters Arg: DON best-match: -1
+     [java] Pred: enters Arg: SID bagging evidence best-match: -1
+     [java] Pred: sees Arg: SID bagging evidence best-match: -1
+     [java] Pred: sees Arg: DON enters best-match: -1
+     [java] walk:
+     [java]     A0: DAVID and COLBY
+     [java]     AM-DIR: up
+     [java] speak:
+     [java]     A0: DAVID
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: walk Arg: DAVID and COLBY best-match: 0
+     [java] ANIMATE
+     [java] DAVID-1, beg --- 154 , end --- 159
+     [java] ANIMATE
+     [java] DAVID-1, beg --- 154 , end --- 159
+     [java] UNKNOWN
+     [java] COLBY-3, beg --- 164 , end --- 169
+     [java] Pred: speaks Arg: DAVID best-match: 3
+     [java] ANIMATE
+     [java] DAVID-7, beg --- 182 , end --- 187
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] nod:
+     [java]     A0: Colby
+     [java]     A1: to SID bagging the six --- pack of beers
+     [java] bag:
+     [java]     A0: SID
+     [java]     A1: the six --- pack of beers
+     [java]     AA: Colby
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: nods Arg: Colby best-match: 0
+     [java] ANIMATE
+     [java] Colby-1, beg --- 233 , end --- 238
+     [java] Pred: nods Arg: to SID bagging the six --- pack of beers best-match: -1
+     [java] Pred: bagging Arg: SID best-match: -1
+     [java] Pred: bagging Arg: the six --- pack of beers best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: COLBY best-match: 5
+     [java] UNKNOWN
+     [java] COLBY-13, beg --- 287 , end --- 292
+     [java] spy:
+     [java]     A0: Don
+     [java]     A1: a WOMAN , 35 , well dressed
+     [java]     AM-MNR: with a YOUNG COUPLE
+     [java] dress:
+     [java]     A1: a WOMAN , 35 ,
+     [java]     AM-MNR: well
+     [java] 
+     [java] Pred: spies Arg: a WOMAN , 35 , well dressed best-match: 1
+     [java] ANIMATE
+     [java] WOMAN-4, beg --- 324 , end --- 329
+     [java] ANIMATE
+     [java] WOMAN-4, beg --- 324 , end --- 329
+     [java] Pred: spies Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 312 , end --- 315
+     [java] Pred: dressed Arg: a WOMAN , 35 , best-match: 1
+     [java] ANIMATE
+     [java] WOMAN-4, beg --- 324 , end --- 329
+     [java] ANIMATE
+     [java] WOMAN-4, beg --- 324 , end --- 329
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] take:
+     [java]     A0: Don
+     [java]     A1: a closer look at the body
+     [java] 
+     [java] Pred: takes Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 394 , end --- 397
+     [java] Pred: takes Arg: a closer look at the body best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] enter:
+     [java]     A0: LARRY'S OFFICE
+     [java]     AM-ADV: carrying a briefcase
+     [java] carry:
+     [java]     A0: LARRY'S OFFICE - NIGHT 3 CHARLIE enters
+     [java]     A1: a briefcase
+     [java] look:
+     [java]     A0: LARRY'S OFFICE - NIGHT 3 CHARLIE enters , carrying a briefcase ,
+     [java]     AM-DIR: around
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: enters Arg: LARRY'S OFFICE best-match: 1
+     [java] UNKNOWN
+     [java] LARRY-1, beg --- 467 , end --- 472
+     [java] Pred: carrying Arg: LARRY'S OFFICE - NIGHT 3 CHARLIE enters best-match: 4
+     [java] UNKNOWN
+     [java] LARRY-1, beg --- 467 , end --- 472
+     [java] INANIMATE
+     [java] CHARLIE-7, beg --- 492 , end --- 499
+     [java] Pred: carrying Arg: a briefcase best-match: -1
+     [java] Pred: looks Arg: LARRY'S OFFICE - NIGHT 3 CHARLIE enters , carrying a briefcase , best-match: 4
+     [java] INANIMATE
+     [java] CHARLIE-7, beg --- 492 , end --- 499
+     [java] Pred: speaks Arg: LARRY best-match: 6
+     [java] ANIMATE
+     [java] LARRY-17, beg --- 547 , end --- 552
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] turn:
+     [java]     A1: He
+     [java]     AM-PNC: to see LARRY on an inversion table , inverted
+     [java] see:
+     [java]     A0: He
+     [java]     A1: LARRY
+     [java]     AM-LOC: on an inversion table
+     [java] 
+     [java] Pred: turns Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 572 , end --- 574
+     [java] Pred: see Arg: LARRY best-match: 1
+     [java] ANIMATE
+     [java] LARRY-5, beg --- 588 , end --- 593
+     [java] Pred: see Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 572 , end --- 574
+     [java] come:
+     [java]     A1: apology
+     [java] speak:
+     [java]     A0: apology is coming , Charles ,
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: coming Arg: apology best-match: -1
+     [java] Pred: speaks Arg: apology is coming , Charles , best-match: 0
+     [java] ANIMATE
+     [java] Charles-5, beg --- 647 , end --- 654
+     [java] ANIMATE
+     [java] Charles-5, beg --- 647 , end --- 654
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 2
+     [java] ANIMATE
+     [java] LARRY-9, beg --- 721 , end --- 726
+     [java] pull:
+     [java]     A0: Charlie
+     [java]     A1: a gift --- bag from his briefcase
+     [java]     A2: out
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: pulls Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 746 , end --- 753
+     [java] Pred: pulls Arg: out best-match: -1
+     [java] Pred: pulls Arg: a gift --- bag from his briefcase best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 4
+     [java] ANIMATE
+     [java] LARRY-12, beg --- 800 , end --- 805
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: LARRY best-match: 0
+     [java] ANIMATE
+     [java] LARRY-1, beg --- 827 , end --- 832
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] take:
+     [java]     A0: Larry
+     [java]     A1: the gift bag
+     [java] open:
+     [java]     A0: Larry
+     [java]     A1: it to find
+     [java]     C-A1: a faded T --- shirt ---- his shirt
+     [java] find:
+     [java]     A0: it
+     [java]     A1: a faded T --- shirt ---- his shirt
+     [java] fade:
+     [java]     A1: ---- his shirt
+     [java] 
+     [java] Pred: takes Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 852 , end --- 857
+     [java] Pred: takes Arg: the gift bag best-match: -1
+     [java] Pred: opens Arg: it to find best-match: -1
+     [java] Pred: opens Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 852 , end --- 857
+     [java] Pred: find Arg: it best-match: -1
+     [java] Pred: find Arg: a faded T --- shirt ---- his shirt best-match: -1
+     [java] Pred: faded Arg: ---- his shirt best-match: -1
+     [java] coref (FLASH) --- key: 0_5
+     [java] coref (swings) --- key: 681_687
+     [java] coref (PHOTOGRAPHER) --- key: 19_31
+     [java] COREF --------------
+     [java] mention: PHOTOGRAPHER, coref: PHOTOGRAPHER
+     [java] coref (table) --- key: 610_615
+     [java] coref (photo) --- key: 40_45
+     [java] coref (Charles) --- key: 647_654
+     [java] COREF --------------
+     [java] mention: Charles, coref: Charles
+     [java] coref (Charles) --- key: 647_654
+     [java] COREF --------------
+     [java] mention: Charles, coref: Charles
+     [java] coref (duct) --- key: 60_64
+     [java] coref (bag) --- key: 773_776
+     [java] coref (bag) --- key: 873_876
+     [java] coref (it) --- key: 884_886
+     [java] coref (our) --- key: 49_52
+     [java] coref (Coroner) --- key: 98_105
+     [java] coref (Uniforms) --- key: 76_84
+     [java] coref (Uniforms) --- key: 76_84
+     [java] coref (Detectives) --- key: 86_96
+     [java] coref (T) --- key: 906_907
+     [java] coref (SID) --- key: 132_135
+     [java] coref (DAVID) --- key: 154_159
+     [java] COREF --------------
+     [java] mention: DAVID, coref: DAVID
+     [java] coref (DAVID) --- key: 182_187
+     [java] COREF --------------
+     [java] mention: DAVID, coref: DAVID
+     [java] coref (DAVID) --- key: 154_159
+     [java] COREF --------------
+     [java] mention: DAVID, coref: DAVID
+     [java] coref (COLBY) --- key: 164_169
+     [java] COREF --------------
+     [java] mention: COLBY, coref: COLBY
+     [java] coref (Colby) --- key: 233_238
+     [java] COREF --------------
+     [java] mention: Colby, coref: COLBY
+     [java] coref (COLBY) --- key: 287_292
+     [java] COREF --------------
+     [java] mention: COLBY, coref: COLBY
+     [java] coref (dialogue) --- key: 197_205
+     [java] coref (dialogue) --- key: 223_231
+     [java] coref (dialogue) --- key: 302_310
+     [java] coref (dialogue) --- key: 384_392
+     [java] coref (dialogue) --- key: 457_465
+     [java] coref (dialogue) --- key: 562_570
+     [java] coref (dialogue) --- key: 665_673
+     [java] coref (dialogue) --- key: 736_744
+     [java] coref (dialogue) --- key: 815_823
+     [java] coref (dialogue) --- key: 842_850
+     [java] coref (shirt) --- key: 925_930
+     [java] coref (SID) --- key: 247_250
+     [java] coref (six) --- key: 263_266
+     [java] coref (beers) --- key: 277_282
+     [java] coref (pack) --- key: 269_273
+     [java] coref (35) --- key: 331_333
+     [java] coref (WOMAN) --- key: 324_329
+     [java] COREF --------------
+     [java] mention: WOMAN, coref: WOMAN
+     [java] coref (WOMAN) --- key: 324_329
+     [java] COREF --------------
+     [java] mention: WOMAN, coref: WOMAN
+     [java] coref (Don) --- key: 312_315
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 394_397
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (COUPLE) --- key: 362_368
+     [java] coref (body) --- key: 425_429
+     [java] coref (CHARLIE) --- key: 492_499
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (Charlie) --- key: 746_753
+     [java] COREF --------------
+     [java] mention: Charlie, coref: CHARLIE
+     [java] coref (his) --- key: 782_785
+     [java] coref (3) --- key: 490_491
+     [java] coref (LARRY) --- key: 467_472
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (LARRY) --- key: 547_552
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (He) --- key: 572_574
+     [java] COREF --------------
+     [java] mention: He, coref: LARRY
+     [java] coref (Larry) --- key: 675_680
+     [java] coref (LARRY) --- key: 721_726
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (LARRY) --- key: 800_805
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (LARRY) --- key: 827_832
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (Larry) --- key: 852_857
+     [java] COREF --------------
+     [java] mention: Larry, coref: LARRY
+     [java] coref (his) --- key: 921_924
+     [java] coref (OFFICE) --- key: 475_481
+     [java] coref (briefcase) --- key: 519_528
+     [java] coref (briefcase) --- key: 786_795
+     [java] coref (NIGHT) --- key: 484_489
+     [java] coref (table) --- key: 610_615
+     [java] coref (LARRY) --- key: 588_593
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] 
+     [java] jar:
+     [java]     A0: PHOTOS ( crime scene photos and DMV photos ) of SCOTT TILLMAN , white , 40
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: JARED Arg: PHOTOS ( crime scene photos and DMV photos ) of SCOTT TILLMAN , white , 40 best-match: 6
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 14
+     [java] ANIMATE
+     [java] CHARLIE-30, beg --- 140 , end --- 147
+     [java] show:
+     [java]     A1: the THREE HOUSE LOCATIONS
+     [java] 
+     [java] Pred: showing Arg: the THREE HOUSE LOCATIONS best-match: -1
+     [java] 
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 329 , end --- 336
+     [java] speak:
+     [java]     A0: CHARLIE ( o.s.)
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE ( o.s.) best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 358 , end --- 365
+     [java] sit:
+     [java]     AM-MOD: REVEAL
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 4
+     [java] ANIMATE
+     [java] CHARLIE-10, beg --- 437 , end --- 444
+     [java] see:
+     [java]     A0: WE
+     [java] apply:
+     [java]     A1: a CLOZHES
+     [java]     AM-ADV: onto the FIGURE ( as with -- Colorforms -- )
+     [java] 
+     [java] Pred: SEE Arg: WE best-match: -1
+     [java] Pred: applied Arg: a CLOZHES best-match: -1
+     [java] cloihes:
+     [java]     A0: Ihe
+     [java] 
+     [java] Pred: CLOIHES Arg: Ihe best-match: -1
+     [java] 
+     [java] cloihes:
+     [java]     A0: Ihe
+     [java]     A2: rotate quickly for DIEEERENT.RERSONALITIES : PIRE-SMOKING
+     [java]     AM-TMP: now
+     [java] rotate:
+     [java]     A1: Ihe CLOIHES
+     [java]     AM-MNR: quickly
+     [java]     AM-TMP: now
+     [java] smoke:
+     [java] 
+     [java] Pred: CLOIHES Arg: Ihe best-match: -1
+     [java] Pred: CLOIHES Arg: rotate quickly for DIEEERENT.RERSONALITIES : PIRE-SMOKING best-match: -1
+     [java] Pred: rotate Arg: Ihe CLOIHES best-match: -1
+     [java] 
+     [java] coref (Don) --- key: 0_3
+     [java] coref (Don) --- key: 0_3
+     [java] coref (David) --- key: 12_17
+     [java] coref (MEGAN) --- key: 5_10
+     [java] coref (TILLMAN) --- key: 83_90
+     [java] coref (HOLT) --- key: 109_113
+     [java] coref (HOLT) --- key: 109_113
+     [java] coref (55) --- key: 135_137
+     [java] coref (CHARLIE) --- key: 140_147
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (CHARLIE) --- key: 329_336
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (Charlie) --- key: 403_410
+     [java] coref (CHARLIE) --- key: 437_444
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (PLASMAS) --- key: 22_29
+     [java] coref (PHOTOS) --- key: 31_37
+     [java] coref (PHOTOS) --- key: 31_37
+     [java] coref (photos) --- key: 51_57
+     [java] coref (photos) --- key: 51_57
+     [java] coref (white) --- key: 92_97
+     [java] coref (white) --- key: 92_97
+     [java] coref (40) --- key: 99_101
+     [java] coref (photos) --- key: 66_72
+     [java] coref (dialogue) --- key: 157_165
+     [java] coref (dialogue) --- key: 346_354
+     [java] coref (dialogue) --- key: 382_390
+     [java] coref (dialogue) --- key: 454_462
+     [java] coref (American) --- key: 125_133
+     [java] coref (THREE) --- key: 195_200
+     [java] coref (LOCATIONS) --- key: 207_216
+     [java] coref (L.A.) --- key: 178_182
+     [java] coref (Colonial) --- key: 285_293
+     [java] coref (HOUSES) --- key: 236_242
+     [java] coref (photos) --- key: 222_228
+     [java] coref (bungalow) --- key: 260_268
+     [java] coref (bungalow) --- key: 260_268
+     [java] coref (ranch) --- key: 313_318
+     [java] coref (two) --- key: 272_275
+     [java] coref (storey) --- key: 278_284
+     [java] coref (one) --- key: 301_304
+     [java] coref (NOW) --- key: 399_402
+     [java] coref (now) --- key: 678_681
+     [java] coref (o.s.) --- key: 367_371
+     [java] coref (CHARLIE) --- key: 358_365
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (Charlie) --- key: 403_410
+     [java] coref (Larry) --- key: 415_420
+     [java] coref (CLOZHES) --- key: 495_502
+     [java] coref (WE) --- key: 486_488
+     [java] coref (BEGINIAUDIENCE) --- key: 464_478
+     [java] coref (Colorforms) --- key: 542_552
+     [java] coref (sweatshirt) --- key: 557_567
+     [java] coref (FIGURE) --- key: 524_530
+     [java] coref (with) --- key: 535_539
+     [java] coref (pants) --- key: 622_627
+     [java] coref (shoes) --- key: 629_634
+     [java] coref (lands) --- key: 648_653
+     [java] coref (jeans) --- key: 569_574
+     [java] coref (sandals) --- key: 576_583
+     [java] coref (CLOIHES) --- key: 589_596
+     [java] coref (CLOIHES) --- key: 670_677
+     [java] coref (shirt) --- key: 615_620
+     [java] coref (shirt) --- key: 615_620
+     [java] coref (DIEEERENT.RERSONALITIES) --- key: 701_724
+     [java] coref (RRERPY) --- key: 762_768
+     [java] coref (ACADEMIC) --- key: 739_747
+     [java] coref (ONE) --- key: 794_797
+     [java] coref (arm) --- key: 661_664
+     [java] coref (HIP-HOP) --- key: 749_756
+     [java] coref (GUY) --- key: 757_760
+     [java] coref (GUY) --- key: 769_772
+     [java] coref (ACT) --- key: 790_793
+     [java] 
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: COLBY best-match: 0
+     [java] INANIMATE
+     [java] COLBY-1, beg --- 86 , end --- 91
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] coref (FBI) --- key: 0_3
+     [java] coref (dialogue) --- key: 101_109
+     [java] coref (SECOND) --- key: 26_32
+     [java] coref (OFFICE) --- key: 4_10
+     [java] coref (BRIDGE) --- key: 13_19
+     [java] coref (BUMPER) --- key: 41_47
+     [java] coref (DOn) --- key: 54_57
+     [java] coref (Colby) --- key: 66_71
+     [java] coref (David) --- key: 59_64
+     [java] coref (COLBY) --- key: 86_91
+     [java] COREF --------------
+     [java] mention: COLBY, coref: Colby
+     [java] coref (move) --- key: 79_83
+     [java] 
+     [java] speak:
+     [java]     A0: ELAINE TILLMAN ( O.S.)
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ELAINE TILLMAN ( O.S.) best-match: 0
+     [java] ANIMATE
+     [java] TILLMAN-2, beg --- 171 , end --- 178
+     [java] 
+     [java] look:
+     [java]     A0: She
+     [java]     A1: to Megan
+     [java] 
+     [java] Pred: looks Arg: She best-match: 0
+     [java] ANIMATE
+     [java] She-1, beg --- 275 , end --- 278
+     [java] Pred: looks Arg: to Megan best-match: 1
+     [java] ANIMATE
+     [java] Megan-4, beg --- 288 , end --- 293
+     [java] coref (38) --- key: 46_48
+     [java] coref (40) --- key: 69_71
+     [java] coref (10) --- key: 89_91
+     [java] coref (one) --- key: 94_97
+     [java] coref (League) --- key: 128_134
+     [java] coref (13) --- key: 158_160
+     [java] coref (CLOSE) --- key: 0_5
+     [java] coref (PHOTOS) --- key: 22_28
+     [java] coref (TILLMAN) --- key: 37_44
+     [java] coref (TILLMAN) --- key: 37_44
+     [java] coref (his) --- key: 117_120
+     [java] coref (TILLMAN) --- key: 60_67
+     [java] coref (SON) --- key: 84_87
+     [java] coref (SON) --- key: 84_87
+     [java] coref (their) --- key: 78_83
+     [java] coref (son) --- key: 110_113
+     [java] coref (photo) --- key: 98_103
+     [java] coref (uniform) --- key: 135_142
+     [java] coref (DAUGHTER) --- key: 148_156
+     [java] coref (O.S.) --- key: 180_184
+     [java] coref (She) --- key: 275_278
+     [java] COREF --------------
+     [java] mention: She, coref: O.S.
+     [java] coref (TILLMAN) --- key: 171_178
+     [java] COREF --------------
+     [java] mention: TILLMAN, coref: TILLMAN
+     [java] coref (UP) --- key: 210_212
+     [java] coref (dialogue) --- key: 195_203
+     [java] coref (TILLMAN) --- key: 229_236
+     [java] coref (TILLMAN) --- key: 229_236
+     [java] coref (strength) --- key: 265_273
+     [java] coref (Megan) --- key: 288_293
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] be:
+     [java]     A1: Charlie
+     [java]     AM-EXT: at his laptop
+     [java] 
+     [java] Pred: is Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] 
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 0
+     [java] ANIMATE
+     [java] LARRY-5, beg --- 59 , end --- 64
+     [java] smile:
+     [java]     A0: Larry
+     [java]     A1: On Larry
+     [java] 
+     [java] Pred: smiles Arg: On Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-2, beg --- 87 , end --- 92
+     [java] Pred: smiles Arg: Larry best-match: 1
+     [java] ANIMATE
+     [java] Larry-4, beg --- 94 , end --- 99
+     [java] 
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 153 , end --- 160
+     [java] 
+     [java] speak:
+     [java]     A0: AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: AMITA best-match: 0
+     [java] ANIMATE
+     [java] AMITA-1, beg --- 212 , end --- 217
+     [java] return:
+     [java]     A1: They
+     [java]     A4: to their work
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: return Arg: They best-match: 0
+     [java] ANIMATE
+     [java] They-1, beg --- 237 , end --- 241
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 3
+     [java] ANIMATE
+     [java] CHARLIE-7, beg --- 267 , end --- 274
+     [java] stop:
+     [java]     A1: Charlie
+     [java] return:
+     [java]     A1: he
+     [java] 
+     [java] Pred: stops Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 294 , end --- 301
+     [java] Pred: returns Arg: he best-match: 3
+     [java] ANIMATE
+     [java] he-10, beg --- 337 , end --- 339
+     [java] coref (smile) --- key: 181_186
+     [java] coref (Charlie) --- key: 0_7
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (his) --- key: 14_17
+     [java] coref (CHARLIE) --- key: 153_160
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (CHARLIE) --- key: 267_274
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 294_301
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (he) --- key: 337_339
+     [java] COREF --------------
+     [java] mention: he, coref: Charlie
+     [java] coref (glee) --- key: 205_209
+     [java] coref (laptop) --- key: 18_24
+     [java] coref (AMITA) --- key: 212_217
+     [java] COREF --------------
+     [java] mention: AMITA, coref: AMITA
+     [java] coref (LARRY) --- key: 59_64
+     [java] COREF --------------
+     [java] mention: LARRY, coref: Larry
+     [java] coref (Larry) --- key: 87_92
+     [java] COREF --------------
+     [java] mention: Larry, coref: Larry
+     [java] coref (Larry) --- key: 94_99
+     [java] COREF --------------
+     [java] mention: Larry, coref: Larry
+     [java] coref (his) --- key: 108_111
+     [java] coref (Larry) --- key: 190_195
+     [java] coref (Larry) --- key: 321_326
+     [java] coref (They) --- key: 237_241
+     [java] COREF --------------
+     [java] mention: They, coref: They
+     [java] coref (their) --- key: 252_257
+     [java] coref (dialogue) --- key: 74_82
+     [java] coref (dialogue) --- key: 170_178
+     [java] coref (dialogue) --- key: 227_235
+     [java] coref (dialogue) --- key: 284_292
+     [java] coref (work) --- key: 258_262
+     [java] coref (ebullience) --- key: 112_122
+     [java] coref (checks) --- key: 132_138
+     [java] coref (look) --- key: 329_333
+     [java] coref (display) --- key: 143_150
+     [java] stack:
+     [java]     A1: Megan
+     [java] pile:
+     [java]     A1: a stack of files
+     [java] 
+     [java] Pred: stack Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 0 , end --- 5
+     [java] Pred: piled Arg: a stack of files best-match: -1
+     [java] walk:
+     [java]     A0: David
+     [java]     AM-DIR: up
+     [java] speak:
+     [java]     A0: DAVID
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: walks Arg: David best-match: 0
+     [java] ANIMATE
+     [java] David-1, beg --- 43 , end --- 48
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DAVID best-match: 1
+     [java] ANIMATE
+     [java] DAVID-5, beg --- 62 , end --- 67
+     [java] coref (Megan) --- key: 0_5
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (desk) --- key: 13_17
+     [java] coref (desk) --- key: 13_17
+     [java] coref (her) --- key: 9_12
+     [java] coref (files) --- key: 30_35
+     [java] coref (David) --- key: 43_48
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (DAVID) --- key: 62_67
+     [java] COREF --------------
+     [java] mention: DAVID, coref: David
+     [java] coref (dialogue) --- key: 77_85
+     [java] sit:
+     [java]     A1: Charlie and Amita
+     [java]     AM-MNR: opposite
+     [java] work:
+     [java]     A0: Charlie and Amita
+     [java] 
+     [java] Pred: sit Arg: Charlie and Amita best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] ANIMATE
+     [java] Amita-3, beg --- 12 , end --- 17
+     [java] Pred: working Arg: Charlie and Amita best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] ANIMATE
+     [java] Amita-3, beg --- 12 , end --- 17
+     [java] look:
+     [java]     A0: Amita
+     [java]     A1: from her laptop , frustrated
+     [java]     AM-DIR: up
+     [java] frustrate:
+     [java]     A1: her laptop
+     [java] 
+     [java] Pred: looks Arg: Amita best-match: 0
+     [java] ANIMATE
+     [java] Amita-1, beg --- 41 , end --- 46
+     [java] Pred: looks Arg: from her laptop , frustrated best-match: -1
+     [java] Pred: frustrated Arg: her laptop best-match: -1
+     [java] see:
+     [java]     A0: she
+     [java] live:
+     [java]     A0: Room
+     [java] talk:
+     [java]     A0: ALAN
+     [java]     A2: on his cell
+     [java]     AM-MNR: quietly
+     [java] 
+     [java] Pred: sees Arg: she best-match: 0
+     [java] ANIMATE
+     [java] she-3, beg --- 98 , end --- 101
+     [java] Pred: Living Arg: Room best-match: -1
+     [java] Pred: talking Arg: ALAN best-match: -1
+     [java] Pred: talking Arg: on his cell best-match: -1
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 172 , end --- 179
+     [java] watch:
+     [java]     A0: Amita
+     [java]     AM-MNR: as Alan ends his call
+     [java] end:
+     [java]     A0: Alan
+     [java]     A1: his call
+     [java] speak:
+     [java]     A0: AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: watches Arg: Amita best-match: 0
+     [java] ANIMATE
+     [java] Amita-1, beg --- 199 , end --- 204
+     [java] Pred: ends Arg: Alan best-match: 1
+     [java] ANIMATE
+     [java] Alan-4, beg --- 216 , end --- 220
+     [java] Pred: ends Arg: his call best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: AMITA best-match: 4
+     [java] ANIMATE
+     [java] AMITA-9, beg --- 239 , end --- 244
+     [java] join:
+     [java]     A1: them
+     [java]     AM-MNR: in the Dining Room
+     [java] dine:
+     [java]     A0: Room
+     [java] 
+     [java] Pred: joins Arg: them best-match: 1
+     [java] ANIMATE
+     [java] them-4, beg --- 277 , end --- 281
+     [java] Pred: Dining Arg: Room best-match: -1
+     [java] speak:
+     [java]     A0: AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: AMITA best-match: 0
+     [java] ANIMATE
+     [java] AMITA-1, beg --- 303 , end --- 308
+     [java] realize:
+     [java]     A0: Amita and Charlie
+     [java]     A1: it
+     [java]     AM-TMP: at the same time
+     [java] speak:
+     [java]     A0: ALAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: realize Arg: Amita and Charlie best-match: 2
+     [java] ANIMATE
+     [java] Amita-1, beg --- 328 , end --- 333
+     [java] ANIMATE
+     [java] Amita-1, beg --- 328 , end --- 333
+     [java] ANIMATE
+     [java] Charlie-3, beg --- 338 , end --- 345
+     [java] Pred: realize Arg: it best-match: -1
+     [java] Pred: speaks Arg: ALAN best-match: 5
+     [java] UNKNOWN
+     [java] ALAN-11, beg --- 378 , end --- 382
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: ALAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ALAN best-match: 0
+     [java] UNKNOWN
+     [java] ALAN-1, beg --- 404 , end --- 408
+     [java] spread:
+     [java]     A1: notices
+     [java]     AM-LOC: on the table
+     [java]     C-V: out
+     [java] 
+     [java] Pred: spread Arg: notices best-match: -1
+     [java] speak:
+     [java]     A0: ALAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ALAN best-match: 0
+     [java] UNKNOWN
+     [java] ALAN-1, beg --- 473 , end --- 477
+     [java] 
+     [java] SRL failed for sentence: Charlie looks down at the map Of GREATER L.A. ShOWing the THREE HOUSE LOCATIONS... FZASH'CHARLIE VISION Details (maybe_pqpping up in 3-D) appear around each of the HUUHES: 8 CHURCH} FIREHUUSE, SCHOOL, HUSPIZAL... BACK TU SCENE
+     [java] Continuing ...
+     [java] coref (Charlie) --- key: 0_7
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (his) --- key: 161_164
+     [java] coref (CHARLIE) --- key: 172_179
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 338_345
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 529_536
+     [java] coref (Amita) --- key: 12_17
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (Amita) --- key: 41_46
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (her) --- key: 61_64
+     [java] coref (she) --- key: 98_101
+     [java] COREF --------------
+     [java] mention: she, coref: Amita
+     [java] coref (Amita) --- key: 199_204
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (AMITA) --- key: 239_244
+     [java] COREF --------------
+     [java] mention: AMITA, coref: Amita
+     [java] coref (AMITA) --- key: 303_308
+     [java] COREF --------------
+     [java] mention: AMITA, coref: Amita
+     [java] coref (Amita) --- key: 328_333
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (Charlie) --- key: 0_7
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (HUSPIZAL) --- key: 730_738
+     [java] coref (FIREHUUSE) --- key: 711_720
+     [java] coref (opposite) --- key: 22_30
+     [java] coref (laptop) --- key: 65_71
+     [java] coref (SCHOOL) --- key: 722_728
+     [java] coref (pacing) --- key: 115_121
+     [java] coref (Room) --- key: 136_140
+     [java] coref (Room) --- key: 136_140
+     [java] coref (cell) --- key: 165_169
+     [java] coref (dialogue) --- key: 189_197
+     [java] coref (dialogue) --- key: 254_262
+     [java] coref (dialogue) --- key: 318_326
+     [java] coref (it) --- key: 354_356
+     [java] coref (dialogue) --- key: 392_400
+     [java] coref (dialogue) --- key: 418_426
+     [java] coref (dialogue) --- key: 487_495
+     [java] coref (Alan) --- key: 216_220
+     [java] COREF --------------
+     [java] mention: Alan, coref: Alan
+     [java] coref (his) --- key: 226_229
+     [java] coref (ALAN) --- key: 378_382
+     [java] COREF --------------
+     [java] mention: ALAN, coref: Alan
+     [java] coref (ALAN) --- key: 404_408
+     [java] COREF --------------
+     [java] mention: ALAN, coref: Alan
+     [java] coref (ALAN) --- key: 473_477
+     [java] COREF --------------
+     [java] mention: ALAN, coref: Alan
+     [java] coref (Alan) --- key: 497_501
+     [java] coref (call) --- key: 230_234
+     [java] coref (and) --- key: 267_270
+     [java] coref (them) --- key: 277_281
+     [java] COREF --------------
+     [java] mention: them, coref: and
+     [java] coref (Room) --- key: 296_300
+     [java] coref (Amita) --- key: 328_333
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (time) --- key: 369_373
+     [java] coref (work) --- key: 442_446
+     [java] coref (notices) --- key: 428_435
+     [java] coref (their) --- key: 436_441
+     [java] coref (table) --- key: 465_470
+     [java] coref (kitchen) --- key: 520_527
+     [java] coref (exits) --- key: 507_512
+     [java] coref (8) --- key: 701_702
+     [java] coref (THREE) --- key: 587_592
+     [java] coref (FZASH) --- key: 612_617
+     [java] coref (LOCATIONS) --- key: 599_608
+     [java] coref (L.A.) --- key: 570_574
+     [java] coref (map) --- key: 555_558
+     [java] coref (each) --- key: 681_685
+     [java] coref (3-D) --- key: 662_665
+     [java] coref (Details) --- key: 633_640
+     [java] coref (CHURCH) --- key: 703_709
+     [java] coref (HUUHES) --- key: 693_699
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 1 , end --- 8
+     [java] speak:
+     [java]     A0: DAVID
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: DAVID best-match: 4
+     [java] ANIMATE
+     [java] DAVID-9, beg --- 67 , end --- 72
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-1, beg --- 146 , end --- 151
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] SRL failed for sentence: She picks up another file, reads...  MEGAN (cont'd) speaks a dialogue.
+     [java] Continuing ...
+     [java] speak:
+     [java]     A0: DAVID
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: DAVID best-match: 0
+     [java] ANIMATE
+     [java] DAVID-1, beg --- 244 , end --- 249
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] look:
+     [java]     A0: Megan
+     [java]     A1: at Don
+     [java] 
+     [java] Pred: looks Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 269 , end --- 274
+     [java] Pred: looks Arg: at Don best-match: 1
+     [java] UNKNOWN
+     [java] Don-4, beg --- 284 , end --- 287
+     [java] coref (look) --- key: 307_311
+     [java] coref (CHARLIE) --- key: 1_8
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (dialogue) --- key: 18_26
+     [java] coref (dialogue) --- key: 82_90
+     [java] coref (dialogue) --- key: 161_169
+     [java] coref (dialogue) --- key: 232_240
+     [java] coref (dialogue) --- key: 259_267
+     [java] coref (MEGAN) --- key: 291_296
+     [java] coref (Don) --- key: 28_31
+     [java] coref (Don) --- key: 284_287
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (David) --- key: 36_41
+     [java] coref (DAVID) --- key: 67_72
+     [java] COREF --------------
+     [java] mention: DAVID, coref: David
+     [java] coref (DAVID) --- key: 244_249
+     [java] COREF --------------
+     [java] mention: DAVID, coref: David
+     [java] coref (Don) --- key: 28_31
+     [java] coref (Bullpen) --- key: 55_62
+     [java] coref (t0) --- key: 118_120
+     [java] coref (They) --- key: 92_96
+     [java] coref (BULLPEN) --- key: 107_114
+     [java] coref (Megan) --- key: 126_131
+     [java] coref (MEGAN) --- key: 146_151
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: Megan
+     [java] coref (She) --- key: 171_174
+     [java] coref (MEGAN) --- key: 208_213
+     [java] coref (Megan) --- key: 269_274
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (desk) --- key: 139_143
+     [java] coref (her) --- key: 135_138
+     [java] coref (file) --- key: 192_196
+     [java] coref (cont) --- key: 215_219
+     [java] run:
+     [java]     A1: the facts
+     [java]     AM-MNR: TWO SECOND GRAPHIC BUMPER : Don , Megan , Colby
+     [java] 
+     [java] Pred: run Arg: the facts best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] 
+     [java] coref (SECOND) --- key: 4_10
+     [java] coref (Megan) --- key: 32_37
+     [java] coref (BUMPER) --- key: 19_25
+     [java] coref (Colby) --- key: 39_44
+     [java] coref (Don) --- key: 27_30
+     [java] coref (COLBY) --- key: 85_90
+     [java] coref (facts) --- key: 53_58
+     [java] coref (dialogue) --- key: 74_82
+     [java] observe:
+     [java]     A0: Megan
+     [java]     AM-ADV: as Elaine Tillman cleans up the mess from her kids --- breakfast ( cereal , spilled milk , etc )
+     [java] clean:
+     [java]     A0: Elaine Tillman
+     [java]     A1: the mess from her kids
+     [java]     AM-ADV: --- breakfast ( cereal , spilled milk , etc )
+     [java]     C-V: up
+     [java] spill:
+     [java]     A0: Elaine Tillman
+     [java]     A1: cereal
+     [java]     A2: milk
+     [java] 
+     [java] Pred: observes Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 0 , end --- 5
+     [java] Pred: cleans Arg: Elaine Tillman best-match: 1
+     [java] ANIMATE
+     [java] Tillman-6, beg --- 26 , end --- 33
+     [java] Pred: cleans Arg: the mess from her kids best-match: 3
+     [java] ANIMATE
+     [java] kids-13, beg --- 62 , end --- 66
+     [java] Pred: spilled Arg: milk best-match: -1
+     [java] Pred: spilled Arg: Elaine Tillman best-match: 1
+     [java] ANIMATE
+     [java] Tillman-6, beg --- 26 , end --- 33
+     [java] Pred: spilled Arg: cereal best-match: -1
+     [java] speak:
+     [java]     A0: ELAINE TILLMAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ELAINE TILLMAN best-match: 1
+     [java] ANIMATE
+     [java] TILLMAN-6, beg --- 133 , end --- 140
+     [java] measure:
+     [java]     A0: Megan
+     [java]     A1: Elaine
+     [java] lock:
+     [java]     A1: her eyes
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: measures Arg: Elaine best-match: 1
+     [java] ANIMATE
+     [java] Elaine-3, beg --- 175 , end --- 181
+     [java] ANIMATE
+     [java] Elaine-3, beg --- 175 , end --- 181
+     [java] Pred: measures Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 160 , end --- 165
+     [java] Pred: locked Arg: her eyes best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: MEGAN best-match: 5
+     [java] ANIMATE
+     [java] MEGAN-10, beg --- 206 , end --- 211
+     [java] react:
+     [java]     A0: Elaine
+     [java] 
+     [java] Pred: reacts Arg: Elaine best-match: 4
+     [java] ANIMATE
+     [java] Elaine-9, beg --- 267 , end --- 273
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-1, beg --- 283 , end --- 288
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] devastate:
+     [java]     A1: ------
+     [java] fail:
+     [java]     A2: as wife and mother
+     [java] 
+     [java] Pred: devastated Arg: ------ best-match: -1
+     [java] Pred: failed Arg: as wife and mother best-match: 3
+     [java] ANIMATE
+     [java] wife-10, beg --- 355 , end --- 359
+     [java] coref (Megan) --- key: 0_5
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (her) --- key: 58_61
+     [java] coref (Megan) --- key: 160_165
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (her) --- key: 183_186
+     [java] coref (MEGAN) --- key: 206_211
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: Megan
+     [java] coref (Megan) --- key: 231_236
+     [java] coref (MEGAN) --- key: 283_288
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: Megan
+     [java] coref (Tillman) --- key: 26_33
+     [java] COREF --------------
+     [java] mention: Tillman, coref: Tillman
+     [java] coref (TILLMAN) --- key: 133_140
+     [java] COREF --------------
+     [java] mention: TILLMAN, coref: Tillman
+     [java] coref (mess) --- key: 48_52
+     [java] coref (------) --- key: 326_332
+     [java] coref (wife) --- key: 355_359
+     [java] COREF --------------
+     [java] mention: wife, coref: wife
+     [java] coref (kids) --- key: 62_66
+     [java] COREF --------------
+     [java] mention: kids, coref: kids
+     [java] coref (kids) --- key: 261_265
+     [java] coref (their) --- key: 255_260
+     [java] coref (look) --- key: 321_325
+     [java] coref (breakfast) --- key: 70_79
+     [java] coref (cereal) --- key: 81_87
+     [java] coref (milk) --- key: 97_101
+     [java] coref (milk) --- key: 97_101
+     [java] coref (vibe) --- key: 117_121
+     [java] coref (dialogue) --- key: 150_158
+     [java] coref (dialogue) --- key: 221_229
+     [java] coref (dialogue) --- key: 298_306
+     [java] coref (Elaine) --- key: 175_181
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (Elaine) --- key: 175_181
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (Elaine) --- key: 267_273
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (Elaine) --- key: 312_318
+     [java] coref (eyes) --- key: 187_191
+     [java] coref (photo) --- key: 246_251
+     [java] spread:
+     [java]     A1: their work
+     [java]     C-V: out
+     [java] 
+     [java] Pred: spread Arg: their work best-match: -1
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 5
+     [java] ANIMATE
+     [java] CHARLIE-9, beg --- 100 , end --- 107
+     [java] struggle:
+     [java]     A0: Charlie
+     [java] speak:
+     [java]     A0: CHARLIE ( cont 'd )
+     [java]     A1: a dialogue
+     [java]     AM-TMP: as Charlie struggles with his emotions
+     [java] 
+     [java] Pred: struggles Arg: Charlie best-match: 2
+     [java] ANIMATE
+     [java] Charlie-5, beg --- 144 , end --- 151
+     [java] Pred: speaks Arg: CHARLIE ( cont 'd ) best-match: 5
+     [java] ANIMATE
+     [java] CHARLIE-11, beg --- 184 , end --- 191
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: AMITA AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: AMITA AMITA best-match: 0
+     [java] ANIMATE
+     [java] AMITA-2, beg --- 228 , end --- 233
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] turn:
+     [java]     A0: She
+     [java]     A1: her laptop
+     [java]     AM-ADV: so he can see it
+     [java] see:
+     [java]     A0: he
+     [java]     A1: it
+     [java]     AM-MOD: can
+     [java] 
+     [java] Pred: turns Arg: her laptop best-match: -1
+     [java] Pred: turns Arg: She best-match: 0
+     [java] ANIMATE
+     [java] She-1, beg --- 253 , end --- 256
+     [java] Pred: see Arg: he best-match: 3
+     [java] ANIMATE
+     [java] he-6, beg --- 277 , end --- 279
+     [java] Pred: see Arg: it best-match: -1
+     [java] see:
+     [java]     A0: we
+     [java]     A1: the map of GREATER L.A.
+     [java] show:
+     [java]     A0: Onscreen we see the map of GREATER L.A.
+     [java]     A1: the THREE HOUSE LOCATIONS
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: see Arg: we best-match: 1
+     [java] ANIMATE
+     [java] we-2, beg --- 301 , end --- 303
+     [java] Pred: see Arg: the map of GREATER L.A. best-match: -1
+     [java] Pred: showing Arg: Onscreen we see the map of GREATER L.A. best-match: 1
+     [java] Pred: showing Arg: the THREE HOUSE LOCATIONS best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 6
+     [java] ANIMATE
+     [java] CHARLIE-15, beg --- 370 , end --- 377
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] punch:
+     [java]     A0: She
+     [java]     A1: neighborhood details on the map
+     [java]     AM-DIR: up
+     [java] appear:
+     [java]     A1: schools , playgrounds , malls , internet cafes , etc.
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: punches Arg: neighborhood details on the map best-match: -1
+     [java] Pred: punches Arg: She best-match: 0
+     [java] ANIMATE
+     [java] She-1, beg --- 397 , end --- 400
+     [java] Pred: appear Arg: schools , playgrounds , malls , internet cafes , etc. best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 4
+     [java] ANIMATE
+     [java] CHARLIE-22, beg --- 506 , end --- 513
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 2
+     [java] ANIMATE
+     [java] CHARLIE-8, beg --- 567 , end --- 574
+     [java] 
+     [java] coref (THREE) --- key: 344_349
+     [java] coref (Charlie) --- key: 0_7
+     [java] coref (Charlie) --- key: 74_81
+     [java] coref (CHARLIE) --- key: 100_107
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 144_151
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (his) --- key: 167_170
+     [java] coref (CHARLIE) --- key: 184_191
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (he) --- key: 277_279
+     [java] COREF --------------
+     [java] mention: he, coref: Charlie
+     [java] coref (CHARLIE) --- key: 370_377
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (CHARLIE) --- key: 506_513
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (CHARLIE) --- key: 567_574
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Amita) --- key: 12_17
+     [java] coref (Amita) --- key: 59_64
+     [java] coref (her) --- key: 87_90
+     [java] coref (AMITA) --- key: 228_233
+     [java] COREF --------------
+     [java] mention: AMITA, coref: AMITA
+     [java] coref (She) --- key: 253_256
+     [java] COREF --------------
+     [java] mention: She, coref: AMITA
+     [java] coref (her) --- key: 263_266
+     [java] coref (She) --- key: 397_400
+     [java] COREF --------------
+     [java] mention: She, coref: AMITA
+     [java] coref (Charlie) --- key: 0_7
+     [java] coref (Charlie) --- key: 0_7
+     [java] coref (map) --- key: 312_315
+     [java] coref (map) --- key: 440_443
+     [java] coref (Onscreen) --- key: 292_300
+     [java] coref (table) --- key: 29_34
+     [java] coref (we) --- key: 301_303
+     [java] COREF --------------
+     [java] mention: we, coref: we
+     [java] coref (work) --- key: 42_46
+     [java] coref (LOCATIONS) --- key: 356_365
+     [java] coref (their) --- key: 36_41
+     [java] coref (L.A.) --- key: 327_331
+     [java] coref (details) --- key: 425_432
+     [java] coref (peers) --- key: 65_70
+     [java] coref (laptop) --- key: 91_97
+     [java] coref (laptop) --- key: 267_273
+     [java] coref (it) --- key: 288_290
+     [java] coref (laptop) --- key: 541_547
+     [java] coref (dialogue) --- key: 117_125
+     [java] coref (dialogue) --- key: 210_218
+     [java] coref (dialogue) --- key: 243_251
+     [java] coref (dialogue) --- key: 387_395
+     [java] coref (dialogue) --- key: 523_531
+     [java] coref (dialogue) --- key: 584_592
+     [java] coref (cafes) --- key: 483_488
+     [java] coref (beat) --- key: 135_139
+     [java] coref (MAP) --- key: 559_562
+     [java] coref (beat) --- key: 135_139
+     [java] coref (emotions) --- key: 171_179
+     [java] coref (cont) --- key: 193_197
+     [java] 
+     [java] 
+     [java] speak:
+     [java]     A0: # 311/48 " Killer Chat " BUFF REV LARRY ( cont 'd )
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: # 311/48 " Killer Chat " BUFF REV LARRY ( cont 'd ) best-match: 1
+     [java] UNKNOWN
+     [java] LARRY-9, beg --- 65 , end --- 70
+     [java] stop:
+     [java]     A0: He
+     [java]     A2: short
+     [java] want:
+     [java]     A0: He
+     [java]     A1: to continue
+     [java]     AM-NEG: not
+     [java] continue:
+     [java]     A0: He
+     [java] 
+     [java] Pred: stops Arg: short best-match: -1
+     [java] Pred: stops Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 99 , end --- 101
+     [java] Pred: wanting Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 99 , end --- 101
+     [java] Pred: wanting Arg: to continue best-match: -1
+     [java] Pred: continue Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 99 , end --- 101
+     [java] coref (Larry) --- key: 0_5
+     [java] coref (Megan) --- key: 10_15
+     [java] coref (Larry) --- key: 0_5
+     [java] coref (Chat) --- key: 49_53
+     [java] coref (LARRY) --- key: 65_70
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (He) --- key: 99_101
+     [java] COREF --------------
+     [java] mention: He, coref: LARRY
+     [java] coref (dialogue) --- key: 89_97
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: LARRY best-match: 0
+     [java] ANIMATE
+     [java] LARRY-1, beg --- 1 , end --- 6
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] enter:
+     [java]     A0: Don
+     [java]     AM-ADV: as Alan is exiting the kitchen , carrying a plate
+     [java] exit:
+     [java]     A0: Alan
+     [java]     A1: the kitchen
+     [java]     AM-ADV: carrying a plate
+     [java] carry:
+     [java]     A0: Alan
+     [java]     A1: a plate
+     [java] 
+     [java] Pred: enters Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 26 , end --- 29
+     [java] Pred: exiting Arg: the kitchen best-match: -1
+     [java] Pred: exiting Arg: Alan best-match: 1
+     [java] ANIMATE
+     [java] Alan-5, beg --- 41 , end --- 45
+     [java] Pred: carrying Arg: Alan best-match: 1
+     [java] ANIMATE
+     [java] Alan-5, beg --- 41 , end --- 45
+     [java] Pred: carrying Arg: a plate best-match: -1
+     [java] speak:
+     [java]     A0: ALAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ALAN best-match: 0
+     [java] UNKNOWN
+     [java] ALAN-1, beg --- 89 , end --- 93
+     [java] attempt:
+     [java]     A0: Don
+     [java]     A1: a smile
+     [java] 
+     [java] Pred: attempts Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 113 , end --- 116
+     [java] Pred: attempts Arg: a smile best-match: -1
+     [java] turn:
+     [java]     A1: Alan
+     [java]     AM-PNC: for the stairs
+     [java]     AM-TMP: ------ Exits
+     [java] 
+     [java] Pred: turns Arg: Alan best-match: 0
+     [java] UNKNOWN
+     [java] Alan-1, beg --- 135 , end --- 139
+     [java] 
+     [java] 
+     [java] coref (thoughts) --- key: 198_206
+     [java] coref (LARRY) --- key: 1_6
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (dialogue) --- key: 16_24
+     [java] coref (dialogue) --- key: 103_111
+     [java] coref (Don) --- key: 26_29
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 113_116
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 178_181
+     [java] coref (his) --- key: 194_197
+     [java] coref (Alan) --- key: 41_45
+     [java] COREF --------------
+     [java] mention: Alan, coref: Alan
+     [java] coref (ALAN) --- key: 89_93
+     [java] COREF --------------
+     [java] mention: ALAN, coref: Alan
+     [java] coref (Alan) --- key: 135_139
+     [java] COREF --------------
+     [java] mention: Alan, coref: Alan
+     [java] coref (kitchen) --- key: 61_68
+     [java] coref (plate) --- key: 81_86
+     [java] coref (smile) --- key: 128_133
+     [java] coref (------) --- key: 161_167
+     [java] coref (stairs) --- key: 154_160
+     [java] coref (Exits) --- key: 168_173
+     [java] 
+     [java] walk:
+     [java]     A0: Colby and David
+     [java]     AM-ADV: find Don at his desk
+     [java]     AM-DIR: up
+     [java] find:
+     [java]     A0: Colby and David
+     [java]     AM-LOC: at his desk
+     [java] 
+     [java] Pred: walk Arg: Colby and David best-match: 0
+     [java] ANIMATE
+     [java] Colby-1, beg --- 9 , end --- 14
+     [java] ANIMATE
+     [java] Colby-1, beg --- 9 , end --- 14
+     [java] ANIMATE
+     [java] David-3, beg --- 19 , end --- 24
+     [java] Pred: find Arg: Colby and David best-match: 0
+     [java] ANIMATE
+     [java] Colby-1, beg --- 9 , end --- 14
+     [java] ANIMATE
+     [java] Colby-1, beg --- 9 , end --- 14
+     [java] ANIMATE
+     [java] David-3, beg --- 19 , end --- 24
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: DON best-match: 4
+     [java] ANIMATE
+     [java] DON-7, beg --- 112 , end --- 115
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] coref (print-out) --- key: 98_107
+     [java] coref (Morning) --- key: 0_7
+     [java] coref (Colby) --- key: 9_14
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (his) --- key: 46_49
+     [java] coref (David) --- key: 19_24
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (David) --- key: 80_85
+     [java] coref (Colby) --- key: 9_14
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Don) --- key: 39_42
+     [java] coref (Don) --- key: 92_95
+     [java] coref (DON) --- key: 112_115
+     [java] COREF --------------
+     [java] mention: DON, coref: Don
+     [java] coref (desk) --- key: 50_54
+     [java] coref (dialogue) --- key: 70_78
+     [java] coref (dialogue) --- key: 125_133
+     [java] coref (hands) --- key: 86_91
+     [java] speak:
+     [java]     A0: BRENDAN MCCRARY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: BRENDAN MCCRARY best-match: 0
+     [java] ANIMATE
+     [java] MCCRARY-2, beg --- 9 , end --- 16
+     [java] grill:
+     [java]     A0: Don
+     [java]     A2: Brendan McCrary , his LAWYER
+     [java]     AA: SECOND GRAPHIC BUMPER
+     [java]     AM-MNR: present
+     [java] 
+     [java] Pred: grills Arg: Don best-match: 1
+     [java] UNKNOWN
+     [java] Don-5, beg --- 59 , end --- 62
+     [java] Pred: grills Arg: Brendan McCrary , his LAWYER best-match: 2
+     [java] ANIMATE
+     [java] McCrary-8, beg --- 78 , end --- 85
+     [java] ANIMATE
+     [java] McCrary-8, beg --- 78 , end --- 85
+     [java] ANIMATE
+     [java] LAWYER-11, beg --- 91 , end --- 97
+     [java] speak:
+     [java]     A0: LAWYER
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: LAWYER best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] lay:
+     [java]     A0: Don
+     [java] 
+     [java] Pred: lays Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 134 , end --- 137
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] slide:
+     [java]     A1: the transcripts
+     [java] speak:
+     [java]     A0: BRENDAN MCCRARY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: slides Arg: the transcripts best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: BRENDAN MCCRARY best-match: 2
+     [java] ANIMATE
+     [java] MCCRARY-8, beg --- 259 , end --- 266
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] indicate:
+     [java]     A0: Don
+     [java]     A2: to the photos
+     [java] 
+     [java] Pred: indicates Arg: to the photos best-match: -1
+     [java] Pred: indicates Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 356 , end --- 359
+     [java] regain:
+     [java]     A0: McCrary
+     [java]     A1: his composure ----
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: regains Arg: his composure ---- best-match: -1
+     [java] Pred: regains Arg: McCrary best-match: 0
+     [java] ANIMATE
+     [java] McCrary-1, beg --- 385 , end --- 392
+     [java] Pred: speaks Arg: DON best-match: 3
+     [java] ANIMATE
+     [java] DON-6, beg --- 421 , end --- 424
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] set:
+     [java]     A2: of transcripts on the table
+     [java] 
+     [java] Pred: set Arg: of transcripts on the table best-match: -1
+     [java] coref (MCCRARY) --- key: 9_16
+     [java] COREF --------------
+     [java] mention: MCCRARY, coref: McCrary
+     [java] coref (McCrary) --- key: 78_85
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCrary
+     [java] coref (McCrary) --- key: 78_85
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCrary
+     [java] coref (LAWYER) --- key: 91_97
+     [java] COREF --------------
+     [java] mention: LAWYER, coref: McCrary
+     [java] coref (MCCRARY) --- key: 259_266
+     [java] COREF --------------
+     [java] mention: MCCRARY, coref: McCrary
+     [java] coref (McCrary) --- key: 385_392
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCrary
+     [java] coref (his) --- key: 401_404
+     [java] coref (McCrary) --- key: 444_451
+     [java] coref (dialogue) --- key: 26_34
+     [java] coref (dialogue) --- key: 124_132
+     [java] coref (dialogue) --- key: 203_211
+     [java] coref (dialogue) --- key: 276_284
+     [java] coref (dialogue) --- key: 346_354
+     [java] coref (dialogue) --- key: 434_442
+     [java] coref (SECOND) --- key: 36_42
+     [java] coref (second) --- key: 465_471
+     [java] coref (present) --- key: 98_105
+     [java] coref (composure) --- key: 405_414
+     [java] coref (Don) --- key: 59_62
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (his) --- key: 87_90
+     [java] coref (Don) --- key: 134_137
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 213_216
+     [java] coref (Don) --- key: 356_359
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (DON) --- key: 421_424
+     [java] COREF --------------
+     [java] mention: DON, coref: Don
+     [java] coref (set) --- key: 472_475
+     [java] coref (transcripts) --- key: 479_490
+     [java] coref (THREE) --- key: 157_162
+     [java] coref (PHOTOS) --- key: 143_149
+     [java] coref (photos) --- key: 377_383
+     [java] coref (VICTIMS) --- key: 163_170
+     [java] coref (table) --- key: 182_187
+     [java] coref (table) --- key: 498_503
+     [java] coref (transcripts) --- key: 228_239
+     [java] coref (slides) --- key: 286_292
+     [java] coref (set) --- key: 308_311
+     [java] coref (transcripts) --- key: 315_326
+     [java] java.lang.NullPointerException
+     [java] 	at EMNLP14.GenerateAnnotationData.isHumanNotPossesive(Unknown Source)
+     [java] 	at EMNLP14.GenerateAnnotationData.main(Unknown Source)
+     [java] 
+     [java] watch:
+     [java]     A0: BRENDAN McCRARY , 40 , All --- American dad
+     [java]     A1: the sidelines
+     [java]     AM-NEG: not
+     [java] be:
+     [java]     A1: BRENDAN McCRARY , 40 , All --- American dad
+     [java]     A1: the sidelines , not watching , busy on his cell
+     [java] distract:
+     [java]     A1: McCrary
+     [java]     AM-LOC: on his cell
+     [java] pick:
+     [java]     A0: his son MATT McCRARY , 15 ,
+     [java]     A1: his way
+     [java]     A4: into the back of the net
+     [java]     AM-DIR: through three defenders
+     [java] put:
+     [java]     A0: his son MATT McCRARY , 15 ,
+     [java]     A1: the ball
+     [java]     A2: past the goalie
+     [java]     A2: into the back of the net
+     [java] 
+     [java] be:
+     [java]     A1: Megan
+     [java]     AM-EXT: at work
+     [java]     R-AM-LOC: Where
+     [java] 
+     [java] Pred: is Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-2, beg --- 6 , end --- 11
+     [java] observe:
+     [java]     A0: Don and Megan
+     [java] present:
+     [java]     A0: Charlie and Amita
+     [java]     A1: their findings
+     [java]     AM-ADV: As Don and Megan observe
+     [java] 
+     [java] Pred: observe Arg: Don and Megan best-match: 2
+     [java] ANIMATE
+     [java] Don-2, beg --- 27 , end --- 30
+     [java] ANIMATE
+     [java] Don-2, beg --- 27 , end --- 30
+     [java] ANIMATE
+     [java] Megan-4, beg --- 35 , end --- 40
+     [java] Pred: present Arg: Charlie and Amita best-match: 3
+     [java] ANIMATE
+     [java] Charlie-7, beg --- 50 , end --- 57
+     [java] ANIMATE
+     [java] Charlie-7, beg --- 50 , end --- 57
+     [java] ANIMATE
+     [java] Amita-9, beg --- 62 , end --- 67
+     [java] Pred: present Arg: their findings best-match: -1
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 93 , end --- 100
+     [java] put:
+     [java]     A0: Charlie
+     [java]     A1: the map of GREATER L.A. showing the THREE HOUSE LOCATIONS , now encircled by red -- hot --- zones -- ---- CHARLIE speaks a dialogue
+     [java]     C-V: up
+     [java] show:
+     [java]     A1: the THREE HOUSE LOCATIONS , now encircled by red -- hot --- zones -- ---- CHARLIE speaks a dialogue
+     [java] encircle:
+     [java]     A1: the THREE HOUSE LOCATIONS
+     [java]     A2: by red -- hot --- zones -- ---- CHARLIE speaks a dialogue
+     [java]     AM-TMP: now
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: puts Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 120 , end --- 127
+     [java] Pred: puts Arg: the map of GREATER L.A. showing the THREE HOUSE LOCATIONS , now encircled by red -- hot --- zones -- ---- CHARLIE speaks a dialogue best-match: 8
+     [java] Pred: showing Arg: the THREE HOUSE LOCATIONS , now encircled by red -- hot --- zones -- ---- CHARLIE speaks a dialogue best-match: 8
+     [java] Pred: encircled Arg: the THREE HOUSE LOCATIONS best-match: -1
+     [java] Pred: encircled Arg: by red -- hot --- zones -- ---- CHARLIE speaks a dialogue best-match: 8
+     [java] ANIMATE
+     [java] CHARLIE-25, beg --- 238 , end --- 245
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 8
+     [java] ANIMATE
+     [java] CHARLIE-25, beg --- 238 , end --- 245
+     [java] punch:
+     [java]     A0: Charlie
+     [java]     A1: them
+     [java]     AM-DIR: up
+     [java] 
+     [java] Pred: punches Arg: them best-match: 1
+     [java] ANIMATE
+     [java] them-3, beg --- 281 , end --- 285
+     [java] Pred: punches Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 265 , end --- 272
+     [java] appear:
+     [java]     A1: A hundred red -- hot --- zones --
+     [java] 
+     [java] Pred: appear Arg: A hundred red -- hot --- zones -- best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] enter:
+     [java]     A0: David
+     [java]     A1: a grim look to Don
+     [java]     AM-TMP: now
+     [java] 
+     [java] Pred: enters Arg: a grim look to Don best-match: 4
+     [java] ANIMATE
+     [java] Don-9, beg --- 385 , end --- 388
+     [java] Pred: enters Arg: David best-match: 0
+     [java] ANIMATE
+     [java] David-1, beg --- 352 , end --- 357
+     [java] coref (Megan) --- key: 6_11
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Megan) --- key: 35_40
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (hot) --- key: 306_309
+     [java] coref (Don) --- key: 27_30
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 385_388
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (David) --- key: 352_357
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (now) --- key: 365_368
+     [java] coref (now) --- key: 365_368
+     [java] coref (look) --- key: 377_381
+     [java] coref (Charlie) --- key: 50_57
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 93_100
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 120_127
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 238_245
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 265_272
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Amita) --- key: 62_67
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (present) --- key: 68_75
+     [java] coref (Don) --- key: 27_30
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Charlie) --- key: 50_57
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (findings) --- key: 82_90
+     [java] coref (their) --- key: 76_81
+     [java] coref (them) --- key: 281_285
+     [java] COREF --------------
+     [java] mention: them, coref: their
+     [java] coref (dialogue) --- key: 110_118
+     [java] coref (dialogue) --- key: 255_263
+     [java] coref (dialogue) --- key: 342_350
+     [java] coref (THREE) --- key: 172_177
+     [java] coref (map) --- key: 140_143
+     [java] coref (L.A.) --- key: 155_159
+     [java] coref (LOCATIONS) --- key: 184_193
+     [java] coref (LOCATIONS) --- key: 184_193
+     [java] coref (now) --- key: 195_198
+     [java] coref (zones) --- key: 224_229
+     [java] coref (zones) --- key: 312_317
+     [java] coref (red) --- key: 300_303
+     [java] coref (hundred) --- key: 292_299
+     [java] walk:
+     [java]     A0: Don
+     [java]     AM-MNR: with Brendan McCrary
+     [java] 
+     [java] Pred: walks Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 0 , end --- 3
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] wait:
+     [java]     A1: COLLEEN McCRARY , 39 , soccer mom , and son Matt
+     [java] 
+     [java] Pred: waiting Arg: COLLEEN McCRARY , 39 , soccer mom , and son Matt best-match: 2
+     [java] ANIMATE
+     [java] McCRARY-9, beg --- 109 , end --- 116
+     [java] ANIMATE
+     [java] McCRARY-9, beg --- 109 , end --- 116
+     [java] 
+     [java] 
+     [java] look:
+     [java]     A0: Brendan McCrary
+     [java]     A1: to Don
+     [java] 
+     [java] Pred: looks Arg: Brendan McCrary best-match: 0
+     [java] ANIMATE
+     [java] McCrary-2, beg --- 194 , end --- 201
+     [java] Pred: looks Arg: to Don best-match: 1
+     [java] ANIMATE
+     [java] Don-5, beg --- 211 , end --- 214
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] walk:
+     [java]     A0: Colleen McCrary and Matt
+     [java]     AM-DIR: up
+     [java] speak:
+     [java]     A0: COLLEEN MCCRARY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: walk Arg: Colleen McCrary and Matt best-match: 0
+     [java] ANIMATE
+     [java] McCrary-2, beg --- 248 , end --- 255
+     [java] ANIMATE
+     [java] McCrary-2, beg --- 248 , end --- 255
+     [java] ANIMATE
+     [java] Matt-4, beg --- 260 , end --- 264
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: COLLEEN MCCRARY best-match: 3
+     [java] ANIMATE
+     [java] MCCRARY-9, beg --- 285 , end --- 292
+     [java] glare:
+     [java]     A1: at Don
+     [java] 
+     [java] Pred: glares Arg: at Don best-match: 0
+     [java] ANIMATE
+     [java] Don-3, beg --- 322 , end --- 325
+     [java] hang:
+     [java]     A1: Son Matt
+     [java]     A2: back
+     [java]     AM-MNR: sheepish
+     [java] 
+     [java] Pred: hangs Arg: back best-match: -1
+     [java] Pred: hangs Arg: Son Matt best-match: 0
+     [java] ANIMATE
+     [java] Matt-2, beg --- 331 , end --- 335
+     [java] speak:
+     [java]     A0: BRENDAN MCCRARY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: BRENDAN MCCRARY best-match: 0
+     [java] ANIMATE
+     [java] MCCRARY-2, beg --- 367 , end --- 374
+     [java] SRL failed for sentence: The McCrary Family turns and exits as... Colby, holding a print---out (having seen the exchange with the McCrarys), comes from the Elevator Area, picking his way through the crowd.
+     [java] Continuing ...
+     [java] glance:
+     [java]     A0: He
+     [java]     A1: at the McCrary 's exiting
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] mention poss: the McCrary 's exiting
+     [java] Pred: glances Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 575 , end --- 577
+     [java] mention poss: the McCrary 's exiting
+     [java] Pred: glances Arg: at the McCrary 's exiting best-match: -1
+     [java] mention poss: the McCrary 's exiting
+     [java] Pred: speaks Arg: COLBY best-match: 2
+     [java] INANIMATE
+     [java] COLBY-9, beg --- 615 , end --- 620
+     [java] mention poss: the McCrary 's exiting
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] move:
+     [java]     A1: Don and Colby
+     [java]     AM-DIR: down
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: move Arg: Don and Colby best-match: 2
+     [java] ANIMATE
+     [java] Don-2, beg --- 643 , end --- 646
+     [java] ANIMATE
+     [java] Don-2, beg --- 643 , end --- 646
+     [java] ANIMATE
+     [java] Colby-4, beg --- 651 , end --- 656
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: COLBY best-match: 4
+     [java] INANIMATE
+     [java] COLBY-10, beg --- 683 , end --- 688
+     [java] register:
+     [java]     A0: Don
+     [java]     A1: this
+     [java] see:
+     [java]     A0: Don
+     [java]     A1: Charlie and Amita approaching
+     [java] approach:
+     [java]     A1: Charlie and Amita
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: registers Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 708 , end --- 711
+     [java] Pred: registers Arg: this best-match: -1
+     [java] Pred: sees Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 708 , end --- 711
+     [java] Pred: sees Arg: Charlie and Amita approaching best-match: 2
+     [java] ANIMATE
+     [java] Charlie-6, beg --- 733 , end --- 740
+     [java] ANIMATE
+     [java] Charlie-6, beg --- 733 , end --- 740
+     [java] ANIMATE
+     [java] Amita-8, beg --- 745 , end --- 750
+     [java] Pred: approaching Arg: Charlie and Amita best-match: 2
+     [java] ANIMATE
+     [java] Charlie-6, beg --- 733 , end --- 740
+     [java] ANIMATE
+     [java] Charlie-6, beg --- 733 , end --- 740
+     [java] ANIMATE
+     [java] Amita-8, beg --- 745 , end --- 750
+     [java] Pred: speaks Arg: CHARLIE best-match: 5
+     [java] ANIMATE
+     [java] CHARLIE-11, beg --- 767 , end --- 774
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] continue:
+     [java]     A1: Don , Charlie and Amita
+     [java]     C-V: into
+     [java] 
+     [java] Pred: continue Arg: Don , Charlie and Amita best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 794 , end --- 797
+     [java] ANIMATE
+     [java] Don-1, beg --- 794 , end --- 797
+     [java] ANIMATE
+     [java] Charlie-3, beg --- 799 , end --- 806
+     [java] ANIMATE
+     [java] Amita-5, beg --- 811 , end --- 816
+     [java] coref (Don) --- key: 0_3
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 211_214
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 322_325
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 643_646
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 708_711
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 794_797
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 794_797
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (McCrary) --- key: 23_30
+     [java] coref (McCrary) --- key: 56_63
+     [java] coref (McCRARY) --- key: 109_116
+     [java] COREF --------------
+     [java] mention: McCRARY, coref: McCRARY
+     [java] coref (McCRARY) --- key: 109_116
+     [java] COREF --------------
+     [java] mention: McCRARY, coref: McCRARY
+     [java] coref (McCrary) --- key: 194_201
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCRARY
+     [java] coref (McCrary) --- key: 248_255
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCRARY
+     [java] coref (MCCRARY) --- key: 285_292
+     [java] COREF --------------
+     [java] mention: MCCRARY, coref: McCRARY
+     [java] coref (MCCRARY) --- key: 367_374
+     [java] COREF --------------
+     [java] mention: MCCRARY, coref: McCRARY
+     [java] coref (McCrary) --- key: 398_405
+     [java] coref (He) --- key: 575_577
+     [java] COREF --------------
+     [java] mention: He, coref: McCRARY
+     [java] coref (Charlie) --- key: 733_740
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (dialogue) --- key: 46_54
+     [java] coref (dialogue) --- key: 230_238
+     [java] coref (dialogue) --- key: 302_310
+     [java] coref (dialogue) --- key: 384_392
+     [java] coref (dialogue) --- key: 630_638
+     [java] coref (dialogue) --- key: 698_706
+     [java] coref (dialogue) --- key: 784_792
+     [java] coref (39) --- key: 118_120
+     [java] coref (Matt) --- key: 142_146
+     [java] coref (Matt) --- key: 260_264
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (Matt) --- key: 331_335
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (Lounge) --- key: 88_94
+     [java] coref (mom) --- key: 129_132
+     [java] coref (eye) --- key: 160_163
+     [java] coref (Matt) --- key: 173_177
+     [java] coref (McCrary) --- key: 248_255
+     [java] COREF --------------
+     [java] mention: McCrary, coref: McCrary
+     [java] coref (Colby) --- key: 435_440
+     [java] coref (Colby) --- key: 435_440
+     [java] coref (his) --- key: 548_551
+     [java] coref (COLBY) --- key: 615_620
+     [java] COREF --------------
+     [java] mention: COLBY, coref: Colby
+     [java] coref (Colby) --- key: 651_656
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (COLBY) --- key: 683_688
+     [java] COREF --------------
+     [java] mention: COLBY, coref: Colby
+     [java] coref (print) --- key: 452_457
+     [java] coref (Family) --- key: 406_412
+     [java] coref (exits) --- key: 423_428
+     [java] coref (McCrarys) --- key: 499_507
+     [java] coref (Area) --- key: 534_538
+     [java] coref (exchange) --- key: 481_489
+     [java] coref (crowd) --- key: 568_573
+     [java] coref (way) --- key: 552_555
+     [java] coref (McCrary) --- key: 593_600
+     [java] coref (hallway) --- key: 671_678
+     [java] coref (Don) --- key: 643_646
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (this) --- key: 722_726
+     [java] coref (Amita) --- key: 745_750
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (Amita) --- key: 811_816
+     [java] COREF --------------
+     [java] mention: Amita, coref: Amita
+     [java] coref (Charlie) --- key: 733_740
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 767_774
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 799_806
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] review:
+     [java]     A0: he
+     [java]     A1: the FBI Techs --- findings
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: reviews Arg: the FBI Techs --- findings best-match: 4
+     [java] ANIMATE
+     [java] Techs-10, beg --- 66 , end --- 71
+     [java] Pred: reviews Arg: he best-match: 3
+     [java] ANIMATE
+     [java] he-6, beg --- 47 , end --- 49
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 7
+     [java] ANIMATE
+     [java] CHARLIE-14, beg --- 88 , end --- 95
+     [java] drop:
+     [java]     A0: A HAND
+     [java]     AM-TMP: BEGINIAUDIENCE VISION
+     [java] stamp:
+     [java]     A1: ENVELOPE
+     [java]     A2: &
+     [java] address:
+     [java]     A1: ENVELOPE
+     [java] 
+     [java] Pred: drops Arg: A HAND best-match: -1
+     [java] Pred: stamped Arg: ENVELOPE best-match: -1
+     [java] Pred: stamped Arg: & best-match: -1
+     [java] Pred: addressed Arg: ENVELOPE best-match: -1
+     [java] 
+     [java] speak:
+     [java]     A0: oont & acirc ; & euro ; & trade ; d
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: oont & acirc ; & euro ; & trade ; d best-match: -1
+     [java] SRL failed for sentence: .
+     [java] Continuing ...
+     [java] 
+     [java] 
+     [java] speak:
+     [java]     A0: oont & acirc ; & euro ; & trade ; d
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: oont & acirc ; & euro ; & trade ; d best-match: -1
+     [java] SRL failed for sentence: second smaller ENVELOPE #9, stamped & addressed, inside...  CHARLIE(V.0.)
+     [java] Continuing ...
+     [java] speak:
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] open:
+     [java]     A1: A quick series of envelopes
+     [java]     AM-PNC: to reveal smaller ones
+     [java] reveal:
+     [java]     A0: A quick series of envelopes
+     [java]     A1: smaller ones
+     [java] 
+     [java] Pred: opening Arg: A quick series of envelopes best-match: -1
+     [java] Pred: reveal Arg: smaller ones best-match: 2
+     [java] ANIMATE
+     [java] ones-10, beg --- 511 , end --- 515
+     [java] Pred: reveal Arg: A quick series of envelopes best-match: -1
+     [java] open:
+     [java]     A1: The last one
+     [java] 
+     [java] Pred: opened Arg: The last one best-match: -1
+     [java] 
+     [java] speak:
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: BACK TU SCENE MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: BACK TU SCENE MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-4, beg --- 599 , end --- 604
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] coref (cont) --- key: 430_434
+     [java] coref (cont) --- key: 557_561
+     [java] coref (dialogue) --- key: 14_22
+     [java] coref (dialogue) --- key: 105_113
+     [java] coref (dialogue) --- key: 252_260
+     [java] coref (dialogue) --- key: 345_353
+     [java] coref (dialogue) --- key: 447_455
+     [java] coref (dialogue) --- key: 574_582
+     [java] coref (dialogue) --- key: 614_622
+     [java] coref (series) --- key: 465_471
+     [java] coref (Charlie) --- key: 35_42
+     [java] coref (Charlie) --- key: 35_42
+     [java] coref (he) --- key: 47_49
+     [java] COREF --------------
+     [java] mention: he, coref: Charlie
+     [java] coref (CHARLIE) --- key: 88_95
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (FBI) --- key: 62_65
+     [java] coref (Megan) --- key: 24_29
+     [java] coref (one) --- key: 526_529
+     [java] coref (Techs) --- key: 66_71
+     [java] COREF --------------
+     [java] mention: Techs, coref: Techs
+     [java] coref (findings) --- key: 75_83
+     [java] coref (envelopes) --- key: 475_484
+     [java] coref (BEGINIAUDIENCE) --- key: 115_129
+     [java] coref (ones) --- key: 511_515
+     [java] COREF --------------
+     [java] mention: ones, coref: ones
+     [java] coref (MEGAN) --- key: 599_604
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: MEGAN
+     [java] coref (HAND) --- key: 139_143
+     [java] coref (1) --- key: 192_193
+     [java] coref (box) --- key: 194_197
+     [java] coref (&) --- key: 171_172
+     [java] coref (&) --- key: 391_392
+     [java] coref (0) --- key: 211_212
+     [java] coref (0) --- key: 304_305
+     [java] coref (0) --- key: 425_426
+     [java] coref (0) --- key: 552_553
+     [java] coref (V.) --- key: 209_211
+     [java] coref (V.) --- key: 302_304
+     [java] coref (V.) --- key: 423_425
+     [java] coref (V.) --- key: 550_552
+     [java] coref (CHARLIE) --- key: 200_207
+     [java] coref (CHARLIE) --- key: 293_300
+     [java] coref (CHARLIE) --- key: 415_422
+     [java] coref (CHARLIE) --- key: 542_549
+     [java] coref (oont) --- key: 216_220
+     [java] coref (oont) --- key: 309_313
+     [java] coref (trade) --- key: 234_239
+     [java] coref (trade) --- key: 327_332
+     [java] coref (euro) --- key: 228_232
+     [java] coref (euro) --- key: 321_325
+     [java] coref (#U) --- key: 272_274
+     [java] coref (.) --- key: 262_263
+     [java] coref (desk) --- key: 286_290
+     [java] coref (lands) --- key: 275_280
+     [java] coref (second) --- key: 355_361
+     [java] coref (ENVELOPE) --- key: 370_378
+     [java] coref (ENVELOPE) --- key: 370_378
+     [java] SRL failed for sentence: Don watches the PLASMA, David works the remote... Onscreen is a VIDEO IMAGE of VICTIM #3 (John Santos).
+     [java] Continuing ...
+     [java] see:
+     [java]     A0: we
+     [java]     AM-TMP: earlier
+     [java]     AM-TMP: the chair
+     [java] face:
+     [java]     A0: he
+     [java]     A1: CAMERA , beaten , bloodied
+     [java] beat:
+     [java]     A1: CAMERA
+     [java] bloody:
+     [java]     A0: he
+     [java]     A1: CAMERA
+     [java] 
+     [java] Pred: saw Arg: we best-match: 1
+     [java] ANIMATE
+     [java] we-5, beg --- 122 , end --- 124
+     [java] Pred: faces Arg: he best-match: 2
+     [java] ANIMATE
+     [java] he-9, beg --- 138 , end --- 140
+     [java] Pred: faces Arg: CAMERA , beaten , bloodied best-match: -1
+     [java] Pred: beaten Arg: CAMERA best-match: -1
+     [java] Pred: bloodied Arg: he best-match: 2
+     [java] ANIMATE
+     [java] he-9, beg --- 138 , end --- 140
+     [java] Pred: bloodied Arg: CAMERA best-match: -1
+     [java] see:
+     [java]     A0: We
+     [java] beat:
+     [java]     AM-MNR: accumulating over time
+     [java] accumulate:
+     [java]     AM-TMP: over time
+     [java] 
+     [java] Pred: see Arg: We best-match: 1
+     [java] ANIMATE
+     [java] We-4, beg --- 180 , end --- 182
+     [java] coref (we) --- key: 122_124
+     [java] COREF --------------
+     [java] mention: we, coref: we
+     [java] coref (We) --- key: 180_182
+     [java] COREF --------------
+     [java] mention: We, coref: we
+     [java] coref (Don) --- key: 0_3
+     [java] coref (he) --- key: 138_140
+     [java] COREF --------------
+     [java] mention: he, coref: Don
+     [java] coref (his) --- key: 187_190
+     [java] coref (CAMERA) --- key: 147_153
+     [java] coref (CAMERA) --- key: 147_153
+     [java] coref (NOTE) --- key: 174_178
+     [java] coref (David) --- key: 24_29
+     [java] coref (remote) --- key: 40_46
+     [java] coref (Onscreen) --- key: 50_58
+     [java] coref (IMAGE) --- key: 70_75
+     [java] coref (confession) --- key: 198_208
+     [java] coref (effects) --- key: 258_265
+     [java] coref (VICTIM) --- key: 79_85
+     [java] coref (Santos) --- key: 95_101
+     [java] coref (CUTS) --- key: 219_223
+     [java] coref (beating) --- key: 273_280
+     [java] coref (PLASMA) --- key: 16_22
+     [java] coref (chair) --- key: 116_121
+     [java] coref (time) --- key: 299_303
+     [java] have:
+     [java]     A0: TECH
+     [java]     A1: TWO COMPUTER SCREENS ; plus Charlie has his computer for his math )
+     [java] have:
+     [java]     A0: Charlie
+     [java]     A1: his computer
+     [java]     AM-PNC: for his math
+     [java] 
+     [java] Pred: has Arg: TECH best-match: -1
+     [java] Pred: has Arg: TWO COMPUTER SCREENS ; plus Charlie has his computer for his math ) best-match: 3
+     [java] ANIMATE
+     [java] Charlie-11, beg --- 43 , end --- 50
+     [java] Pred: has Arg: his computer best-match: -1
+     [java] Pred: has Arg: Charlie best-match: 3
+     [java] ANIMATE
+     [java] Charlie-11, beg --- 43 , end --- 50
+     [java] look:
+     [java]     A0: Charlie
+     [java]     AM-DIR: up
+     [java] see:
+     [java]     A0: Don entering
+     [java] enter:
+     [java]     A0: Don
+     [java] 
+     [java] Pred: looks Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 83 , end --- 90
+     [java] Pred: sees Arg: Don entering best-match: 1
+     [java] ANIMATE
+     [java] Don-6, beg --- 106 , end --- 109
+     [java] Pred: entering Arg: Don best-match: 1
+     [java] ANIMATE
+     [java] Don-6, beg --- 106 , end --- 109
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 121 , end --- 128
+     [java] 
+     [java] coref (dialogue) --- key: 138_146
+     [java] coref (TWO) --- key: 16_19
+     [java] coref (NOTE) --- key: 1_5
+     [java] coref (SCREENS) --- key: 29_36
+     [java] coref (Charlie) --- key: 43_50
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 83_90
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 121_128
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (which) --- key: 152_157
+     [java] coref (computer) --- key: 59_67
+     [java] coref (his) --- key: 55_58
+     [java] coref (his) --- key: 72_75
+     [java] coref (math) --- key: 76_80
+     [java] coref (Don) --- key: 106_109
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-1, beg --- 1 , end --- 6
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] coref (MEGAN) --- key: 1_6
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: MEGAN
+     [java] coref (dialogue) --- key: 16_24
+     [java] coref (Don) --- key: 26_29
+     [java] coref (Don) --- key: 26_29
+     [java] coref (move) --- key: 47_51
+     [java] coref (Colby) --- key: 34_39
+     [java] monitor:
+     [java] trace:
+     [java]     AM-LOC: at the computer station
+     [java] 
+     [java] speak:
+     [java]     A0: FBI TECH
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: FBI TECH best-match: 0
+     [java] ANIMATE
+     [java] TECH-2, beg --- 64 , end --- 68
+     [java] 
+     [java] 
+     [java] look:
+     [java]     A1: like the last " video confession ,
+     [java]     AM-MOD: should
+     [java] be:
+     [java]     A1: it
+     [java]     A2: at the very end of the seguence
+     [java] stare:
+     [java]     A1: INTO CAMERA
+     [java] resign:
+     [java]     AM-ADV: as it was at the very end of the seguence ... staring INTO CAMERA
+     [java] 
+     [java] Pred: look Arg: like the last " video confession , best-match: -1
+     [java] Pred: was Arg: at the very end of the seguence best-match: -1
+     [java] Pred: was Arg: it best-match: -1
+     [java] Pred: staring Arg: INTO CAMERA best-match: -1
+     [java] find:
+     [java]     A0: *
+     [java]     A1: additional dialogue to run under sequence
+     [java] run:
+     [java]     AM-MNR: under sequence
+     [java]     AM-TMP: in ADDENDUM
+     [java] speak:
+     [java]     A0: ( * find additional dialogue to run under sequence in ADDENDUM ) WENDELL HENDERSON ( ON VIDEO )
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: find Arg: * best-match: -1
+     [java] Pred: find Arg: additional dialogue to run under sequence best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ( * find additional dialogue to run under sequence in ADDENDUM ) WENDELL HENDERSON ( ON VIDEO ) best-match: 3
+     [java] command:
+     [java]     A0: Charlie types
+     [java]     A1: on his computer
+     [java]     AM-MNR: feverishly
+     [java] 
+     [java] Pred: commands Arg: on his computer best-match: -1
+     [java] Pred: commands Arg: Charlie types best-match: 1
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 404 , end --- 411
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] be:
+     [java]     A1: Don
+     [java]     AM-DIR: out the door
+     [java] 
+     [java] Pred: is Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 479 , end --- 482
+     [java] observe:
+     [java]     A0: Charlie
+     [java] work:
+     [java]     A0: the TECH
+     [java]     A1: his computer
+     [java]     AM-MNR: As Charlie observes
+     [java] telescope:
+     [java]     A0: a satellite map
+     [java]     A1: from a zip --- code zone ... to a 10 --- block radius ... to a street ... then a house
+     [java]     R-AM-ADV: ON THE SECOND COMPUTER SCREEN
+     [java] 
+     [java] Pred: observes Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-2, beg --- 503 , end --- 510
+     [java] Pred: works Arg: his computer best-match: -1
+     [java] Pred: works Arg: the TECH best-match: 1
+     [java] ANIMATE
+     [java] TECH-6, beg --- 525 , end --- 529
+     [java] Pred: telescopes Arg: a satellite map best-match: -1
+     [java] Pred: telescopes Arg: from a zip --- code zone ... to a 10 --- block radius ... to a street ... then a house best-match: -1
+     [java] pop:
+     [java]     AM-TMP: 252 ESTRELLA AVENUE
+     [java] 
+     [java] 
+     [java] coref (FBI) --- key: 4_7
+     [java] coref (FBI) --- key: 60_63
+     [java] coref (TECH) --- key: 8_12
+     [java] coref (TECH) --- key: 64_68
+     [java] COREF --------------
+     [java] mention: TECH, coref: TECH
+     [java] coref (TECH) --- key: 525_529
+     [java] COREF --------------
+     [java] mention: TECH, coref: TECH
+     [java] coref (252) --- key: 704_707
+     [java] coref (trace) --- key: 28_33
+     [java] coref (AVENUE) --- key: 717_723
+     [java] coref (station) --- key: 50_57
+     [java] coref (HARD) --- key: 742_746
+     [java] coref (dialogue) --- key: 78_86
+     [java] coref (dialogue) --- key: 394_402
+     [java] coref (dialogue) --- key: 469_477
+     [java] coref (Charlie) --- key: 88_95
+     [java] coref (Charlie) --- key: 404_411
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (his) --- key: 441_444
+     [java] coref (Charlie) --- key: 503_510
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (his) --- key: 536_539
+     [java] coref (Don) --- key: 100_103
+     [java] coref (Don) --- key: 479_482
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Charlie) --- key: 88_95
+     [java] coref (rush) --- key: 104_108
+     [java] coref (FIRST) --- key: 115_120
+     [java] coref (32) --- key: 148_150
+     [java] coref (HENDERSON) --- key: 137_146
+     [java] coref (HENDERSON) --- key: 137_146
+     [java] coref (SCREEN) --- key: 121_127
+     [java] coref (confession) --- key: 199_209
+     [java] coref (it) --- key: 220_222
+     [java] coref (end) --- key: 239_242
+     [java] coref (CAMERA) --- key: 275_281
+     [java] coref (seguence) --- key: 250_258
+     [java] coref (dialogue) --- key: 311_319
+     [java] coref (sequence) --- key: 333_341
+     [java] coref (HENDERSON) --- key: 364_373
+     [java] coref (VIDEO) --- key: 378_383
+     [java] coref (ADDENDUM) --- key: 345_353
+     [java] coref (types) --- key: 412_417
+     [java] coref (computer) --- key: 445_453
+     [java] coref (computer) --- key: 540_548
+     [java] coref (SECOND) --- key: 559_565
+     [java] coref (door) --- key: 494_498
+     [java] coref (SCREEN) --- key: 575_581
+     [java] coref (zone) --- key: 627_631
+     [java] coref (zip) --- key: 616_619
+     [java] coref (telescopes) --- key: 598_608
+     [java] coref (house) --- key: 680_685
+     [java] coref (street) --- key: 664_670
+     [java] coref (radius) --- key: 650_656
+     [java] coref (10) --- key: 639_641
+     [java] coref (address) --- key: 690_697
+     [java] coref (address) --- key: 733_740
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 1 , end --- 8
+     [java] enter:
+     [java]     A0: Megan
+     [java]     A1: to find Larry reading a Shakespeare play
+     [java] find:
+     [java]     A0: Megan
+     [java]     A1: a Shakespeare play
+     [java] read:
+     [java]     A1: a Shakespeare play
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: enters Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 28 , end --- 33
+     [java] Pred: enters Arg: to find Larry reading a Shakespeare play best-match: 1
+     [java] ANIMATE
+     [java] Larry-5, beg --- 49 , end --- 54
+     [java] Pred: find Arg: a Shakespeare play best-match: -1
+     [java] Pred: find Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 28 , end --- 33
+     [java] Pred: reading Arg: a Shakespeare play best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 3
+     [java] ANIMATE
+     [java] LARRY-11, beg --- 86 , end --- 91
+     [java] SRL failed for sentence: He looks up from the book...  LARRY (cont'd) speaks a dialogue.
+     [java] Continuing ...
+     [java] take:
+     [java]     A0: Megan
+     [java] 
+     [java] Pred: takes Arg: Megan best-match: 0
+     [java] ANIMATE
+     [java] Megan-2, beg --- 178 , end --- 183
+     [java] coref (HARD) --- key: 215_219
+     [java] coref (CHARLIE) --- key: 1_8
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (dialogue) --- key: 18_26
+     [java] coref (dialogue) --- key: 101_109
+     [java] coref (dialogue) --- key: 165_173
+     [java] coref (Megan) --- key: 28_33
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Megan) --- key: 178_183
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Larry) --- key: 49_54
+     [java] COREF --------------
+     [java] mention: Larry, coref: Larry
+     [java] coref (LARRY) --- key: 86_91
+     [java] COREF --------------
+     [java] mention: LARRY, coref: Larry
+     [java] coref (He) --- key: 111_113
+     [java] coref (LARRY) --- key: 141_146
+     [java] coref (Larry) --- key: 193_198
+     [java] coref (play) --- key: 77_81
+     [java] coref (book) --- key: 132_136
+     [java] coref (cont) --- key: 148_152
+     [java] coref (desolation) --- key: 201_211
+     [java] swarm:
+     [java]     A0: Don , Colby and the TWO UNIFORMS
+     [java]     A1: the Living Room
+     [java] live:
+     [java]     A0: Room
+     [java] 
+     [java] Pred: swarm Arg: the Living Room best-match: -1
+     [java] Pred: swarm Arg: Don , Colby and the TWO UNIFORMS best-match: 2
+     [java] ANIMATE
+     [java] Colby-4, beg --- 8 , end --- 13
+     [java] Pred: Living Arg: Room best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] level:
+     [java]     A1: Guns
+     [java] 
+     [java] Pred: levelled Arg: Guns best-match: -1
+     [java] look:
+     [java]     A0: They
+     [java]     C-V: up
+     [java] 
+     [java] Pred: look Arg: They best-match: 0
+     [java] ANIMATE
+     [java] They-1, beg --- 130 , end --- 134
+     [java] arrive:
+     [java]     A1: David and the other TWO UNIFORMS
+     [java]     A3: from the back
+     [java]     AM-ADV: guns out
+     [java]     AM-TMP: now
+     [java] 
+     [java] Pred: arrive Arg: from the back best-match: -1
+     [java] Pred: arrive Arg: David and the other TWO UNIFORMS best-match: 0
+     [java] ANIMATE
+     [java] David-1, beg --- 156 , end --- 161
+     [java] ANIMATE
+     [java] David-1, beg --- 156 , end --- 161
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] 
+     [java] coref (Don) --- key: 3_6
+     [java] coref (Don) --- key: 3_6
+     [java] coref (Colby) --- key: 8_13
+     [java] COREF --------------
+     [java] mention: Colby, coref: Don
+     [java] coref (Don) --- key: 274_277
+     [java] coref (his) --- key: 291_294
+     [java] coref (TWO) --- key: 22_25
+     [java] coref (TWO) --- key: 176_179
+     [java] coref (UNIFORMS) --- key: 26_34
+     [java] coref (Room) --- key: 52_56
+     [java] coref (dialogue) --- key: 72_80
+     [java] coref (dialogue) --- key: 239_247
+     [java] coref (dialogue) --- key: 264_272
+     [java] coref (Guns) --- key: 82_86
+     [java] coref (guns) --- key: 215_219
+     [java] coref (reading) --- key: 108_115
+     [java] coref (CHILD) --- key: 123_128
+     [java] coref (her) --- key: 119_122
+     [java] coref (They) --- key: 130_134
+     [java] COREF --------------
+     [java] mention: They, coref: They
+     [java] coref (David) --- key: 156_161
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (now) --- key: 196_199
+     [java] coref (UNIFORMS) --- key: 180_188
+     [java] coref (David) --- key: 156_161
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (back) --- key: 209_213
+     [java] coref (back) --- key: 209_213
+     [java] coref (phone) --- key: 300_305
+     [java] coref (cell) --- key: 295_299
+     [java] 
+     [java] arrive:
+     [java]     A1: Don 's SUV
+     [java]     A4: with TWO LAPD UNITS
+     [java]     AM-TMP: simultaneously
+     [java] 
+     [java] Pred: arrives Arg: Don 's SUV best-match: 1
+     [java] ANIMATE
+     [java] Don-1, beg --- 45 , end --- 48
+     [java] jump:
+     [java]     C-V: out
+     [java] join:
+     [java]     A0: Don , David , Colby
+     [java]     A1: with the FOUR LAPD UNIFORMS
+     [java]     C-V: up
+     [java] 
+     [java] Pred: join Arg: Don , David , Colby best-match: 0
+     [java] ANIMATE
+     [java] Colby-5, beg --- 111 , end --- 116
+     [java] ANIMATE
+     [java] Don-1, beg --- 99 , end --- 102
+     [java] ANIMATE
+     [java] David-3, beg --- 104 , end --- 109
+     [java] Pred: join Arg: with the FOUR LAPD UNIFORMS best-match: -1
+     [java] look:
+     [java]     A0: Don
+     [java]     A2: to Colby and the first TWO UNIFORMS
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: looks Arg: to Colby and the first TWO UNIFORMS best-match: 1
+     [java] ANIMATE
+     [java] Colby-4, beg --- 188 , end --- 193
+     [java] ANIMATE
+     [java] Colby-4, beg --- 188 , end --- 193
+     [java] Pred: looks Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 175 , end --- 178
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] 
+     [java] 
+     [java] give:
+     [java]     A0: Don
+     [java]     A1: the nod
+     [java]     A2: Colby
+     [java] kick:
+     [java]     A1: he
+     [java]     AM-LOC: in the door
+     [java] 
+     [java] Pred: gives Arg: the nod best-match: -1
+     [java] Pred: gives Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 372 , end --- 375
+     [java] Pred: gives Arg: Colby best-match: 1
+     [java] UNKNOWN
+     [java] Colby-3, beg --- 382 , end --- 387
+     [java] Pred: kicks Arg: he best-match: 3
+     [java] ANIMATE
+     [java] he-7, beg --- 400 , end --- 402
+     [java] coref (252) --- key: 0_3
+     [java] coref (door) --- key: 366_370
+     [java] coref (door) --- key: 416_420
+     [java] coref (overhead) --- key: 35_43
+     [java] coref (Don) --- key: 45_48
+     [java] COREF --------------
+     [java] mention: Don, coref: Colby
+     [java] coref (Colby) --- key: 111_116
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Don) --- key: 99_102
+     [java] COREF --------------
+     [java] mention: Don, coref: Colby
+     [java] coref (Don) --- key: 175_178
+     [java] COREF --------------
+     [java] mention: Don, coref: Colby
+     [java] coref (Colby) --- key: 188_193
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Don) --- key: 305_308
+     [java] coref (Colby) --- key: 310_315
+     [java] coref (Don) --- key: 372_375
+     [java] COREF --------------
+     [java] mention: Don, coref: Colby
+     [java] coref (Colby) --- key: 382_387
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (he) --- key: 400_402
+     [java] COREF --------------
+     [java] mention: he, coref: Colby
+     [java] coref (TWO) --- key: 83_86
+     [java] coref (TWO) --- key: 208_211
+     [java] coref (TWO) --- key: 268_271
+     [java] coref (TWO) --- key: 330_333
+     [java] coref (nod) --- key: 392_395
+     [java] coref (SUV) --- key: 51_54
+     [java] coref (SUV) --- key: 133_136
+     [java] coref (UNITS) --- key: 92_97
+     [java] coref (David) --- key: 104_109
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (David) --- key: 248_253
+     [java] coref (FOUR) --- key: 155_159
+     [java] coref (UNIFORMS) --- key: 165_173
+     [java] coref (first) --- key: 202_207
+     [java] coref (first) --- key: 324_329
+     [java] coref (UNIFORMS) --- key: 212_220
+     [java] coref (UNIFORMS) --- key: 334_342
+     [java] coref (Colby) --- key: 188_193
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Colby) --- key: 310_315
+     [java] coref (dialogue) --- key: 238_246
+     [java] coref (David) --- key: 248_253
+     [java] coref (UNIFORMS) --- key: 272_280
+     [java] resume:
+     [java]     A1: Don
+     [java]     AM-MNR: with David and Colby
+     [java] 
+     [java] Pred: Resume Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-2, beg --- 7 , end --- 10
+     [java] be:
+     [java]     A1: Don
+     [java]     AM-LOC: on his cell
+     [java] 
+     [java] mention poss: Don 's on his cell --
+     [java] Pred: 's Arg: Don best-match: -1
+     [java] coref (Don) --- key: 7_10
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (his) --- key: 43_46
+     [java] coref (David) --- key: 17_22
+     [java] coref (Colby) --- key: 27_32
+     [java] coref (David) --- key: 17_22
+     [java] coref (Don) --- key: 34_37
+     [java] coref (cell) --- key: 47_51
+     [java] 
+     [java] reply:
+     [java]     A0: Charlie
+     [java]     A2: on speaker phone
+     [java] 
+     [java] Pred: replies Arg: Charlie best-match: 4
+     [java] ANIMATE
+     [java] Charlie-16, beg --- 127 , end --- 134
+     [java] Pred: replies Arg: on speaker phone best-match: -1
+     [java] coref (Charlie) --- key: 0_7
+     [java] coref (Charlie) --- key: 127_134
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 0_7
+     [java] coref (Tech) --- key: 16_20
+     [java] coref (workstation) --- key: 37_48
+     [java] coref (HENDERSON) --- key: 91_100
+     [java] coref (CONFESSION) --- key: 69_79
+     [java] coref (CUTS) --- key: 101_105
+     [java] coref (SNOW) --- key: 115_119
+     [java] coref (phone) --- key: 154_159
+     [java] 
+     [java] live:
+     [java]     A0: TO FIND
+     [java] tie:
+     [java]     A1: to a chair
+     [java] slump:
+     [java]     A1: Don , David and the first TWO UNIFORMS MOVE INTO THE LIVING ROOM TO FIND : VICTIM # 4 ( WENDELL HENDERSON ) , tied to a chair ,
+     [java] 
+     [java] Pred: LIVING Arg: TO FIND best-match: -1
+     [java] Pred: tied Arg: to a chair best-match: -1
+     [java] Pred: slumped Arg: Don , David and the first TWO UNIFORMS MOVE INTO THE LIVING ROOM TO FIND : VICTIM # 4 ( WENDELL HENDERSON ) , tied to a chair , best-match: 10
+     [java] left:
+     [java]     A1: A video camera
+     [java]     A2: on a tripod facing him
+     [java] face:
+     [java]     A0: a tripod
+     [java]     A1: him
+     [java] 
+     [java] Pred: left Arg: A video camera best-match: -1
+     [java] Pred: left Arg: on a tripod facing him best-match: 2
+     [java] ANIMATE
+     [java] him-9, beg --- 200 , end --- 203
+     [java] Pred: facing Arg: him best-match: 2
+     [java] ANIMATE
+     [java] him-9, beg --- 200 , end --- 203
+     [java] Pred: facing Arg: a tripod best-match: -1
+     [java] check:
+     [java]     A0: Don
+     [java]     A1: his pulse
+     [java] 
+     [java] Pred: checks Arg: Don best-match: 1
+     [java] ANIMATE
+     [java] Don-1, beg --- 205 , end --- 208
+     [java] Pred: checks Arg: his pulse best-match: -1
+     [java] enter:
+     [java]     A0: Colby and the other TWO UNIFORMS
+     [java]     A1: from the back
+     [java] 
+     [java] Pred: entering Arg: from the back best-match: -1
+     [java] Pred: entering Arg: Colby and the other TWO UNIFORMS best-match: 0
+     [java] UNKNOWN
+     [java] Colby-4, beg --- 239 , end --- 244
+     [java] UNKNOWN
+     [java] Colby-4, beg --- 239 , end --- 244
+     [java] carry:
+     [java]     A1: a large gym bag
+     [java] 
+     [java] mention poss: Colby 's
+     [java] Pred: carrying Arg: a large gym bag best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] hold:
+     [java]     A0: Colby
+     [java]     A2: open
+     [java] be:
+     [java]     A1: cameras , wireless transmitters and other electronic gear
+     [java]     R-AM-MNR: ------ inside it
+     [java] 
+     [java] Pred: holds Arg: open best-match: -1
+     [java] Pred: holds Arg: Colby best-match: 0
+     [java] ANIMATE
+     [java] Colby-1, beg --- 354 , end --- 359
+     [java] Pred: are Arg: cameras , wireless transmitters and other electronic gear best-match: -1
+     [java] speak:
+     [java]     A0: DAVID
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: DAVID best-match: 0
+     [java] ANIMATE
+     [java] DAVID-1, beg --- 463 , end --- 468
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] coref (dialogue) --- key: 344_352
+     [java] coref (it) --- key: 397_399
+     [java] coref (dialogue) --- key: 478_486
+     [java] coref (Door) --- key: 0_4
+     [java] coref (bag) --- key: 325_328
+     [java] coref (Don) --- key: 31_34
+     [java] coref (him) --- key: 200_203
+     [java] COREF --------------
+     [java] mention: him, coref: Don
+     [java] coref (Don) --- key: 205_208
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (his) --- key: 216_219
+     [java] coref (Don) --- key: 488_491
+     [java] coref (Don) --- key: 488_491
+     [java] coref (David) --- key: 36_41
+     [java] coref (DAVID) --- key: 463_468
+     [java] COREF --------------
+     [java] mention: DAVID, coref: David
+     [java] coref (David) --- key: 493_498
+     [java] coref (first) --- key: 50_55
+     [java] coref (------) --- key: 383_389
+     [java] coref (TWO) --- key: 56_59
+     [java] coref (TWO) --- key: 259_262
+     [java] coref (bag) --- key: 379_382
+     [java] coref (HENDERSON) --- key: 123_132
+     [java] coref (Guns) --- key: 16_20
+     [java] coref (Guns) --- key: 16_20
+     [java] coref (UNIFORMS) --- key: 60_68
+     [java] coref (cameras) --- key: 404_411
+     [java] coref (cameras) --- key: 404_411
+     [java] coref (transmitters) --- key: 422_434
+     [java] coref (ROOM) --- key: 90_94
+     [java] coref (VICTIM) --- key: 104_110
+     [java] coref (VICTIM) --- key: 104_110
+     [java] coref (camera) --- key: 169_175
+     [java] coref (chair) --- key: 145_150
+     [java] coref (tripod) --- key: 186_192
+     [java] coref (body) --- key: 517_521
+     [java] coref (eye) --- key: 509_512
+     [java] coref (checks) --- key: 209_215
+     [java] coref (pulse) --- key: 220_225
+     [java] coref (Colby) --- key: 239_244
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (VICTIM) --- key: 525_531
+     [java] coref (VICTIM) --- key: 525_531
+     [java] coref (UNIFORMS) --- key: 263_271
+     [java] coref (Colby) --- key: 239_244
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Colby) --- key: 296_301
+     [java] coref (Colby) --- key: 354_359
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (Colby) --- key: 503_508
+     [java] coref (back) --- key: 290_294
+     [java] resume:
+     [java]     A1: Charlie
+     [java]     AM-ADV: checking the database
+     [java] check:
+     [java]     A1: the database
+     [java] 
+     [java] Pred: Resume Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-2, beg --- 7 , end --- 14
+     [java] ANIMATE
+     [java] Charlie-2, beg --- 7 , end --- 14
+     [java] Pred: checking Arg: the database best-match: -1
+     [java] 
+     [java] coref (Charlie) --- key: 7_14
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 7_14
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (database) --- key: 29_37
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: CHARLIE best-match: 7
+     [java] ANIMATE
+     [java] CHARLIE-12, beg --- 55 , end --- 62
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] move:
+     [java]     A1: REVEAL OUTSIDE THE DOOR
+     [java] 
+     [java] Pred: moved Arg: REVEAL OUTSIDE THE DOOR best-match: -1
+     [java] look:
+     [java]     A0: HARLIE
+     [java]     A1: at a PHOTO OF LARRY
+     [java] 
+     [java] Pred: looking Arg: HARLIE best-match: 0
+     [java] INANIMATE
+     [java] HARLIE-1, beg --- 142 , end --- 148
+     [java] INANIMATE
+     [java] HARLIE-1, beg --- 142 , end --- 148
+     [java] Pred: looking Arg: at a PHOTO OF LARRY best-match: 4
+     [java] UNKNOWN
+     [java] LARRY-10, beg --- 187 , end --- 192
+     [java] coref (HARLIE) --- key: 142_148
+     [java] COREF --------------
+     [java] mention: HARLIE, coref: HARLIE
+     [java] coref (HARLIE) --- key: 142_148
+     [java] COREF --------------
+     [java] mention: HARLIE, coref: HARLIE
+     [java] coref (CHARLIE) --- key: 55_62
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (PHOTO) --- key: 178_183
+     [java] coref (PHOTOS) --- key: 0_6
+     [java] coref (contemplative) --- key: 150_163
+     [java] coref (LARRY) --- key: 10_15
+     [java] coref (LARRY) --- key: 10_15
+     [java] coref (LARRY) --- key: 187_192
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (mementos) --- key: 17_25
+     [java] coref (awards) --- key: 27_33
+     [java] coref (awards) --- key: 27_33
+     [java] coref (reminders) --- key: 41_50
+     [java] coref (dialogue) --- key: 72_80
+     [java] coref (Megan) --- key: 107_112
+     [java] coref (Amita) --- key: 117_122
+     [java] coref (DOOR) --- key: 101_105
+     [java] coref (Megan) --- key: 107_112
+     [java] coref (Megan) --- key: 107_112
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 1 , end --- 8
+     [java] enter:
+     [java]     A0: Don , Megan and Colby
+     [java]     A1: to find Charlie at the PLASMA
+     [java] find:
+     [java]     A0: Don , Megan and Colby
+     [java]     AM-LOC: at the PLASMA
+     [java] 
+     [java] Pred: enter Arg: to find Charlie at the PLASMA best-match: 4
+     [java] ANIMATE
+     [java] Charlie-9, beg --- 63 , end --- 70
+     [java] Pred: enter Arg: Don , Megan and Colby best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 28 , end --- 31
+     [java] ANIMATE
+     [java] Don-1, beg --- 28 , end --- 31
+     [java] ANIMATE
+     [java] Megan-3, beg --- 33 , end --- 38
+     [java] ANIMATE
+     [java] Colby-5, beg --- 43 , end --- 48
+     [java] Pred: find Arg: Don , Megan and Colby best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 28 , end --- 31
+     [java] ANIMATE
+     [java] Don-1, beg --- 28 , end --- 31
+     [java] ANIMATE
+     [java] Megan-3, beg --- 33 , end --- 38
+     [java] ANIMATE
+     [java] Colby-5, beg --- 43 , end --- 48
+     [java] have:
+     [java]     A0: He
+     [java] chat:
+     [java]     A0: the killer 's
+     [java]     A1: on the left
+     [java] chat:
+     [java]     A2: on the right
+     [java] 
+     [java] Pred: has Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 86 , end --- 88
+     [java] Pred: chat Arg: on the left best-match: -1
+     [java] Pred: chat Arg: the killer 's best-match: 3
+     [java] ANIMATE
+     [java] killer-10, beg --- 123 , end --- 129
+     [java] Pred: chat Arg: on the right best-match: -1
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: COLBY best-match: 0
+     [java] INANIMATE
+     [java] COLBY-1, beg --- 214 , end --- 219
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] dine:
+     [java]     A0: NIGHT Don
+     [java] 
+     [java] Pred: DINING Arg: NIGHT Don best-match: 2
+     [java] ANIMATE
+     [java] Don-8, beg --- 275 , end --- 278
+     [java] 
+     [java] 
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] look:
+     [java]     A0: Matt
+     [java]     A1: at Don now ------ Don 's struck a chord of truth
+     [java] strike:
+     [java]     A1: a chord of truth
+     [java]     AM-TMP: 's
+     [java] 
+     [java] mention poss: Don now ------ Don 's struck a chord of truth
+     [java] mention poss: Don 's
+     [java] Pred: looks Arg: at Don now ------ Don 's struck a chord of truth best-match: -1
+     [java] mention poss: Don now ------ Don 's struck a chord of truth
+     [java] mention poss: Don 's
+     [java] Pred: looks Arg: Matt best-match: 0
+     [java] ANIMATE
+     [java] Matt-1, beg --- 326 , end --- 330
+     [java] mention poss: Don now ------ Don 's struck a chord of truth
+     [java] mention poss: Don 's
+     [java] Pred: struck Arg: a chord of truth best-match: -1
+     [java] spy:
+     [java]     A0: Don
+     [java]     A1: a FAMILY PHOTO
+     [java]     AM-LOC: on the wall
+     [java] include:
+     [java]     A1: DAUGHTER KATIE
+     [java]     A2: a FAMILY PHOTO
+     [java] 
+     [java] Pred: spies Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 386 , end --- 389
+     [java] Pred: spies Arg: a FAMILY PHOTO best-match: -1
+     [java] Pred: including Arg: a FAMILY PHOTO best-match: -1
+     [java] Pred: including Arg: DAUGHTER KATIE best-match: 2
+     [java] ANIMATE
+     [java] KATIE-9, beg --- 431 , end --- 436
+     [java] crack:
+     [java]     A0: Don 's words
+     [java]     A1: Matt 's shell
+     [java] 
+     [java] Pred: crack Arg: Matt 's shell best-match: 3
+     [java] ANIMATE
+     [java] Matt-5, beg --- 469 , end --- 473
+     [java] Pred: crack Arg: Don 's words best-match: 1
+     [java] ANIMATE
+     [java] Don-1, beg --- 451 , end --- 454
+     [java] leave:
+     [java]     A0: a dialogue
+     [java]     A1: your room
+     [java]     AM-ADV: even
+     [java] speak:
+     [java]     A0: even leave your room
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: leave Arg: a dialogue best-match: -1
+     [java] Pred: leave Arg: your room best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: even leave your room best-match: -1
+     [java] lean:
+     [java]     A0: Don
+     [java] hold:
+     [java]     A0: Matt 's look
+     [java]     A1: Don leans in
+     [java] 
+     [java] Pred: leans Arg: Don best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 524 , end --- 527
+     [java] Pred: holds Arg: Don leans in best-match: 0
+     [java] ANIMATE
+     [java] Don-1, beg --- 524 , end --- 527
+     [java] Pred: holds Arg: Matt 's look best-match: 2
+     [java] ANIMATE
+     [java] Matt-6, beg --- 544 , end --- 548
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] nod:
+     [java]     A0: Matt
+     [java] look:
+     [java]     A0: Matt
+     [java]     A1: to his parents
+     [java] 
+     [java] Pred: nods Arg: Matt best-match: 0
+     [java] ANIMATE
+     [java] Matt-1, beg --- 581 , end --- 585
+     [java] Pred: looks Arg: Matt best-match: 0
+     [java] ANIMATE
+     [java] Matt-1, beg --- 581 , end --- 585
+     [java] Pred: looks Arg: to his parents best-match: 1
+     [java] ANIMATE
+     [java] parents-7, beg --- 605 , end --- 612
+     [java] 
+     [java] collapse:
+     [java]     A1: Matt
+     [java]     A2: into his mom 's arms
+     [java] cry:
+     [java]     A1: into his mom 's arms
+     [java] 
+     [java] Pred: collapses Arg: Matt best-match: 0
+     [java] ANIMATE
+     [java] Matt-1, beg --- 637 , end --- 641
+     [java] Pred: collapses Arg: into his mom 's arms best-match: 2
+     [java] ANIMATE
+     [java] mom-5, beg --- 661 , end --- 664
+     [java] Pred: crying Arg: into his mom 's arms best-match: 2
+     [java] ANIMATE
+     [java] mom-5, beg --- 661 , end --- 664
+     [java] 
+     [java] embrace:
+     [java] 
+     [java] coref (anger) --- key: 630_635
+     [java] coref (CHARLIE) --- key: 1_8
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (dialogue) --- key: 18_26
+     [java] coref (dialogue) --- key: 229_237
+     [java] coref (dialogue) --- key: 316_324
+     [java] coref (dialogue) --- key: 514_522
+     [java] coref (dialogue) --- key: 571_579
+     [java] coref (arms) --- key: 667_671
+     [java] coref (Don) --- key: 28_31
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 28_31
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (He) --- key: 86_88
+     [java] COREF --------------
+     [java] mention: He, coref: Don
+     [java] coref (Don) --- key: 275_278
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 355_358
+     [java] coref (Don) --- key: 386_389
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 451_454
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 524_527
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Megan) --- key: 33_38
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Colby) --- key: 43_48
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (COLBY) --- key: 214_219
+     [java] COREF --------------
+     [java] mention: COLBY, coref: Colby
+     [java] coref (Remorse) --- key: 614_621
+     [java] coref (Remorse) --- key: 614_621
+     [java] coref (Charlie) --- key: 63_70
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (PLASMA) --- key: 78_84
+     [java] coref (split) --- key: 95_100
+     [java] coref (mom) --- key: 661_664
+     [java] COREF --------------
+     [java] mention: mom, coref: mom
+     [java] coref (chat) --- key: 132_136
+     [java] coref (hesitates) --- key: 681_690
+     [java] coref (killer) --- key: 123_129
+     [java] COREF --------------
+     [java] mention: killer, coref: killer
+     [java] coref (loss) --- key: 697_701
+     [java] coref (left) --- key: 144_148
+     [java] coref (chat) --- key: 194_198
+     [java] coref (Parents) --- key: 157_164
+     [java] coref (parents) --- key: 605_612
+     [java] COREF --------------
+     [java] mention: parents, coref: parents
+     [java] coref (Predator) --- key: 173_181
+     [java] coref (right) --- key: 206_211
+     [java] coref (NIGHT) --- key: 269_274
+     [java] coref (ROOM) --- key: 262_266
+     [java] coref (room) --- key: 500_504
+     [java] coref (HOUSE) --- key: 247_252
+     [java] coref (present) --- key: 280_287
+     [java] coref (response) --- key: 292_300
+     [java] coref (now) --- key: 344_347
+     [java] coref (now) --- key: 622_625
+     [java] coref (------) --- key: 348_354
+     [java] coref (Matt) --- key: 326_330
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (Matt) --- key: 469_473
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (Matt) --- key: 544_548
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (Matt) --- key: 581_585
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (his) --- key: 601_604
+     [java] coref (Matt) --- key: 637_641
+     [java] COREF --------------
+     [java] mention: Matt, coref: Matt
+     [java] coref (his) --- key: 657_660
+     [java] coref (chord) --- key: 370_375
+     [java] coref (Don) --- key: 340_343
+     [java] coref (PHOTO) --- key: 405_410
+     [java] coref (wall) --- key: 445_449
+     [java] coref (KATIE) --- key: 431_436
+     [java] COREF --------------
+     [java] mention: KATIE, coref: KATIE
+     [java] coref (shell) --- key: 476_481
+     [java] coref (words) --- key: 457_462
+     [java] coref (your) --- key: 495_499
+     [java] coref (look) --- key: 551_555
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] 
+     [java] sit:
+     [java]     A2: in
+     [java] 
+     [java] Pred: sitting Arg: in best-match: -1
+     [java] 
+     [java] go:
+     [java]     A1: Charlie 's eyes
+     [java] chat:
+     [java]     A2: with predators -- FZASH'CHARLIE VISION A block of chatroom chat -- words
+     [java] chat:
+     [java]     A0: chatroom
+     [java] pop:
+     [java]     A1: the transcripts of their chatroom chats with predators -- FZASH'CHARLIE VISION A block of chatroom chat -- words
+     [java] illuminate:
+     [java]     A1: ie
+     [java] 
+     [java] Pred: go Arg: Charlie 's eyes best-match: 1
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 107 , end --- 114
+     [java] Pred: chats Arg: with predators -- FZASH'CHARLIE VISION A block of chatroom chat -- words best-match: 8
+     [java] ANIMATE
+     [java] predators-22, beg --- 212 , end --- 221
+     [java] Pred: chat Arg: chatroom best-match: -1
+     [java] Pred: pop Arg: the transcripts of their chatroom chats with predators -- FZASH'CHARLIE VISION A block of chatroom chat -- words best-match: 8
+     [java] Pred: illuminating Arg: ie best-match: -1
+     [java] speak:
+     [java]     A0: 4A CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: 4A CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-2, beg --- 308 , end --- 315
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] vary:
+     [java]     A5: color
+     [java] 
+     [java] 
+     [java] speak:
+     [java]     A0: cont & acirc ; & euro ; & trade ; d
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: cont & acirc ; & euro ; & trade ; d best-match: -1
+     [java] SRL failed for sentence: A HAND strings another strand -- different beads, order...  CHARLIE(V.0.)
+     [java] Continuing ...
+     [java] speak:
+     [java]     A0: cont & acirc ; & euro ; & trade ; d
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: cont & acirc ; & euro ; & trade ; d best-match: -1
+     [java] line:
+     [java]     A0: Several different strands
+     [java]     AM-PNC: for comparison
+     [java]     C-V: up
+     [java] 
+     [java] Pred: line Arg: Several different strands best-match: -1
+     [java] SRL failed for sentence: Letters now'appear on the beads, revealing.message sequences...  CHARLIE(V.0.)
+     [java] Continuing ...
+     [java] speak:
+     [java]     A0: cont & acirc ; & euro ; & trade ; d
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: cont & acirc ; & euro ; & trade ; d best-match: -1
+     [java] 
+     [java] coref (dialogue) --- key: 14_22
+     [java] coref (dialogue) --- key: 325_333
+     [java] coref (dialogue) --- key: 469_477
+     [java] coref (dialogue) --- key: 590_598
+     [java] coref (dialogue) --- key: 766_774
+     [java] coref (SECOND) --- key: 24_30
+     [java] coref (beads) --- key: 522_527
+     [java] coref (beads) --- key: 522_527
+     [java] coref (briefs) --- key: 53_59
+     [java] coref (DOD) --- key: 60_63
+     [java] coref (David) --- key: 77_82
+     [java] coref (hands) --- key: 83_88
+     [java] coref (file) --- key: 101_105
+     [java] coref (Charlie) --- key: 107_114
+     [java] COREF --------------
+     [java] mention: Charlie, coref: CHARLIE
+     [java] coref (CHARLIE) --- key: 232_239
+     [java] coref (CHARLIE) --- key: 308_315
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (CHARLIE) --- key: 715_722
+     [java] coref (eyes) --- key: 117_121
+     [java] coref (list) --- key: 134_138
+     [java] coref (names) --- key: 142_147
+     [java] coref (group) --- key: 155_160
+     [java] coref (strands) --- key: 618_625
+     [java] coref (transcripts) --- key: 171_182
+     [java] coref (line) --- key: 626_630
+     [java] coref (their) --- key: 186_191
+     [java] coref (chatroom) --- key: 192_200
+     [java] coref (block) --- key: 249_254
+     [java] coref (predators) --- key: 212_221
+     [java] COREF --------------
+     [java] mention: predators, coref: predators
+     [java] coref (now) --- key: 658_661
+     [java] coref (words) --- key: 275_280
+     [java] coref (Letters) --- key: 650_657
+     [java] coref (chat) --- key: 267_271
+     [java] coref (beads) --- key: 676_681
+     [java] coref (beads) --- key: 676_681
+     [java] coref (sequences) --- key: 701_710
+     [java] coref (ie) --- key: 300_302
+     [java] coref (color) --- key: 401_406
+     [java] coref (strings) --- key: 364_371
+     [java] coref (of.beads) --- key: 381_389
+     [java] coref (0) --- key: 428_429
+     [java] coref (0) --- key: 549_550
+     [java] coref (0) --- key: 725_726
+     [java] coref (color) --- key: 401_406
+     [java] coref (cont) --- key: 433_437
+     [java] coref (cont) --- key: 554_558
+     [java] coref (cont) --- key: 730_734
+     [java] coref (SCENE) --- key: 779_784
+     [java] coref (CHARLIE) --- key: 418_425
+     [java] coref (CHARLIE) --- key: 539_546
+     [java] coref (V.) --- key: 426_428
+     [java] coref (V.) --- key: 547_549
+     [java] coref (V.) --- key: 723_725
+     [java] coref (trade) --- key: 451_456
+     [java] coref (trade) --- key: 572_577
+     [java] coref (trade) --- key: 748_753
+     [java] coref (euro) --- key: 445_449
+     [java] coref (euro) --- key: 566_570
+     [java] coref (euro) --- key: 742_746
+     [java] coref (HAND) --- key: 481_485
+     [java] coref (strand) --- key: 502_508
+     [java] coref (strings) --- key: 486_493
+     [java] cross:
+     [java]     A0: Amita
+     [java]     A1: the Quad carrying a stack of papers
+     [java] carry:
+     [java]     A0: the Quad
+     [java]     A1: a stack of papers
+     [java] stack:
+     [java]     A1: of papers
+     [java] 
+     [java] Pred: crosses Arg: the Quad carrying a stack of papers best-match: -1
+     [java] Pred: crosses Arg: Amita best-match: 0
+     [java] ANIMATE
+     [java] Amita-1, beg --- 0 , end --- 5
+     [java] Pred: carrying Arg: a stack of papers best-match: -1
+     [java] Pred: carrying Arg: the Quad best-match: -1
+     [java] Pred: stack Arg: of papers best-match: -1
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 52 , end --- 59
+     [java] catch:
+     [java]     A2: with her
+     [java]     AM-ADV: carrying a folder with chat transcripts
+     [java]     C-V: up
+     [java] carry:
+     [java]     A1: a folder
+     [java]     AM-MNR: with chat transcripts
+     [java] chat:
+     [java]     A1: transcripts
+     [java] 
+     [java] Pred: catches Arg: with her best-match: 0
+     [java] ANIMATE
+     [java] her-4, beg --- 95 , end --- 98
+     [java] Pred: carrying Arg: a folder best-match: -1
+     [java] Pred: chat Arg: transcripts best-match: -1
+     [java] speak:
+     [java]     A0: AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: AMITA best-match: 0
+     [java] ANIMATE
+     [java] AMITA-1, beg --- 142 , end --- 147
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-1, beg --- 169 , end --- 174
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] hold:
+     [java]     A0: ------ AMITA
+     [java]     A1: her stack of transcripts
+     [java]     AM-TMP: Then
+     [java]     C-V: up
+     [java] stack:
+     [java]     A0: her
+     [java]     A1: of transcripts
+     [java] speak:
+     [java]     A0: ------ AMITA
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: holds Arg: ------ AMITA best-match: 2
+     [java] ANIMATE
+     [java] AMITA-9, beg --- 255 , end --- 260
+     [java] Pred: holds Arg: her stack of transcripts best-match: -1
+     [java] Pred: stack Arg: of transcripts best-match: -1
+     [java] Pred: stack Arg: her best-match: -1
+     [java] Pred: speaks Arg: ------ AMITA best-match: 2
+     [java] ANIMATE
+     [java] AMITA-9, beg --- 255 , end --- 260
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] head:
+     [java]     C-V: off
+     [java] 
+     [java] coref (transcripts) --- key: 235_246
+     [java] coref (Amita) --- key: 0_5
+     [java] COREF --------------
+     [java] mention: Amita, coref: AMITA
+     [java] coref (her) --- key: 95_98
+     [java] COREF --------------
+     [java] mention: her, coref: AMITA
+     [java] coref (AMITA) --- key: 142_147
+     [java] COREF --------------
+     [java] mention: AMITA, coref: AMITA
+     [java] coref (AMITA) --- key: 255_260
+     [java] COREF --------------
+     [java] mention: AMITA, coref: AMITA
+     [java] coref (Amita) --- key: 294_299
+     [java] coref (Quad) --- key: 18_22
+     [java] coref (a) --- key: 32_33
+     [java] coref (papers) --- key: 43_49
+     [java] coref (CHARLIE) --- key: 52_59
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: CHARLIE
+     [java] coref (Megan) --- key: 284_289
+     [java] coref (Megan) --- key: 284_289
+     [java] coref (dialogue) --- key: 69_77
+     [java] coref (dialogue) --- key: 157_165
+     [java] coref (dialogue) --- key: 184_192
+     [java] coref (dialogue) --- key: 270_278
+     [java] coref (folder) --- key: 111_117
+     [java] coref (transcripts) --- key: 128_139
+     [java] coref (MEGAN) --- key: 169_174
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: MEGAN
+     [java] coref (Megan) --- key: 194_199
+     [java] coref (her) --- key: 222_225
+     [java] coref (Megan) --- key: 284_289
+     [java] 
+     [java] coref (SECOND) --- key: 4_10
+     [java] coref (Don) --- key: 27_30
+     [java] coref (Don) --- key: 27_30
+     [java] coref (Megan) --- key: 32_37
+     [java] coref (David) --- key: 42_47
+     [java] coref (BUMPER) --- key: 19_25
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] close:
+     [java]     AM-MNR: ON A MAP OF GREATER L.A. ------ 85 BLACK X'S liberally scattered , showing Elaine Tillman 's house listings
+     [java] scatter:
+     [java]     AM-MNR: liberally
+     [java] show:
+     [java]     A0: A MAP
+     [java]     A1: Elaine Tillman 's house listings
+     [java] 
+     [java] mention poss: CLOSE ON A MAP OF GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings .
+     [java] mention poss: A MAP OF GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings
+     [java] mention poss: GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings
+     [java] mention poss: ------ 85 BLACK X 'S liberally scattered
+     [java] mention poss: BLACK X 'S
+     [java] Pred: showing Arg: Elaine Tillman 's house listings best-match: 6
+     [java] ANIMATE
+     [java] Tillman-18, beg --- 111 , end --- 118
+     [java] mention poss: CLOSE ON A MAP OF GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings .
+     [java] mention poss: A MAP OF GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings
+     [java] mention poss: GREATER L.A. ------ 85 BLACK X 'S liberally scattered , showing Elaine Tillman 's house listings
+     [java] mention poss: ------ 85 BLACK X 'S liberally scattered
+     [java] mention poss: BLACK X 'S
+     [java] Pred: showing Arg: A MAP best-match: -1
+     [java] be:
+     [java]     A1: Charlie
+     [java]     AM-LOC: at the PLASMA
+     [java] 
+     [java] Pred: is Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 137 , end --- 144
+     [java] listen:
+     [java]     A0: Don and Megan
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: listening Arg: Don and Megan best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 163 , end --- 166
+     [java] ANIMATE
+     [java] Don-1, beg --- 163 , end --- 166
+     [java] ANIMATE
+     [java] Megan-3, beg --- 171 , end --- 176
+     [java] Pred: speaks Arg: CHARLIE best-match: 3
+     [java] ANIMATE
+     [java] CHARLIE-6, beg --- 191 , end --- 198
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] SRL failed for sentence: Charlie now punches up his previous map showing Jessica's Law --hot---zones-- split---screened with the map of house locations...  CHARLIE (cont'd) speaks a dialogue.
+     [java] Continuing ...
+     [java] hit:
+     [java]     A0: Charlie
+     [java] simplify:
+     [java]     AM-MNR: down
+     [java] 
+     [java] Pred: hits Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 385 , end --- 392
+     [java] speak:
+     [java]     A0: CHARLIE ( cont 'd )
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: CHARLIE ( cont 'd ) best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 490 , end --- 497
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] speak:
+     [java]     A0: DON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: DON best-match: -1
+     [java] coref (dialogue) --- key: 14_22
+     [java] coref (dialogue) --- key: 208_216
+     [java] coref (dialogue) --- key: 375_383
+     [java] coref (dialogue) --- key: 516_524
+     [java] coref (dialogue) --- key: 541_549
+     [java] coref (Tillman) --- key: 111_118
+     [java] COREF --------------
+     [java] mention: Tillman, coref: Tillman
+     [java] coref (CLOSE) --- key: 24_29
+     [java] coref (MAP) --- key: 35_38
+     [java] coref (L.A.) --- key: 50_54
+     [java] coref (85) --- key: 62_64
+     [java] coref (X) --- key: 71_72
+     [java] coref (X) --- key: 459_460
+     [java] coref (listings) --- key: 127_135
+     [java] coref (PLASMA) --- key: 155_161
+     [java] coref (Charlie) --- key: 137_144
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 191_198
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Charlie) --- key: 218_225
+     [java] coref (his) --- key: 241_244
+     [java] coref (CHARLIE) --- key: 349_356
+     [java] coref (Charlie) --- key: 385_392
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 490_497
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Megan) --- key: 171_176
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Don) --- key: 163_166
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Don) --- key: 163_166
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Jessica) --- key: 266_273
+     [java] coref (now) --- key: 226_229
+     [java] coref (now) --- key: 463_466
+     [java] coref (map) --- key: 254_257
+     [java] coref (zones) --- key: 288_293
+     [java] coref (ZONES) --- key: 482_487
+     [java] coref (locations) --- key: 335_344
+     [java] coref (cont) --- key: 358_362
+     [java] coref (cont) --- key: 499_503
+     [java] coref (map) --- key: 322_325
+     [java] coref (two) --- key: 414_417
+     [java] coref (5) --- key: 452_453
+     [java] coref (5) --- key: 470_471
+     [java] coref (remote) --- key: 402_408
+     [java] coref (BLUE) --- key: 454_458
+     [java] coref (maps) --- key: 418_422
+     [java] coref (HOT) --- key: 476_479
+     [java] cross:
+     [java]     A0: Charlie
+     [java]     A1: the Quad
+     [java]     AM-ADV: reading a journal
+     [java] read:
+     [java]     A0: Charlie
+     [java]     A1: a journal
+     [java] 
+     [java] Pred: crosses Arg: the Quad best-match: -1
+     [java] Pred: crosses Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] Pred: reading Arg: a journal best-match: -1
+     [java] Pred: reading Arg: Charlie best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 0 , end --- 7
+     [java] intercept:
+     [java]     A1: him
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: intercepts Arg: him best-match: 1
+     [java] ANIMATE
+     [java] him-2, beg --- 56 , end --- 59
+     [java] Pred: speaks Arg: LARRY best-match: 2
+     [java] ANIMATE
+     [java] LARRY-4, beg --- 64 , end --- 69
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] coref (Charlie) --- key: 0_7
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (him) --- key: 56_59
+     [java] COREF --------------
+     [java] mention: him, coref: Charlie
+     [java] coref (Quad) --- key: 20_24
+     [java] coref (journal) --- key: 36_43
+     [java] coref (LARRY) --- key: 64_69
+     [java] COREF --------------
+     [java] mention: LARRY, coref: LARRY
+     [java] coref (intercepts) --- key: 45_55
+     [java] coref (dialogue) --- key: 79_87
+     [java] coref (Megan) --- key: 102_107
+     [java] coref (They) --- key: 89_93
+     [java] coref (desk) --- key: 110_114
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: COLBY best-match: 0
+     [java] INANIMATE
+     [java] COLBY-1, beg --- 1 , end --- 6
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] cross:
+     [java]     A0: Don and Colby
+     [java]     C-V: through
+     [java] head:
+     [java]     A0: Don and Colby
+     [java]     A1: toward Megan
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: crossing Arg: Don and Colby best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 26 , end --- 29
+     [java] ANIMATE
+     [java] Don-1, beg --- 26 , end --- 29
+     [java] ANIMATE
+     [java] Colby-3, beg --- 34 , end --- 39
+     [java] Pred: heading Arg: toward Megan best-match: 3
+     [java] ANIMATE
+     [java] Megan-9, beg --- 73 , end --- 78
+     [java] Pred: heading Arg: Don and Colby best-match: 2
+     [java] ANIMATE
+     [java] Don-1, beg --- 26 , end --- 29
+     [java] ANIMATE
+     [java] Don-1, beg --- 26 , end --- 29
+     [java] ANIMATE
+     [java] Colby-3, beg --- 34 , end --- 39
+     [java] Pred: speaks Arg: COLBY best-match: 4
+     [java] UNKNOWN
+     [java] COLBY-11, beg --- 83 , end --- 88
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] coref (COLBY) --- key: 1_6
+     [java] COREF --------------
+     [java] mention: COLBY, coref: COLBY
+     [java] coref (Colby) --- key: 34_39
+     [java] COREF --------------
+     [java] mention: Colby, coref: COLBY
+     [java] coref (COLBY) --- key: 83_88
+     [java] COREF --------------
+     [java] mention: COLBY, coref: COLBY
+     [java] coref (dialogue) --- key: 16_24
+     [java] coref (dialogue) --- key: 98_106
+     [java] coref (Don) --- key: 26_29
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] coref (Megan) --- key: 73_78
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Don) --- key: 26_29
+     [java] COREF --------------
+     [java] mention: Don, coref: Don
+     [java] drop:
+     [java]     A0: A BOX OF FBI BALLCAPS
+     [java]     AM-LOC: on a desk
+     [java] 
+     [java] Pred: drops Arg: A BOX OF FBI BALLCAPS best-match: -1
+     [java] 
+     [java] gather:
+     [java]     A0: Charlie , Megan , David and Colby
+     [java]     A1: around
+     [java] 
+     [java] Pred: gathered Arg: around best-match: -1
+     [java] Pred: gathered Arg: Charlie , Megan , David and Colby best-match: 0
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 72 , end --- 79
+     [java] ANIMATE
+     [java] Charlie-1, beg --- 72 , end --- 79
+     [java] ANIMATE
+     [java] Megan-3, beg --- 81 , end --- 86
+     [java] ANIMATE
+     [java] David-5, beg --- 88 , end --- 93
+     [java] ANIMATE
+     [java] Colby-7, beg --- 98 , end --- 103
+     [java] speak:
+     [java]     A0: COLBY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: COLBY best-match: 0
+     [java] INANIMATE
+     [java] COLBY-1, beg --- 122 , end --- 127
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] give:
+     [java]     A0: Colby
+     [java]     A1: a look
+     [java]     A2: Charlie
+     [java] 
+     [java] Pred: gives Arg: a look best-match: -1
+     [java] Pred: gives Arg: Charlie best-match: 1
+     [java] ANIMATE
+     [java] Charlie-3, beg --- 159 , end --- 166
+     [java] Pred: gives Arg: Colby best-match: 0
+     [java] ANIMATE
+     [java] Colby-1, beg --- 147 , end --- 152
+     [java] step:
+     [java]     A0: David
+     [java]     C-V: up
+     [java] extend:
+     [java]     A0: a hand
+     [java] 
+     [java] Pred: steps Arg: David best-match: 0
+     [java] ANIMATE
+     [java] David-1, beg --- 175 , end --- 180
+     [java] Pred: extends Arg: a hand best-match: -1
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 208 , end --- 215
+     [java] turn:
+     [java]     A1: Larry
+     [java]     AM-DIR: to Megan , who 's been silent until now
+     [java] be:
+     [java]     A1: Megan
+     [java]     AM-MNR: silent
+     [java]     AM-TMP: until now
+     [java]     R-A1: who
+     [java] 
+     [java] Pred: turns Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 235 , end --- 240
+     [java] Pred: been Arg: Megan best-match: 1
+     [java] ANIMATE
+     [java] Megan-4, beg --- 250 , end --- 255
+     [java] ANIMATE
+     [java] Megan-4, beg --- 250 , end --- 255
+     [java] coref (dialogue) --- key: 137_145
+     [java] coref (dialogue) --- key: 225_233
+     [java] coref (BOX) --- key: 2_5
+     [java] coref (BALLCAPS) --- key: 13_21
+     [java] coref (desk) --- key: 33_37
+     [java] coref (look) --- key: 169_173
+     [java] coref (Larry) --- key: 65_70
+     [java] coref (Larry) --- key: 235_240
+     [java] COREF --------------
+     [java] mention: Larry, coref: Larry
+     [java] coref (UP) --- key: 44_46
+     [java] coref (hand) --- key: 201_205
+     [java] coref (DOD) --- key: 56_59
+     [java] coref (now) --- key: 281_284
+     [java] coref (Charlie) --- key: 72_79
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 72_79
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (Charlie) --- key: 159_166
+     [java] COREF --------------
+     [java] mention: Charlie, coref: Charlie
+     [java] coref (CHARLIE) --- key: 208_215
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Megan) --- key: 81_86
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Megan) --- key: 250_255
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Megan) --- key: 250_255
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (David) --- key: 88_93
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (David) --- key: 175_180
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (Colby) --- key: 98_103
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] coref (COLBY) --- key: 122_127
+     [java] COREF --------------
+     [java] mention: COLBY, coref: Colby
+     [java] coref (Colby) --- key: 147_152
+     [java] COREF --------------
+     [java] mention: Colby, coref: Colby
+     [java] 
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: MEGAN best-match: 1
+     [java] ANIMATE
+     [java] MEGAN-7, beg --- 56 , end --- 61
+     [java] put:
+     [java]     A0: Larry
+     [java]     A1: his fingers
+     [java]     A2: to her lips
+     [java]     AM-ADV: hushing her
+     [java] hush:
+     [java]     A0: Larry
+     [java]     A1: her
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: puts Arg: to her lips best-match: -1
+     [java] Pred: puts Arg: his fingers best-match: -1
+     [java] Pred: puts Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 81 , end --- 86
+     [java] Pred: hushing Arg: her best-match: -1
+     [java] Pred: hushing Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 81 , end --- 86
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 6
+     [java] ANIMATE
+     [java] LARRY-12, beg --- 133 , end --- 138
+     [java] lean:
+     [java]     A0: He
+     [java] kiss:
+     [java]     A0: He
+     [java]     A1: her
+     [java] 
+     [java] Pred: leans Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 158 , end --- 160
+     [java] Pred: kisses Arg: her best-match: -1
+     [java] Pred: kisses Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 158 , end --- 160
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: LARRY best-match: 3
+     [java] ANIMATE
+     [java] LARRY-6, beg --- 214 , end --- 219
+     [java] look:
+     [java]     A0: Larry
+     [java]     A1: toward a FIGURE standing on the Bridge
+     [java] speak:
+     [java]     A0: LARRY
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: looks Arg: toward a FIGURE standing on the Bridge best-match: -1
+     [java] Pred: looks Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 239 , end --- 244
+     [java] Pred: speaks Arg: LARRY best-match: 3
+     [java] ANIMATE
+     [java] LARRY-11, beg --- 294 , end --- 299
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] turn:
+     [java]     A1: Larry
+     [java] cross:
+     [java]     A0: Larry
+     [java]     A1: to BUZZ ALDRIN
+     [java] 
+     [java] Pred: turns Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 333 , end --- 338
+     [java] Pred: crosses Arg: to BUZZ ALDRIN best-match: 1
+     [java] ANIMATE
+     [java] ALDRIN-7, beg --- 365 , end --- 371
+     [java] Pred: crosses Arg: Larry best-match: 0
+     [java] ANIMATE
+     [java] Larry-1, beg --- 333 , end --- 338
+     [java] walk:
+     [java]     AM-PNC: TO CAMERA IN SLO --- MO
+     [java] 
+     [java] think:
+     [java]     A1: --- The Right Stuff
+     [java] 
+     [java] Pred: Think Arg: --- The Right Stuff best-match: -1
+     [java] 
+     [java] coref (ALDRIN) --- key: 365_371
+     [java] COREF --------------
+     [java] mention: ALDRIN, coref: ALDRIN
+     [java] coref (Larry) --- key: 0_5
+     [java] coref (Larry) --- key: 81_86
+     [java] COREF --------------
+     [java] mention: Larry, coref: ALDRIN
+     [java] coref (his) --- key: 92_95
+     [java] coref (LARRY) --- key: 133_138
+     [java] COREF --------------
+     [java] mention: LARRY, coref: ALDRIN
+     [java] coref (He) --- key: 158_160
+     [java] COREF --------------
+     [java] mention: He, coref: ALDRIN
+     [java] coref (LARRY) --- key: 214_219
+     [java] COREF --------------
+     [java] mention: LARRY, coref: ALDRIN
+     [java] coref (Larry) --- key: 239_244
+     [java] COREF --------------
+     [java] mention: Larry, coref: ALDRIN
+     [java] coref (LARRY) --- key: 294_299
+     [java] COREF --------------
+     [java] mention: LARRY, coref: ALDRIN
+     [java] coref (Larry) --- key: 333_338
+     [java] COREF --------------
+     [java] mention: Larry, coref: ALDRIN
+     [java] coref (ALDRIN) --- key: 397_403
+     [java] coref (LARRY) --- key: 382_387
+     [java] coref (LARRY) --- key: 382_387
+     [java] coref (Megan) --- key: 10_15
+     [java] coref (MEGAN) --- key: 56_61
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: Megan
+     [java] coref (her) --- key: 107_110
+     [java] coref (her) --- key: 125_128
+     [java] coref (her) --- key: 181_184
+     [java] coref (Megan) --- key: 186_191
+     [java] coref (Megan) --- key: 319_324
+     [java] coref (Larry) --- key: 0_5
+     [java] coref (CLOSE) --- key: 373_378
+     [java] coref (door) --- key: 23_27
+     [java] coref (pause) --- key: 40_45
+     [java] coref (dialogue) --- key: 71_79
+     [java] coref (dialogue) --- key: 148_156
+     [java] coref (dialogue) --- key: 229_237
+     [java] coref (dialogue) --- key: 309_317
+     [java] coref (CAMERA) --- key: 415_421
+     [java] coref (fingers) --- key: 96_103
+     [java] coref (BUZZ) --- key: 392_396
+     [java] coref (Think) --- key: 435_440
+     [java] coref (lips) --- key: 111_115
+     [java] coref (SLO) --- key: 425_428
+     [java] coref (MO) --- key: 431_433
+     [java] coref (VOICE) --- key: 473_478
+     [java] coref (Stuff) --- key: 454_459
+     [java] coref (kisses) --- key: 174_180
+     [java] coref (tears) --- key: 204_209
+     [java] coref (fights) --- key: 192_198
+     [java] coref (standing) --- key: 267_275
+     [java] coref (Bridge) --- key: 283_289
+     [java] pull:
+     [java]     A0: TWO SUV 's
+     [java]     A2: up
+     [java]     AM-LOC: behind an ND STATION WAGON
+     [java] 
+     [java] Pred: pull Arg: up best-match: -1
+     [java] Pred: pull Arg: TWO SUV 's best-match: -1
+     [java] jump:
+     [java]     A0: Megan and David
+     [java]     C-V: out
+     [java] check:
+     [java]     A0: Megan and David
+     [java]     A1: the ND STATION WAGON
+     [java]     C-V: out
+     [java] 
+     [java] Pred: jump Arg: Megan and David best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 46 , end --- 51
+     [java] ANIMATE
+     [java] Megan-1, beg --- 46 , end --- 51
+     [java] ANIMATE
+     [java] David-3, beg --- 56 , end --- 61
+     [java] Pred: checking Arg: the ND STATION WAGON best-match: -1
+     [java] Pred: checking Arg: Megan and David best-match: 0
+     [java] ANIMATE
+     [java] Megan-1, beg --- 46 , end --- 51
+     [java] ANIMATE
+     [java] Megan-1, beg --- 46 , end --- 51
+     [java] ANIMATE
+     [java] David-3, beg --- 56 , end --- 61
+     [java] coref (TWO) --- key: 0_3
+     [java] coref (SUV) --- key: 4_7
+     [java] coref (WAGON) --- key: 39_44
+     [java] coref (WAGON) --- key: 100_105
+     [java] coref (Megan) --- key: 46_51
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (David) --- key: 56_61
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (Megan) --- key: 46_51
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] close:
+     [java]     A1: VICTIM # 5 , 35 --- ish , bruised and bloodied , stares out at us with frightened eyes
+     [java]     AM-TMP: ON A LAPTOP SCREEN
+     [java] bruise:
+     [java]     A1: VICTIM # 5
+     [java] bloody:
+     [java]     A1: 35 ---
+     [java] 
+     [java] Pred: CLOSE Arg: VICTIM # 5 , 35 --- ish , bruised and bloodied , stares out at us with frightened eyes best-match: 2
+     [java] Pred: bruised Arg: VICTIM # 5 best-match: 2
+     [java] ANIMATE
+     [java] VICTIM-7, beg --- 26 , end --- 32
+     [java] Pred: bloodied Arg: 35 --- best-match: -1
+     [java] find:
+     [java]     A0: OFF THE LAPTOP SCREEN
+     [java]     A1: VICTIM
+     [java] lash:
+     [java]     A1: # 5
+     [java]     A2: with duct tape
+     [java] 
+     [java] Pred: find Arg: OFF THE LAPTOP SCREEN best-match: -1
+     [java] Pred: find Arg: VICTIM best-match: -1
+     [java] Pred: lashed Arg: with duct tape best-match: -1
+     [java] Pred: lashed Arg: # 5 best-match: -1
+     [java] stand:
+     [java]     A1: Elaine Tillman
+     [java]     AM-MNR: him
+     [java] 
+     [java] Pred: stands Arg: Elaine Tillman best-match: 0
+     [java] ANIMATE
+     [java] Tillman-2, beg --- 215 , end --- 222
+     [java] speak:
+     [java]     A0: ELAINE TILLMAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: ELAINE TILLMAN best-match: 0
+     [java] ANIMATE
+     [java] TILLMAN-2, beg --- 248 , end --- 255
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] fill:
+     [java]     A1: Her eyes
+     [java]     A2: with hatred and , in this moment , control
+     [java] 
+     [java] Pred: filled Arg: Her eyes best-match: -1
+     [java] Pred: filled Arg: with hatred and , in this moment , control best-match: -1
+     [java] cut:
+     [java]     A0: She
+     [java]     A1: the last of the duct tape
+     [java]     A2: with a kitchen knife as
+     [java] 
+     [java] Pred: cuts Arg: the last of the duct tape best-match: -1
+     [java] Pred: cuts Arg: with a kitchen knife as best-match: -1
+     [java] Pred: cuts Arg: She best-match: 0
+     [java] ANIMATE
+     [java] She-1, beg --- 337 , end --- 340
+     [java] 
+     [java] 
+     [java] 
+     [java] enter:
+     [java]     A0: ANOTHER SWAT TEAM
+     [java] 
+     [java] Pred: enters Arg: ANOTHER SWAT TEAM best-match: -1
+     [java] have:
+     [java]     A0: Elaine
+     [java]     A1: the drop on her victim
+     [java]     AM-ADV: behind him
+     [java]     AM-DIS: But
+     [java] 
+     [java] Pred: has Arg: the drop on her victim best-match: 2
+     [java] ANIMATE
+     [java] victim-8, beg --- 582 , end --- 588
+     [java] Pred: has Arg: Elaine best-match: 0
+     [java] ANIMATE
+     [java] Elaine-2, beg --- 555 , end --- 561
+     [java] 
+     [java] speak:
+     [java]     A0: MEGAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: MEGAN best-match: 0
+     [java] ANIMATE
+     [java] MEGAN-1, beg --- 632 , end --- 637
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] weaken:
+     [java]     A1: Elaine 's resolve
+     [java] 
+     [java] Pred: weakening Arg: Elaine 's resolve best-match: 1
+     [java] ANIMATE
+     [java] Elaine-1, beg --- 657 , end --- 663
+     [java] get:
+     [java]     A0: Megan 's
+     [java]     A1: her ---- MEGAN ( cont 'd ) speaks a dialogue
+     [java]     AM-ADV: almost
+     [java] speak:
+     [java]     A0: her ---- MEGAN ( cont 'd )
+     [java]     A1: a dialogue
+     [java] 
+     [java] mention poss: Megan 's
+     [java] Pred: got Arg: Megan 's best-match: -1
+     [java] mention poss: Megan 's
+     [java] Pred: got Arg: her ---- MEGAN ( cont 'd ) speaks a dialogue best-match: 2
+     [java] UNKNOWN
+     [java] MEGAN-7, beg --- 717 , end --- 722
+     [java] mention poss: Megan 's
+     [java] Pred: speaks Arg: her ---- MEGAN ( cont 'd ) best-match: 2
+     [java] UNKNOWN
+     [java] MEGAN-7, beg --- 717 , end --- 722
+     [java] mention poss: Megan 's
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] 
+     [java] drop:
+     [java]     A0: Elaine
+     [java]     A1: the knife
+     [java] crumble:
+     [java]     A0: Elaine
+     [java]     A1: she 's been carrying
+     [java]     AM-LOC: under the weight of the guilt
+     [java] carry:
+     [java]     A0: she
+     [java] 
+     [java] Pred: drops Arg: Elaine best-match: 0
+     [java] ANIMATE
+     [java] Elaine-1, beg --- 757 , end --- 763
+     [java] Pred: drops Arg: the knife best-match: -1
+     [java] Pred: crumbles Arg: Elaine best-match: 0
+     [java] ANIMATE
+     [java] Elaine-1, beg --- 757 , end --- 763
+     [java] Pred: crumbles Arg: she 's been carrying best-match: 4
+     [java] ANIMATE
+     [java] she-13, beg --- 820 , end --- 823
+     [java] Pred: carrying Arg: she best-match: 4
+     [java] ANIMATE
+     [java] she-13, beg --- 820 , end --- 823
+     [java] take:
+     [java]     A0: A SWAT TEAM MEMBER
+     [java]     A1: her
+     [java]     A2: into custody
+     [java] look:
+     [java]     A0: VICTIM # 5
+     [java]     A1: to Megan and David
+     [java] shake:
+     [java] 
+     [java] Pred: takes Arg: her best-match: -1
+     [java] Pred: takes Arg: A SWAT TEAM MEMBER best-match: 0
+     [java] ANIMATE
+     [java] MEMBER-4, beg --- 853 , end --- 859
+     [java] Pred: takes Arg: into custody best-match: -1
+     [java] Pred: looks Arg: VICTIM # 5 best-match: 2
+     [java] ANIMATE
+     [java] VICTIM-11, beg --- 887 , end --- 893
+     [java] Pred: looks Arg: to Megan and David best-match: 3
+     [java] ANIMATE
+     [java] Megan-16, beg --- 906 , end --- 911
+     [java] ANIMATE
+     [java] Megan-16, beg --- 906 , end --- 911
+     [java] ANIMATE
+     [java] David-18, beg --- 916 , end --- 921
+     [java] coref (throat) --- key: 623_629
+     [java] coref (CLOSE) --- key: 0_5
+     [java] coref (SCREEN) --- key: 18_24
+     [java] coref (SCREEN) --- key: 127_133
+     [java] coref (knife) --- key: 610_615
+     [java] coref (knife) --- key: 774_779
+     [java] coref (VICTIM) --- key: 26_32
+     [java] COREF --------------
+     [java] mention: VICTIM, coref: victim
+     [java] coref (victim) --- key: 582_588
+     [java] COREF --------------
+     [java] mention: victim, coref: victim
+     [java] coref (him) --- key: 597_600
+     [java] coref (his) --- key: 619_622
+     [java] coref (VICTIM) --- key: 887_893
+     [java] COREF --------------
+     [java] mention: VICTIM, coref: victim
+     [java] coref (MEGAN) --- key: 717_722
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: MEGAN
+     [java] coref (35) --- key: 37_39
+     [java] coref (ish) --- key: 42_45
+     [java] coref (us) --- key: 83_85
+     [java] coref (resolve) --- key: 666_673
+     [java] coref (eyes) --- key: 102_106
+     [java] coref (eyes) --- key: 279_283
+     [java] coref (guilt) --- key: 814_819
+     [java] coref (OFF) --- key: 112_115
+     [java] coref (weight) --- key: 800_806
+     [java] coref (chair) --- key: 179_184
+     [java] coref (tape) --- key: 169_173
+     [java] coref (CAMERA) --- key: 194_200
+     [java] coref (Tillman) --- key: 215_222
+     [java] COREF --------------
+     [java] mention: Tillman, coref: Tillman
+     [java] coref (him) --- key: 235_238
+     [java] coref (TILLMAN) --- key: 248_255
+     [java] COREF --------------
+     [java] mention: TILLMAN, coref: Tillman
+     [java] coref (MEMBER) --- key: 853_859
+     [java] COREF --------------
+     [java] mention: MEMBER, coref: MEMBER
+     [java] coref (dialogue) --- key: 265_273
+     [java] coref (dialogue) --- key: 647_655
+     [java] coref (dialogue) --- key: 741_749
+     [java] coref (moment) --- key: 320_326
+     [java] coref (Her) --- key: 275_278
+     [java] coref (She) --- key: 337_340
+     [java] COREF --------------
+     [java] mention: She, coref: Her
+     [java] coref (hatred) --- key: 300_306
+     [java] coref (last) --- key: 350_354
+     [java] coref (knife) --- key: 387_392
+     [java] coref (tape) --- key: 367_371
+     [java] coref (FBI) --- key: 437_440
+     [java] coref (FBI) --- key: 442_445
+     [java] coref (OPEN) --- key: 420_424
+     [java] coref (SHOUTS) --- key: 426_432
+     [java] coref (TEAM) --- key: 475_479
+     [java] coref (David) --- key: 456_461
+     [java] coref (David) --- key: 916_921
+     [java] COREF --------------
+     [java] mention: David, coref: David
+     [java] coref (Megan) --- key: 449_454
+     [java] coref (Megan) --- key: 449_454
+     [java] coref (MEGAN) --- key: 632_637
+     [java] COREF --------------
+     [java] mention: MEGAN, coref: Megan
+     [java] coref (Megan) --- key: 688_693
+     [java] coref (her) --- key: 707_710
+     [java] coref (Megan) --- key: 906_911
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (Megan) --- key: 906_911
+     [java] COREF --------------
+     [java] mention: Megan, coref: Megan
+     [java] coref (room) --- key: 495_499
+     [java] coref (room) --- key: 495_499
+     [java] coref (surge) --- key: 480_485
+     [java] coref (TEAM) --- key: 524_528
+     [java] coref (guns) --- key: 501_505
+     [java] coref (drop) --- key: 570_574
+     [java] coref (Elaine) --- key: 555_561
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (her) --- key: 578_581
+     [java] coref (Elaine) --- key: 657_663
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (Elaine) --- key: 757_763
+     [java] COREF --------------
+     [java] mention: Elaine, coref: Elaine
+     [java] coref (she) --- key: 820_823
+     [java] COREF --------------
+     [java] mention: she, coref: Elaine
+     [java] coref (her) --- key: 866_869
+     [java] coref (back) --- key: 545_549
+     [java] 
+     [java] see:
+     [java]     A0: we
+     [java]     AM-LOC: on the launchpad , the final countdown
+     [java] 
+     [java] Pred: see Arg: we best-match: 0
+     [java] ANIMATE
+     [java] we-3, beg --- 58 , end --- 60
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 0
+     [java] ANIMATE
+     [java] CHARLIE-1, beg --- 123 , end --- 130
+     [java] enter:
+     [java]     A0: Alan
+     [java]     A1: from the kitchen
+     [java]     AM-ADV: carrying a tray of champagne glasses filled with milk
+     [java]     AM-TMP: now
+     [java] carry:
+     [java]     A0: Alan
+     [java]     A1: a tray of champagne glasses filled with milk
+     [java] fill:
+     [java]     A1: champagne glasses
+     [java]     A2: with milk
+     [java] 
+     [java] Pred: enters Arg: from the kitchen best-match: -1
+     [java] Pred: enters Arg: Alan best-match: 0
+     [java] ANIMATE
+     [java] Alan-1, beg --- 150 , end --- 154
+     [java] Pred: carrying Arg: a tray of champagne glasses filled with milk best-match: -1
+     [java] Pred: carrying Arg: Alan best-match: 0
+     [java] ANIMATE
+     [java] Alan-1, beg --- 150 , end --- 154
+     [java] Pred: filled Arg: champagne glasses best-match: -1
+     [java] Pred: filled Arg: with milk best-match: -1
+     [java] set:
+     [java]     A0: He
+     [java]     A1: it
+     [java]     AM-PNC: for all
+     [java]     C-V: down
+     [java] 
+     [java] Pred: sets Arg: He best-match: 0
+     [java] ANIMATE
+     [java] He-1, beg --- 239 , end --- 241
+     [java] Pred: sets Arg: it best-match: -1
+     [java] speak:
+     [java]     A0: ALAN
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: ALAN best-match: 0
+     [java] UNKNOWN
+     [java] ALAN-1, beg --- 265 , end --- 269
+     [java] glass:
+     [java]     A0: They all
+     [java]     A1: of milk
+     [java] speak:
+     [java]     A0: COUNTDOWN VOICE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: glasses Arg: of milk best-match: -1
+     [java] Pred: glasses Arg: They all best-match: 0
+     [java] ANIMATE
+     [java] They-1, beg --- 289 , end --- 293
+     [java] Pred: speaks Arg: a dialogue best-match: 
+     [java] -1
+     [java] Pred: speaks Arg: COUNTDOWN VOICE best-match: -1
+     [java] glass:
+     [java]     A0: they all
+     [java] celebrate:
+     [java]     A1: CHARLIE
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java]     AM-ADV: As they all clink glasses , celebrating
+     [java] 
+     [java] Pred: glasses Arg: they all best-match: 0
+     [java] ANIMATE
+     [java] they-2, beg --- 361 , end --- 365
+     [java] Pred: celebrating Arg: CHARLIE best-match: 2
+     [java] ANIMATE
+     [java] CHARLIE-9, beg --- 401 , end --- 408
+     [java] Pred: speaks Arg: CHARLIE best-match: 2
+     [java] ANIMATE
+     [java] CHARLIE-9, beg --- 401 , end --- 408
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] climb:
+     [java]     A1: the shuttle
+     [java]     A2: into the clouds
+     [java] speak:
+     [java]     A0: CHARLIE
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: climbing Arg: the shuttle best-match: -1
+     [java] Pred: climbing Arg: into the clouds best-match: -1
+     [java] Pred: speaks Arg: CHARLIE best-match: 3
+     [java] ANIMATE
+     [java] CHARLIE-13, beg --- 489 , end --- 496
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] appear:
+     [java]     A1: it
+     [java]     AM-LOC: in script
+     [java] speak:
+     [java]     A0: WENDELL HENDERSON
+     [java]     A1: a dialogue
+     [java] 
+     [java] Pred: appears Arg: it best-match: -1
+     [java] Pred: speaks Arg: a dialogue best-match: -1
+     [java] Pred: speaks Arg: WENDELL HENDERSON best-match: 4
+     [java] ANIMATE
+     [java] HENDERSON-17, beg --- 606 , end --- 615
+     [java] continue:
+     [java]     A1: Additional dialogue
+     [java]     AM-MNR: under action sequence that follows
+     [java] follow:
+     [java]     A1: action sequence
+     [java]     R-A1: that
+     [java] 
+     [java] Pred: continue Arg: Additional dialogue best-match: -1
+     [java] Pred: follows Arg: action sequence best-match: -1
+     [java] coref (VOICE) --- key: 333_338
+     [java] coref (Don) --- key: 0_3
+     [java] coref (Charlie) --- key: 5_12
+     [java] coref (CHARLIE) --- key: 123_130
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (CHARLIE) --- key: 401_408
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (CHARLIE) --- key: 489_496
+     [java] COREF --------------
+     [java] mention: CHARLIE, coref: Charlie
+     [java] coref (Megan) --- key: 14_19
+     [java] coref (David) --- key: 21_26
+     [java] coref (Colby) --- key: 28_33
+     [java] coref (Amita) --- key: 35_40
+     [java] coref (IMAGE) --- key: 439_444
+     [java] coref (TV) --- key: 48_50
+     [java] coref (we) --- key: 58_60
+     [java] COREF --------------
+     [java] mention: we, coref: we
+     [java] coref (shuttle) --- key: 75_82
+     [java] coref (shuttle) --- key: 452_459
+     [java] coref (27) --- key: 560_562
+     [java] coref (launchpad) --- key: 90_99
+     [java] coref (launchpad) --- key: 90_99
+     [java] coref (countdown) --- key: 111_120
+     [java] coref (clouds) --- key: 478_484
+     [java] coref (dialogue) --- key: 140_148
+     [java] coref (dialogue) --- key: 279_287
+     [java] coref (dialogue) --- key: 348_356
+     [java] coref (dialogue) --- key: 418_426
+     [java] coref (dialogue) --- key: 506_514
+     [java] coref (dialogue) --- key: 625_633
+     [java] coref (now) --- key: 162_165
+     [java] coref (it) --- key: 247_249
+     [java] coref (HENDERSON) --- key: 606_615
+     [java] COREF --------------
+     [java] mention: HENDERSON, coref: HENDERSON
+     [java] coref (Alan) --- key: 150_154
+     [java] COREF --------------
+     [java] mention: Alan, coref: Alan
+     [java] coref (He) --- key: 239_241
+     [java] COREF --------------
+     [java] mention: He, coref: Alan
+     [java] coref (ALAN) --- key: 265_269
+     [java] COREF --------------
+     [java] mention: ALAN, coref: Alan
+     [java] coref (tray) --- key: 195_199
+     [java] coref (kitchen) --- key: 175_182
+     [java] coref (Dialogue) --- key: 563_571
+     [java] coref (glasses) --- key: 213_220
+     [java] coref (glasses) --- key: 303_310
+     [java] coref (glasses) --- key: 376_383
+     [java] coref (CONFESSION) --- key: 542_552
+     [java] coref (it) --- key: 575_577
+     [java] coref (sequence) --- key: 680_688
+     [java] coref (They) --- key: 289_293
+     [java] COREF --------------
+     [java] mention: They, coref: They
+     [java] coref (they) --- key: 361_365
+     [java] COREF --------------
+     [java] mention: they, coref: They
+
+BUILD SUCCESSFUL
+Total time: 1 minute 21 seconds

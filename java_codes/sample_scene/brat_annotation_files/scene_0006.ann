@@ -1,0 +1,27 @@
+T0	Verb 8 10	is
+R0	A1 Arg1:T0 Arg2:T1
+T2	Verb 100 106	smiles
+R1	A1 Arg1:T2 Arg2:T3
+R2	A0 Arg1:T2 Arg2:T4
+T5	Nom 132 138	checks
+T6	Nom 179 184	smile
+R3	A2 Arg1:T6 Arg2:T7
+T8	Nom 203 207	glee
+R4	A0 Arg1:T8 Arg2:T7
+T9	Verb 239 245	return
+R5	A1 Arg1:T9 Arg2:T10
+T11	Nom 255 259	work
+T12	Verb 299 304	stops
+R6	A1 Arg1:T12 Arg2:T13
+T14	Verb 337 344	returns
+R7	A1 Arg1:T14 Arg2:T15
+T16	Nom 326 330	look
+R8	A0 Arg1:T16 Arg2:T17
+T4	larry 94 99	Larry
+T1	charlie 0 7	Charlie
+T7	larry 188 193	Larry
+T10	Other 234 238	They
+T17	larry 318 323	Larry
+T15	charlie 334 336	he
+T13	charlie 291 298	Charlie
+T3	larry 87 92	Larry

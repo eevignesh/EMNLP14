@@ -1,0 +1,42 @@
+T30	FAIL 391 571	The McCrary Family turns and exits as... Colby, holding a print---out (having seen the exchange with the McCrarys), comes from the Elevator Area, picking his way through the crowd.
+T44	amita 742 747	Amita
+T5	brendan_mccrary 55 62	McCrary
+T46	don 791 794	Don
+T29	Other 325 328	Son
+T15	matt_mccrary 172 176	Matt
+T21	brendan_mccrary 238 253	Colleen McCrary
+T50	amita 808 813	Amita
+T25	don 320 323	Don
+T7	brendan_mccrary 100 115	COLLEEN McCRARY
+T1	don 0 3	Don
+T38	colby 648 653	Colby
+T40	don 705 708	Don
+T19	don 210 213	Don
+T42	charlie 730 737	Charlie
+T27	matt_mccrary 329 333	Matt
+T9	Other 128 131	mom
+T13	matt_mccrary 141 145	Matt
+T17	brendan_mccrary 185 200	Brendan McCrary
+T23	matt_mccrary 258 262	Matt
+T3	brendan_mccrary 15 30	Brendan McCrary
+T36	don 640 643	Don
+T48	charlie 796 803	Charlie
+T32	brendan_mccrary 572 574	He
+T34	brendan_mccrary 590 597	McCrary
+T11	Other 137 140	son
+T51	Verb_active 725 729	sees
+T52	Verb_active 4 9	walks
+T53	Verb_active 709 718	registers
+T54	Verb_active 748 759	approaching
+T55	Verb_active 263 267	walk
+T56	Verb_active 201 206	looks
+T57	Verb_active 654 658	move
+T58	Verb_active 334 339	hangs
+T59	Verb_active 814 822	continue
+T60	Verb_active 575 582	glances
+T61	Verb_active 150 157	waiting
+T62	Verb_active 310 316	glares
+T63	Nom 128 131	mom
+T64	Nom 163 170	contact
+T65	Nom 600 607	exiting
+T66	Nom 63 68	looks

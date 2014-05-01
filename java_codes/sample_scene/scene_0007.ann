@@ -1,0 +1,7 @@
+T0	Verb 21 26	stack
+R0	A1 Arg1:T0 Arg2:T1
+T2	Verb 36 41	piled
+T3	Verb 49 54	walks
+R1	A0 Arg1:T3 Arg2:T4
+T4	david 43 48	David
+T1	megan 0 5	Megan

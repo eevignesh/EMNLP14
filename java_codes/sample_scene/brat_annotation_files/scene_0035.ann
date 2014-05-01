@@ -1,0 +1,76 @@
+T0	Verb 48 53	enter
+R0	A1 Arg1:T0 Arg2:T1
+R1	A0 Arg1:T0 Arg2:T2
+R2	A0 Arg1:T0 Arg2:T3
+R3	A0 Arg1:T0 Arg2:T4
+T5	Verb 57 61	find
+R4	A0 Arg1:T5 Arg2:T2
+R5	A0 Arg1:T5 Arg2:T3
+R6	A0 Arg1:T5 Arg2:T4
+T6	Verb 88 91	has
+R7	A0 Arg1:T6 Arg2:T7
+T8	Verb 131 135	chat
+R8	A0 Arg1:T8 Arg2:T9
+T10	Verb 193 197	chat
+T11	Verb 253 259	DINING
+R9	A0 Arg1:T11 Arg2:T12
+T13	Nom 290 298	response
+T14	Verb 328 333	looks
+R10	A0 Arg1:T14 Arg2:T15
+T16	Verb 358 364	struck
+T17	Verb 387 392	spies
+R11	A0 Arg1:T17 Arg2:T18
+T19	Verb 409 418	including
+R12	A1 Arg1:T19 Arg2:T20
+T21	Nom 402 407	PHOTO
+T22	Verb 460 465	crack
+R13	A1 Arg1:T22 Arg2:T23
+R14	A0 Arg1:T22 Arg2:T24
+T25	Nom 454 459	words
+R15	A0 Arg1:T25 Arg2:T24
+T26	Nom 473 478	shell
+R16	A0 Arg1:T26 Arg2:T23
+T27	Verb 485 490	leave
+T28	Nom 496 500	room
+T29	Verb 524 529	leans
+R17	A0 Arg1:T29 Arg2:T30
+T31	Verb 534 539	holds
+R18	A1 Arg1:T31 Arg2:T30
+R19	A0 Arg1:T31 Arg2:T32
+T33	Nom 547 551	look
+R20	A1 Arg1:T33 Arg2:T32
+T34	Verb 581 585	nods
+R21	A0 Arg1:T34 Arg2:T35
+T36	Verb 587 592	looks
+R22	A0 Arg1:T36 Arg2:T35
+R23	A1 Arg1:T36 Arg2:T37
+T38	Nom 600 607	parents
+R24	A0 Arg1:T38 Arg2:T37
+T39	Nom 625 630	anger
+T40	Verb 637 646	collapses
+R25	A1 Arg1:T40 Arg2:T41
+R26	A2 Arg1:T40 Arg2:T42
+T43	Verb 668 674	crying
+R27	A1 Arg1:T43 Arg2:T42
+T44	Nom 656 659	mom
+R28	A0 Arg1:T44 Arg2:T42
+T45	Nom 692 696	loss
+T46	Verb 698 705	embrace
+T7	don 85 87	He
+T1	charlie 62 69	Charlie
+T23	matt_mccrary 466 470	Matt
+T24	don 448 451	Don
+T15	matt_mccrary 323 327	Matt
+T9	Other 122 128	killer
+T30	don 520 523	Don
+T41	matt_mccrary 632 636	Matt
+T2	don 27 30	Don
+T35	matt_mccrary 576 580	Matt
+T4	colby 42 47	Colby
+T18	don 383 386	Don
+T32	matt_mccrary 540 544	Matt
+T20	Other 428 433	KATIE
+T37	Other 600 607	parents
+T42	Other 656 659	mom
+T3	megan 32 37	Megan
+T12	don 273 276	Don

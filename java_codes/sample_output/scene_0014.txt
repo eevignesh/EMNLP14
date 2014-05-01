@@ -1,0 +1,7 @@
+LARRY speaks a dialogue.
+Don enters, as Alan is exiting the kitchen, carrying a plate.
+ALAN speaks a dialogue.
+Don attempts a smile.
+Alan turns for the stairs ------ Exits.
+On Don.
+Alone with his thoughts...
