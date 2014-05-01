@@ -32,7 +32,24 @@ using namespace std;
 
 namespace alignment
 {
-    
+   /*
+   *  @brief: format time into hh:mm:ss format
+   *
+   *  @parameters:
+   *    timeNum - time in secs
+   *    tempTime - a string buffer to hold the intermediate string
+   *
+   *  @output:
+   *    timeStrig - final formatted time string
+   * */
+
+  string time2d(int timeNum, char tempTime[])
+  {
+    sprintf(tempTime, "%02d", timeNum);
+    string timeString(tempTime);
+    return timeString;
+  }
+
   /*
    * @brief: return 1 if two characters are equal
    *

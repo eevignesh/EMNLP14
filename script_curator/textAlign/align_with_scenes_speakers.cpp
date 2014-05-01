@@ -5,6 +5,7 @@
 
 #include "textAlign.hpp"
 #include "tvParser.hpp"
+#include "speaker_writer.hpp"
 #include <boost/algorithm/string.hpp>
 #include <boost/unordered_map.hpp>
 #include <boost/regex.hpp>
@@ -145,23 +146,6 @@ void breakIntoScenes(vector <string> description, vector <string> &sceneBreaks, 
   }  
 }
 
-/*
- *  @brief: format time into hh:mm:ss format
- *
- *  @parameters:
- *    timeNum - time in secs
- *    tempTime - a string buffer to hold the intermediate string
- *
- *  @output:
- *    timeStrig - final formatted time string
- * */
-
-string time2d(int timeNum, char tempTime[])
-{
-  sprintf(tempTime, "%02d", timeNum);
-  string timeString(tempTime);
-  return timeString;
-}
 
 /*
  *  @brief: clear unwanted expressions out of the script
@@ -214,9 +198,9 @@ int main(int argc, char* argv[])
 {
 
 	// check for the right number of arguments
-  if( argc < 5){
+  if( argc < 6){
   	cout << "Not enough input arguments (required: 4)" << endl;
-    cout << "1. Script directory, 2. srt file, 3. output alignment file, 4. output scene-breaks file" << endl;
+    cout << "1. Script directory, 2. srt file, 3. output alignment file, 4. output scene-breaks file, 5. output speaker alignment file" << endl;
   	exit(EXIT_FAILURE);
   }
 
@@ -224,6 +208,7 @@ int main(int argc, char* argv[])
   // and the descriptions
   string outFilename(argv[3]);
   string outFilenameScene(argv[4]);
+  string outFilenameSpeaker(argv[5]);
 
   // parse the srt file
   SrtParser srt_parser;
@@ -512,6 +497,9 @@ int main(int argc, char* argv[])
   }
   outFileScene.close();
 
+  /*** Write the dialogue speaker names along with time-stamps of dialogues ***/
+  write_speaker_with_timestamps(script_parser, outFilenameSpeaker);
+  
 
   return 0;
 

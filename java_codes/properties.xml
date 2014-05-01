@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+  <!-- minimum number of times a name should appear as a speaker in order to be considered as a valid cast-member -->
+  <entry key="castListThreshold">2</entry>
+
+  <!-- overlap threshold between the mention and SRL arguments -->
+  <entry key="overlapThreshold">0.1</entry>
+</properties>
